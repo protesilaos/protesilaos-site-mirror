@@ -1,0 +1,54 @@
+a {
+  color: $primary1;
+  text-decoration: none;
+
+  &:not(.active) {
+    @include transition;
+  }
+
+  &:hover,
+  &:active {
+    color: $tertiary1;
+  }
+
+  &:not(.skip-link):focus {
+    color: $tertiary1;
+    background: transparentize($tertiary1, 0.9);
+    outline: thin dashed $tertiary1;
+  }
+
+  &.active {
+    color: $cya;
+    border-bottom: thin solid $cya;
+  }
+
+  article:not(.packages) &,
+  .homepage-container p &,
+  .index p & {
+    border-bottom: thin solid $primary1;
+
+    &:hover,
+    &:active {
+      border-bottom: thin solid $tertiary1;
+    }
+
+    &[href^="#fn"] {
+      font-weight: 400;
+      border-bottom: none;
+
+      &::before {
+        content: "[";
+        font-weight: 400;
+
+        @extend %pseudomark;
+      }
+
+      &::after {
+        content: "]";
+        font-weight: 400;
+
+        @extend %pseudomark;
+      }
+    }
+  }
+}

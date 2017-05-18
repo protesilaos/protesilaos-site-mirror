@@ -1,0 +1,38 @@
+.nextprev {
+  display: block;
+  overflow: hidden;
+  margin: $vrythm auto;
+
+  @extend %clearfix;
+
+  div {
+    display: block;
+    padding: ($vrythm * 2) 0;
+
+    &:first-child {
+      padding: $vrythm 0;
+    }
+
+    + div {
+      padding-top: $vrythm;
+      border-top: thin solid $dark1;
+
+      &:last-child {
+        padding: $vrythm 0;
+      }
+    }
+
+    &:last-child {
+      padding: ($vrythm * 2) 0;
+    }
+  }
+
+  span {
+    color: $text1;
+    margin-right: $sone / 2;
+  }
+
+  a {
+    font-weight: 700;
+  }
+}

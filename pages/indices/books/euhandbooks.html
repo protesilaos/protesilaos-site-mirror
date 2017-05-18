@@ -1,0 +1,47 @@
+---
+layout: index-wide
+title: "A Handbook on the European Union"
+subtitle: "An informed opinion on Europe's experiment in transnational democracy"
+excerpt: "An examination of European politics and the European integration process."
+permalink: /euhandbook/
+breadcrumbs: true
+---
+
+{% assign euhandbooks = site.books | sort='date' %}
+
+<div class="books-meta">
+  <p>Published: <span>{{ site.data.text.euhandbook.datefull }}</span><br/>Book version: <span>{{ site.data.text.euhandbook.version }}</span></p>
+
+  <div class="books-options">
+    <a class="books-button read-online" href="{{ '/euhandbook/introduction/'  | prepend: site.url }}">
+      <svg class="deco-icon icon-book">
+        <use xlink:href="#icon-book"></use>
+      </svg>Read online
+    </a>
+    <a class="books-button read-offline" href="{{ '/euhandbook/print/'  | prepend: site.url }}">
+      <svg class="deco-icon icon-print">
+        <use xlink:href="#icon-print"></use>
+      </svg>Print version
+    </a>
+  </div>
+</div>
+
+<div class="index-cards">
+  <h2>Contents</h2>
+  <div>
+    <ul>
+      {% for euhandbook in euhandbooks %}
+        {% if euhandbook.flag == "euhandbook" %}
+          <li>
+            <a href="{{ euhandbook.url | relative_url }}">{{ forloop.index }}. {{ euhandbook.title }}</a>
+            <p>{{ euhandbook.excerpt }}</p>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% include donation.html %}
+
+{% include booksnav.html %}

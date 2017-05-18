@@ -1,0 +1,39 @@
+/*
+    Name: Equinox
+    Author: Protesilaos Stavrou (https://protesilaos.com)
+    Description: Tested with Rouge-enabled Jekyll sites
+    Theme URL: https://protesilaos.com/equinox
+*/
+
+// Colour scheme
+$dbg: #1d1921; // Dark background
+$dhl: #2d2931; // Dark highlight
+$dt2: #7d7981; // Dark bg text secondary
+$dt1: #ada9b1; // Dark bg text primary
+$lbg: #fcfafe; // Light background
+$lhl: #eceaee; // Light background
+$lt2: #7c7a7e; // Light bg text secondary
+$lt1: #3c3a3e; // Light bg text primary
+$red: #9a334f; // Red
+$ora: #936a48; // Orange
+$yel: #859356; // Yellow
+$gre: #138e6c; // Green
+$cya: #369aa6; // Cyan
+$blu: #536cb2; // Blue
+$vio: #8955ba; // Violet
+$mag: #cc5d9a; // Magenta
+
+// Colour order
+$primary1: $blu;
+$primary2: $vio;
+$primary3: $gre;
+$secondary1: $cya;
+$secondary2: $yel;
+$tertiary1: $mag;
+$tertiary2: $ora;
+$tertiary3: $red;
+
+// Site-wide colours ----------------------
+$text1: $lt1;
+$text2: $lt2;
+$bg: $lbg;

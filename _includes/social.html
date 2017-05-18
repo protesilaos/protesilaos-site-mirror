@@ -1,0 +1,15 @@
+{% include social.svg %}
+
+{% assign profiles = site.data.social %}
+
+<ul class="menu-social">
+{% for profile in profiles %}
+<li>
+  <a title="{{ profile.name }}" href="{{ profile.url }}" aria-label="{{ profile.name }}">
+    <svg class="icon {{ profile.class }}">
+      <use xlink:href="#{{ profile.class }}"></use>
+    </svg>
+  </a>
+</li>
+{% endfor %}
+</ul>

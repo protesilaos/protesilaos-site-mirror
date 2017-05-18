@@ -1,0 +1,98 @@
+<footer class="footer">
+
+  <div class="footer-header">
+    <h2>{{ site.title }}</h2>
+    <h3>{{ site.description }}</h3>
+    <p><a href="{{ site.url }}">protesilaos.com</a></p>
+  </div>
+
+  <div class="footer-inner">
+
+    <div class="footer-section">
+      <h3>Information</h3>
+      <nav class="footer-menu" aria-label="Footer about me menu">
+        <ul>
+          <li>
+            <a href="{{ '/author/' | prepend: site.url }}">
+              About me and my work
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/contact/' | prepend: site.url }}">
+              Contact and availability
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-section">
+      <h3>Political analysis</h3>
+      <nav class="footer-menu" aria-label="Footer politics work menu">
+        <ul>
+          <li>
+            <a href="{{ '/blog/' | prepend: site.url }}">
+              Blog on EU politics
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/books/' | prepend: site.url }}">
+              Web based books
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-section">
+      <h3>Code</h3>
+      <nav class="footer-menu" aria-label="Footer web dev menu">
+        <ul>
+          <li>
+            <a href="{{ '/schemes/' | prepend: site.url }}">
+              Prot16 schemes
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/codelog/' | prepend: site.url }}">
+              Coding blog
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/code/' | prepend: site.url }}">
+              Code projects index
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow me</h3>
+      <nav class="footer-menu" aria-label="Footer social links menu">
+        {% include social.svg %}
+
+        {% assign profiles = site.data.social %}
+
+        <ul>
+        {% for profile in profiles %}
+          <li>
+          <a title="{{ profile.name }}" href="{{ profile.url }}" aria-label="{{ profile.name }}">
+            <svg class="icon {{ profile.class }}">
+              <use xlink:href="#{{ profile.class }}"></use>
+            </svg>
+            {{ profile.name }}
+          </a>
+        </li>
+        {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <small>
+      (c) {{ site.time | date: '%Y' }} Protesilaos Stavrou. <a rel="license" href="{{ '/license/' | prepend: site.url }}">Some rights reserved</a>.
+    </small>
+  </div>
+</footer>

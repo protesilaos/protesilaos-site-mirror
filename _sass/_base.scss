@@ -1,0 +1,190 @@
+body {
+  font-family: $serif;
+  font-size: $base-font-size;
+  line-height: $line-height;
+  color: $text1;
+  background-color: $bg;
+  word-wrap: break-word;
+  margin: 0;
+
+  @include tablet {
+    font-size: $base-font-size + 1;
+  }
+
+  @include desktop {
+    font-size: $base-font-size + 2;
+  }
+
+  .fonts-loaded & {
+
+    // Scope font adjustment to avoid it in index pages
+    .post {
+      font-family: $font1;
+      font-size: $base-font-size - 2;
+
+      @include tablet {
+        font-size: $base-font-size;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $sans;
+  font-weight: 700;
+  color: $text1;
+  margin-bottom: $vrythm / 2;
+  padding: 0;
+
+  .fonts-loaded & {
+    font-family: $font2;
+    font-weight: 900;
+  }
+}
+
+h1,
+h2 {
+  line-height: $heading-line-height;
+}
+
+h1,
+.h1 {
+  font-size: $xlsize;
+
+  @include tablet {
+    font-size: $xxlsize;
+  }
+
+  @include desktop {
+    font-size: $xxxlsize;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $lsize;
+
+  @include tablet {
+    font-size: $xlsize;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $msize;
+
+  @include tablet {
+    font-size: $lsize;
+  }
+}
+
+h4,
+.h4 {
+  font-size: $msize;
+}
+
+h5,
+.h5 {
+  font-size: $ssize;
+}
+
+h6,
+.h6 {
+  font-size: $xssize;
+}
+
+p {
+  margin: 0 0 $vrythm;
+  padding: 0;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: thick solid $dark2;
+
+  p {
+    font-style: italic;
+    padding-left: $vrythm;
+  }
+}
+
+ul,
+ol {
+  margin: 0 0 $vrythm;
+  padding: 0 0 0 $sone;
+}
+
+pre,
+code,
+samp {
+  font-family: $mono;
+  font-size: $ssize;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre;
+  word-break: inherit;
+  word-wrap: inherit;
+  margin: $vrythm 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+small {
+  font-size: $xssize;
+}
+
+time {
+  color: $text2;
+  display: block;
+
+  @extend p;
+}
+
+abbr {
+  border-bottom: thin dotted $dark2;
+  cursor: help;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}

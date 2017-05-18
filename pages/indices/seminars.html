@@ -1,0 +1,20 @@
+---
+layout: index-wide
+title: "Seminars on EU politics"
+excerpt: "A series of seminars on European Union politics"
+permalink: /seminars/
+---
+
+{% assign seminars = site.posts | where: 'layout', 'seminar' | sort: 'date' | reverse %}
+
+<div class="index-cards">
+  <ul>
+    {% for seminar in seminars %}
+      <li>
+        <time>{{ seminar.date | date: site.date_format }}</time>
+        <a href="{{ seminar.url | relative_url }}">{{ seminar.title }} ({{ seminar.lecture }})</a>
+        <p>{{ seminar.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

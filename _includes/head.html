@@ -1,0 +1,125 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% feed_meta %}
+
+  {% seo %}
+
+  <!-- Main styles -->
+  <style type="text/css">
+    {% capture triton %}
+      {% include triton.scss %}
+    {% endcapture %}
+    {{ triton | scssify }}
+  </style>
+
+  <!-- Font event FOUT with a class -->
+  <link rel="stylesheet" href="{{ '/css/webfonts.min.css'  | prepend: site.url }}">
+
+  <script>
+  (function() {
+
+    // Optimization for Repeat Views
+    if( sessionStorage.foutFontsLoaded ) {
+      document.documentElement.className += " fonts-loaded";
+      return;
+    }
+
+    // FontFaceObserver https://github.com/bramstein/fontfaceobserver
+    (function(){function e(e,t){document.addEventListener?e.addEventListener("scroll",t,!1):e.attachEvent("scroll",t)}function t(e){document.body?e():document.addEventListener?document.addEventListener("DOMContentLoaded",function t(){document.removeEventListener("DOMContentLoaded",t),e()}):document.attachEvent("onreadystatechange",function n(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",n),e()})}function n(e){this.a=document.createElement("div"),this.a.setAttribute("aria-hidden","true"),this.a.appendChild(document.createTextNode(e)),this.b=document.createElement("span"),this.c=document.createElement("span"),this.h=document.createElement("span"),this.f=document.createElement("span"),this.g=-1,this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;",this.b.appendChild(this.h),this.c.appendChild(this.f),this.a.appendChild(this.b),this.a.appendChild(this.c)}function r(e,t){e.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+t+";"}function i(e){var t=e.a.offsetWidth,n=t+100;return e.f.style.width=n+"px",e.c.scrollLeft=n,e.b.scrollLeft=e.b.scrollWidth+100,e.g!==t?(e.g=t,!0):!1}function s(t,n){function r(){var e=s;i(e)&&null!==e.a.parentNode&&n(e.g)}var s=t;e(t.b,r),e(t.c,r),i(t)}function o(e,t){var n=t||{};this.family=e,this.style=n.style||"normal",this.weight=n.weight||"normal",this.stretch=n.stretch||"normal"}function l(){if(null===a){var e=document.createElement("div");try{e.style.font="condensed 100px sans-serif"}catch(t){}a=""!==e.style.font}return a}function c(e,t){return[e.style,e.weight,l()?e.stretch:"","100px",t].join(" ")}var u=null,a=null,f=null;o.prototype.load=function(e,i){var o=this,a=e||"BESbswy",l=i||3e3,h=(new Date).getTime();return new Promise(function(e,i){null===f&&(f=!!window.FontFace);if(f){var p=new Promise(function(e,t){function n(){(new Date).getTime()-h>=l?t():document.fonts.load(c(o,o.family),a).then(function(t){1<=t.length?e():setTimeout(n,25)},function(){t()})}n()}),d=new Promise(function(e,t){setTimeout(t,l)});Promise.race([d,p]).then(function(){e(o)},function(){i(o)})}else t(function(){function t(){var t;if(t=-1!=m&&-1!=g||-1!=m&&-1!=S||-1!=g&&-1!=S)(t=m!=g&&m!=S&&g!=S)||(null===u&&(t=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),u=!!t&&(536>parseInt(t[1],10)||536===parseInt(t[1],10)&&11>=parseInt(t[2],10))),t=u&&(m==x&&g==x&&S==x||m==T&&g==T&&S==T||m==N&&g==N&&S==N)),t=!t;t&&(null!==C.parentNode&&C.parentNode.removeChild(C),clearTimeout(L),e(o))}function f(){if((new Date).getTime()-h>=l)null!==C.parentNode&&C.parentNode.removeChild(C),i(o);else{var e=document.hidden;if(!0===e||void 0===e)m=p.a.offsetWidth,g=d.a.offsetWidth,S=v.a.offsetWidth,t();L=setTimeout(f,50)}}var p=new n(a),d=new n(a),v=new n(a),m=-1,g=-1,S=-1,x=-1,T=-1,N=-1,C=document.createElement("div"),L=0;C.dir="ltr",r(p,c(o,"sans-serif")),r(d,c(o,"serif")),r(v,c(o,"monospace")),C.appendChild(p.a),C.appendChild(d.a),C.appendChild(v.a),document.body.appendChild(C),x=p.a.offsetWidth,T=d.a.offsetWidth,N=v.a.offsetWidth,f(),s(p,function(e){m=e,t()}),r(p,c(o,'"'+o.family+'",sans-serif')),s(d,function(e){g=e,t()}),r(d,c(o,'"'+o.family+'",serif')),s(v,function(e){S=e,t()}),r(v,c(o,'"'+o.family+'",monospace'))})})},"undefined"!=typeof module?module.exports=o:(window.FontFaceObserver=o,window.FontFaceObserver.prototype.load=o.prototype.load)})();
+
+    var fontA = new FontFaceObserver('Fira Sans');
+    var fontB = new FontFaceObserver('Merriweather');
+
+    Promise.all([fontA.load(),fontB.load()]).then(function () {
+      document.documentElement.className += " fonts-loaded";
+
+      // Optimization for Repeat Views
+      sessionStorage.foutFontsLoaded = true;
+    });
+  })();
+  </script>
+
+  <!-- Below the fold load async -->
+  <link rel="preload" href="{{ '/css/triton-secondary.css' | prepend: site.url }}" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ '/css/triton-secondary.css'  | prepend: site.url }}"></noscript>
+
+  <!-- Print only -->
+  <link rel="stylesheet" type="text/css" href="{{ '/css/triton-print.css'  | prepend: site.url }}" media="print">
+
+  <!-- Code styles and modules -->
+  {% if page.layout == "scheme" or page.url contains "codelog" or page.component contains "codeblock" %}
+    <style type="text/css">
+      {% capture triton-syntax %}
+        {% include triton-syntax.scss %}
+      {% endcapture %}
+      {{ triton-syntax | scssify }}
+    </style>
+
+    <script async src="{{ '/js/schemesdropdown.min.js' | prepend: site.url }}"></script>
+  {% elsif page.layout == "index" %}
+    <!-- Homepage styles -->
+    <style type="text/css">
+      {% capture triton-homepage %}
+        {% include triton-homepage.scss %}
+      {% endcapture %}
+      {{ triton-homepage | scssify }}
+    </style>
+  {% elsif page.breadcrumbs %}
+    <!-- Book indices navigation styles -->
+    <style type="text/css">
+      {% capture triton-books %}
+        {% include triton-books.scss %}
+      {% endcapture %}
+      {{ triton-books | scssify }}
+    </style>
+  {% elsif page.url contains "contact" %}
+    <!-- Timeline module -->
+    <style type="text/css">
+      {% capture triton-timeline %}
+        {% include triton-timeline.scss %}
+      {% endcapture %}
+      {{ triton-timeline | scssify }}
+    </style>
+  {% elsif page.guest %}
+    <!-- Guest author styles -->
+    <style type="text/css">
+      {% capture triton-guest %}
+        {% include triton-guest.scss %}
+      {% endcapture %}
+      {{ triton-guest | scssify }}
+    </style>
+  {% endif %}
+
+  <!-- The loadCSS script -->
+  <script type="text/javascript">
+    {% include loadcss.min.js %}
+  </script>
+
+  <!-- Active menu item script -->
+  {% if page.layout == "page" %}
+    <script async src="{{ '/js/mainnavigation.min.js' | prepend: site.url }}"></script>
+  {% endif %}
+
+  <!-- JS redirect to https -->
+  <script type="text/javascript">
+  var host = "protesilaos.com";
+  if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+    window.location = window.location.toString().replace(/^http:/, "https:");
+  }
+  </script>
+
+  <!-- Google analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44622622-4', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>

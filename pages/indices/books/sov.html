@@ -1,0 +1,47 @@
+---
+layout: index-wide
+title: "Essays on Sovereignty"
+subtitle: "On the theoretical aspects and underpinnings of supreme political authority"
+excerpt: "A free web based book about the meaning and specifics of sovereignty, and about how these relate to the present and near future."
+permalink: /sov/
+breadcrumbs: true
+---
+
+{% assign sovs = site.books | where: "flag", "sov" %}
+
+<div class="books-meta">
+  <p>Published: <span>{{ site.data.text.sov.datefull }}</span><br/>Book version: <span>{{ site.data.text.sov.version }}</span></p>
+
+  <div class="books-options">
+    <a class="books-button read-online" href="{{ '/sov/introduction/'  | prepend: site.url }}">
+      <svg class="deco-icon icon-book">
+        <use xlink:href="#icon-book"></use>
+      </svg>
+      Read online
+    </a>
+    <a class="books-button read-offline" href="{{ '/sov/print/'  | prepend: site.url }}">
+      <svg class="deco-icon icon-print">
+        <use xlink:href="#icon-print"></use>
+      </svg>
+      Print version
+    </a>
+  </div>
+</div>
+
+<div class="index-cards">
+  <h2>Contents</h2>
+  <div>
+    <ul>
+      {% for sov in sovs %}
+        <li>
+          <a href="{{ sov.url | relative_url }}">{{ forloop.index }}. {{ sov.title }}</a>
+          <p>{{ sov.excerpt }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% include donation.html %}
+
+{% include booksnav.html %}

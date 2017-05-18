@@ -1,0 +1,111 @@
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// Random Mixin
+</span><span class="k">@mixin</span> <span class="nf">tablet</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="nf">and</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$tablet</span><span class="si">}</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// TODO Write something
+</span><span class="nc">.social-share</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$fontui</span><span class="p">;</span>
+
+  <span class="k">@include</span> <span class="nd">radius</span><span class="p">(</span><span class="m">3%</span><span class="p">);</span>
+
+  <span class="nt">div</span> <span class="p">{</span>
+    <span class="nt">a</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nv">$lbg</span><span class="p">;</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="p">(</span><span class="nv">$sone</span> <span class="o">/</span> <span class="m">2</span><span class="p">)</span> <span class="m">0</span><span class="p">;</span>
+
+      <span class="k">@include</span> <span class="nd">tablet</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nv">$sone</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s2">"twitter.com"</span><span class="o">]</span> <span class="p">{</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="mh">#1DA1F3</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="nl">opacity</span><span class="p">:</span> <span class="mi">.8</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">div</span> <span class="o">+</span> <span class="nt">div</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.some-class</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="mh">#123456</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// Random Mixin
+</span><span class="k">@mixin</span> <span class="nf">tablet</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="nf">and</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$tablet</span><span class="si">}</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@content</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// TODO Write something
+</span><span class="nc">.social-share</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$fontui</span><span class="p">;</span>
+
+  <span class="k">@include</span> <span class="nd">radius</span><span class="p">(</span><span class="m">3%</span><span class="p">);</span>
+
+  <span class="nt">div</span> <span class="p">{</span>
+    <span class="nt">a</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nv">$lbg</span><span class="p">;</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="p">(</span><span class="nv">$sone</span> <span class="o">/</span> <span class="m">2</span><span class="p">)</span> <span class="m">0</span><span class="p">;</span>
+
+      <span class="k">@include</span> <span class="nd">tablet</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nv">$sone</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s2">"twitter.com"</span><span class="o">]</span> <span class="p">{</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="mh">#1DA1F3</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="nl">opacity</span><span class="p">:</span> <span class="mi">.8</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">div</span> <span class="o">+</span> <span class="nt">div</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.some-class</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="mh">#123456</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+mkdir -p <span class="nv">$HOME</span>/.local/share/xfce4/terminal/colorschemes
+
+<span class="k">for </span>filename <span class="k">in</span> <span class="k">$(</span>ls <span class="nv">$HOME</span>/prot16-builder/db/schemes<span class="k">)</span>
+<span class="k">do
+  </span><span class="nv">name</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$filename</span> | cut -f 1 -d <span class="s1">'.'</span><span class="k">)</span>
+
+  prot16-builder -s <span class="k">${</span><span class="nv">name</span><span class="k">}</span> -t xfce4-terminal -b light &gt; <span class="nv">$HOME</span>/.local/path/<span class="k">${</span><span class="nv">name</span><span class="k">}</span>-light.theme
+  tput setaf 9; <span class="nb">echo</span> <span class="s2">"Preparing </span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2"> light for </span><span class="se">\n\/</span><span class="s2">escape</span><span class="se">\/</span><span class="s2"> XFCE4-Terminal"</span>
+<span class="k">done</span>
+</code></pre>
+</div>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+mkdir -p <span class="nv">$HOME</span>/.local/share/xfce4/terminal/colorschemes
+
+<span class="k">for </span>filename <span class="k">in</span> <span class="k">$(</span>ls <span class="nv">$HOME</span>/prot16-builder/db/schemes<span class="k">)</span>
+<span class="k">do
+  </span><span class="nv">name</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$filename</span> | cut -f 1 -d <span class="s1">'.'</span><span class="k">)</span>
+
+  prot16-builder -s <span class="k">${</span><span class="nv">name</span><span class="k">}</span> -t xfce4-terminal -b light &gt; <span class="nv">$HOME</span>/.local/path/<span class="k">${</span><span class="nv">name</span><span class="k">}</span>-light.theme
+  tput setaf 9; <span class="nb">echo</span> <span class="s2">"Preparing </span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2"> light for </span><span class="se">\n\/</span><span class="s2">escape</span><span class="se">\/</span><span class="s2"> XFCE4-Terminal"</span>
+<span class="k">done</span>
+</code></pre>
+</div>

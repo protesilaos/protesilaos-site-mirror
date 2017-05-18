@@ -1,0 +1,334 @@
+// These variables are meant to override the equivalents in `_variables.scss`
+// That is because in `_triton-syntax.scss` that partial is loaded before the prot16 loop
+$t1: $dt1;
+$t2: $dt2;
+$background: $dbg;
+$highlight: $dhl;
+
+// Syntax styles
+.highlight {
+  background: $background;
+  color: $t1;
+  padding: $sone;
+
+  @include desktop {
+    @include bigblock;
+  }
+
+  // Comment
+  .c {
+    color: $t2;
+    font-style: italic;
+  }
+
+  // NOTE this is kept in place for contextual purposes
+  // There is no point in posting code with erros
+  // Also, error detection is not very reliable
+  // // Error
+  // .err {
+  //   color: $background;
+  //   background-color: $tertiary3;
+  // }
+
+  // Keyword
+  .k {
+    color: $primary1;
+  }
+
+  // Operator
+  .o {
+    color: $t1;
+    font-weight: bold;
+  }
+
+  // Comment multiline
+  .cm {
+    color: $t2;
+    font-style: italic;
+  }
+
+  // Comment preproc
+  .cp {
+    color: $t2;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  // Comment single
+  .c1 {
+    color: $t2;
+    font-style: italic;
+  }
+
+  // Comment special
+  .cs {
+    color: $t2;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  // Generic delete
+  .gd {
+    color: $background;
+    background-color: $tertiary3;
+  }
+
+  // Generic emphasis
+  .ge {
+    color: $t1;
+    font-style: italic;
+  }
+
+  // Generic error
+  .gr {
+    color: $tertiary3;
+  }
+
+  // Generic heading
+  .gh {
+    color: $t1;
+  }
+
+  // Generic inserted
+  .gi {
+    color: $t1;
+    background-color: $highlight;
+  }
+
+  // Generic output
+  .go {
+    color: $primary2;
+  }
+
+  // Generic prompt
+  .gp {
+    color: $t2;
+  }
+
+  // Generic prompt
+  .gs {
+    font-weight: bold;
+  }
+
+  // Generic subheading
+  .gu {
+    color: $t1;
+  }
+
+  // Generic traceback
+  .gt {
+    color: $primary1;
+  }
+
+  // Keyword constant
+  .kc {
+    color: $primary2;
+  }
+
+  // Keyword declaration
+  .kd {
+    color: $primary2;
+  }
+
+  // Keyword namespace
+  .kn {
+    color: $primary2;
+  }
+
+  // Keyword pseudo
+  .kp {
+    color: $primary2;
+  }
+
+  // Keyword reserved
+  .kr {
+    color: $primary2;
+  }
+
+  // Keyword type
+  .kt {
+    color: $tertiary2;
+  }
+
+  // Literal number
+  .m {
+    color: $primary3;
+  }
+
+  // Literal string
+  .s {
+    color: $secondary1;
+  }
+
+  // Name attribute
+  .na {
+    color: $primary2;
+  }
+
+  // Name builtin
+  .nb {
+    color: $primary2;
+  }
+
+  // Name class
+  .nc {
+    color: $primary2;
+  }
+  // Name constant
+  .no {
+    color: $primary2;
+  }
+
+  // Name decorator
+  .nd {
+    color: $secondary2;
+  }
+
+  // Name entity
+  .ni {
+    color: $secondary2;
+  }
+
+  // Name exception
+  .ne {
+    color: $secondary2;
+    font-weight: bold;
+  }
+
+  // Name function
+  .nf {
+    color: $primary1;
+    font-weight: bold;
+  }
+
+  // Name label
+  .nl {
+    color: $t1;
+  }
+
+  // Name namespace
+  .nn {
+    color: $t1;
+  }
+
+  // Name tag
+  .nt {
+    color: $primary1;
+  }
+
+  // Name variable
+  .nv {
+    color: $primary3;
+  }
+
+  // Operator word
+  .ow {
+    color: $t1;
+    font-weight: bold;
+  }
+
+  // Text whitespace
+  .w {
+    color: $t1;
+  }
+
+  // Literal number float
+  .mf {
+    color: $primary3;
+  }
+
+  // Literal number hex
+  .mh {
+    color: $primary3;
+  }
+
+  // Literal number integer
+  .mi {
+    color: $primary3;
+  }
+
+  // Literal number oct
+  .mo {
+    color: $primary3;
+  }
+
+  // Literal string backtick
+  .sb {
+    color: $secondary1;
+  }
+
+  // Literal string character
+  .sc {
+    color: $secondary1;
+  }
+
+  // Literal string doc
+  .sd {
+    color: $secondary1;
+  }
+
+  // Literal string double
+  .s2 {
+    color: $secondary1;
+  }
+
+  // Literal string escape
+  .se {
+    color: $tertiary1;
+  }
+
+  // Literal string heredoc
+  .sh {
+    color: $tertiary1;
+  }
+
+  // Literal string interpolation
+  .si {
+    color: $tertiary1;
+  }
+
+  // Literal string other
+  .sx {
+    color: $tertiary2;
+  }
+
+  // Literal string regex
+  .sr {
+    color: $tertiary1;
+  }
+
+  // Literal string single
+  .s1 {
+    color: $secondary1;
+  }
+
+  // Literal string symbol
+  .ss {
+    color: $secondary1;
+  }
+
+  // Name builtin pseudo
+  .bp {
+    color: $secondary2;
+  }
+
+  // Name variable class
+  .vc {
+    color: $primary1;
+  }
+
+  // Name variable global
+  .vg {
+    color: $primary1;
+  }
+
+  // Name variable instance
+  .vi {
+    color: $primary1;
+  }
+
+  // Literal number integer long
+  .il {
+    color: $primary3;
+  }
+}

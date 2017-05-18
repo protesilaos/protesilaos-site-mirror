@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div id="content" role="main">
+      <div class="post-header print-page-header">
+        <div class="post-header-inner">
+          <h1 class="h1-plus">{{ page.title }}</h1>
+        </div>
+      </div>
+
+      <article class="post container">
+        {{ content }}
+      </article>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>

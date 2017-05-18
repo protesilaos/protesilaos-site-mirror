@@ -1,0 +1,21 @@
+---
+layout: index-wide
+permalink: /books/
+title: "Books and essays"
+subtitle: "Independent web based publications on protesilaos.com"
+excerpt: "Index of the books published on protesilaos.com. These are free of charge."
+---
+
+<div class="index-cards">
+  <ul>
+    {% assign books = site.data.books | sort: 'date' | reverse %}
+    {% for book in books %}
+    <li>
+      <time>{{ book.date }}</time>
+      <a href="{{ book.url | prepend: '/' }}">{{ book.title }}</a>
+      <p>{{ book.description }}</p>
+    </li>
+    {% endfor %}
+    <li class="highlight-card">{{ site.data.text.books.distribution }}</li>
+  </ul>
+</div>

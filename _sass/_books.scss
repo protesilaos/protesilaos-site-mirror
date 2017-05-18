@@ -1,0 +1,69 @@
+.books-meta {
+  font-family: $fontui;
+  font-size: $ssize;
+
+  @include tablet {
+    font-size: $msize;
+  }
+
+  .books-options {
+    padding: $sone 0;
+    margin: $sone 0;
+
+    @extend %clearfix;
+
+    a.books-button {
+      color: $lbg;
+      padding: $sone * 0.75;
+      display: inline-block;
+      border-bottom: none;
+      text-transform: lowercase;
+
+      @include radius(3%);
+      @include transition;
+      @include shadow;
+
+      @include tablet {
+        padding: ($sone * 0.75) ($sone * 1.5);
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: none;
+      }
+
+      &:last-of-type {
+        margin-left: $sone / 2;
+      }
+
+      .deco-icon {
+        margin-right: $sone / 4;
+      }
+
+      &.read-online {
+        background: $gre;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background: $cya;
+        }
+      }
+
+      &.read-offline {
+        background: $mag;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background: $vio;
+        }
+      }
+    }
+  }
+
+  span {
+    font-weight: 700;
+  }
+}

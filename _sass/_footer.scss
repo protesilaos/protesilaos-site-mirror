@@ -1,0 +1,120 @@
+.footer {
+  font-family: $fontui;
+  background: $dbg;
+  padding-top: $vrythm;
+
+  @extend %clearfix;
+
+  @include tablet {
+    padding-top: $vrythm * 2;
+  }
+}
+
+.footer-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: auto;
+  padding: $sone;
+  margin: 0 auto;
+  max-width: $measure;
+
+  @include tablet {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    padding: $vrythm 0;
+    max-width: $measure-xl;
+  }
+
+  h3 {
+    color: $dt1;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: $shalf 0;
+    }
+  }
+}
+
+.footer-header {
+  display: block;
+  padding: $sone;
+  margin: 0 auto;
+  border-bottom: thin solid $dhl;
+  max-width: $measure;
+
+  @include desktop {
+    max-width: $measure-xl;
+  }
+
+  h2 {
+    color: $dt1;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h3 {
+    color: $dt2;
+    font-weight: 400;
+  }
+}
+
+.footer-section {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: ($vrythm / 4) auto;
+
+  @include tablet {
+    width: ($measure / 4) - ($sone * 2);
+    margin: ($vrythm / 2) 0;
+  }
+
+  @include desktop {
+    width: ($measure-xl / 4) - ($sone * 2);
+
+    &:nth-of-type(2n) {
+      margin-left: $sone;
+    }
+  }
+}
+
+.footer-menu {
+  font-size: $ssize;
+
+  .icon {
+    padding-right: $sone / 4;
+    width: $ssize;
+    height: $ssize;
+  }
+}
+
+.copyright {
+  @extend .footer-header;
+  color: $dt2;
+  border-top: thin solid $dhl;
+  border-bottom: none;
+}

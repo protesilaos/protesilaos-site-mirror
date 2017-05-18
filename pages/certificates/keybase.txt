@@ -1,0 +1,77 @@
+---
+layout: null
+permalink: /.well-known/keybase.txt
+---
+==================================================================
+https://keybase.io/protesilaos
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://protesilaos.com
+  * I am protesilaos (https://keybase.io/protesilaos) on keybase.
+  * I have a public key with fingerprint B468 D073 B7E1 9C68 2363  0545 A480 7515 9C72 52BF
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b92acb6883a35a4caad1fab9d9dc36a3f6813f598b5fdcd587a745836980d1ac0a",
+            "fingerprint": "b468d073b7e19c6823630545a48075159c7252bf",
+            "host": "keybase.io",
+            "key_id": "a48075159c7252bf",
+            "kid": "0101b92acb6883a35a4caad1fab9d9dc36a3f6813f598b5fdcd587a745836980d1ac0a",
+            "uid": "d05bcd8e74fdcded9018baeb3a4e5f19",
+            "username": "protesilaos"
+        },
+        "service": {
+            "hostname": "protesilaos.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1489158627,
+    "expire_in": 157680000,
+    "prev": "e8cb99011226c18ca0c3da7aa463a7d90cf91e21ae8cd9a2a7a0bf667be73c6c",
+    "seqno": 19,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkn9QFGUYx48f8uNAOEISA0SWDISL2b29/QXUCKEG1CRoRiPT9e7uu3frwe1x
+e5wBQpaOKSUIaoPiiPwYRJwKO2cwS0A6ISDNhCwdphGb5MeUMwmpowO1y+Rf9Wfv
+P++8z/N9Pu/3eeY5sNRHE+DVtrM04pgjv9drZJrVFPRfnKpAWIkvQ1IrECtcvGAR
+D2WnySrySCqCYijGMgbAsSRN4wAngJEDgMcEwDI8w3M4CXCBpDFcIBiaJQSe4wma
+ApSRoHGSoVEeAxwKED0iiDYzdNgdos2pYFkjSfMohbMUxBiOpA04iaOEUaHTKEVg
+BMNRBsLACkqhRZLVCsUcC2SYIkpKTHmYFu39h/5/9l26iONRguV4GlJGVQl5BsVo
+FkAWB0ZICBijCmXosIFiqKjtDskJZbEISDJSqUeUhEvkoDpbtZl/i1I4qVghqBGJ
+k4qUpMXptMuparGzzK6qt0PW9A/HxIo2XpmmUuGCDlmUbEgqpig5p6iCMSPNYARN
+Gig9At+xiw5oElUFQZE0qhz1H+hSkNBEcyyjdIIZDCSH0RxAOZwHFABGEgeU0iMn
+MBg0YADSHM8Ag5JCWYEkKRZSOEdyiNpaiU1S4IxiFJgVqCyabcBZ6oBIpXafN+6r
+8QrQxDwd53vWclXunjhmieeWrHuygku81f3TaAN1TyJrH+k01Xe/vb57oHG8/Pi1
+U5XPsnkRGwMnGn/0Kwir+zjk8W+VncmDaTFTTfMNrm/eOM9kIIby9xtbRtnQcwOj
+WZmjv2c/LG7T/XpwJnf5Ub3n/vqHX9T1dH4dsC02J/nOwdnmwlfbXptrnVzRMeW/
+vG5MmH8qYTQ5r7p1ZPuJoOCqZt/QF3VWIaOxwNuz5Sz96XDOcG1s1kRmSKTPuoTT
+KeOunsG9fz7/XPuG/H1dudGvx82fftPn9sIQ2pwdErgwsyPP3ajDWnTS+Nzn79nz
+71jOWOyR5qlbnbWToZkFcaut13JKLiRNtH3kEPZmuTZlpnf0ce6Vd2cutjccWqjF
+CzOfMd8Mp8P0l7uzEYgX16RFncrf9cPmij2zHzZ94L+V8Dn50/BAfVe57ai2/8pY
+VPfmn2/fsk9Zzm3KrVkb8/K71huHT8Sv6tlSf71Z3xL8yuhLLAx/YeHCUPoffdTJ
+7Cjb1dl27erBxHt+2li/oLcTPV3uHF0lca/jZkPvX/25iNman1p/KSgsuDeyHZ01
+SEkPwkqCEsvS46usaf7R36/vHqKrA1bs31aRNfIA3zF4ZGVZwtijSzNaz/RAdPgZ
+zcb4rccz3BmfjbVPfml2d9YsLee0y+TDO/ecr1oz/tbc/gPpj3fVdiWUVOV+IvXl
+xB6Zcf3iWXP5ittTuyw0omHDd0nTN+T7vvbCr1rrmv4G
+=UZYw
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/protesilaos
+
+==================================================================
+

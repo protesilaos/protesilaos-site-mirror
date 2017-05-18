@@ -1,0 +1,55 @@
+{% assign themes = site.data.themes %}
+
+{% for theme in themes %}
+  {% if page.permalink contains theme.url %}
+  <div class="palette-terminal">
+    <p>
+      All of my themes were originally developed for Atom. I do, nonetheless, plan to branch out from there. For the time being, I am experimenting with ways to make ports for at least some of the most popular programs. Based on my current tests on Arch Linux and Linux Mint 17.3 and 18, I have settled on the following colour mapping (which you have to implement manually if none of the options below suits your needs).
+    </p>
+    <div class="termcolours">
+      <i class="paletteblock" style="{{ theme.palette.dhl | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.dhl }}</i>
+      <i class="paletteblock" style="{{ theme.palette.red | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.red }}</i>
+      <i class="paletteblock" style="{{ theme.palette.gre | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.gre }}</i>
+      <i class="paletteblock" style="{{ theme.palette.yel | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.yel }}</i>
+      <i class="paletteblock" style="{{ theme.palette.blu | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.blu }}</i>
+      <i class="paletteblock" style="{{ theme.palette.mag | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.mag }}</i>
+      <i class="paletteblock" style="{{ theme.palette.cya | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.cya }}</i>
+      <i class="paletteblock" style="{{ theme.palette.lhl | prepend: 'background: #' }}; {{ theme.palette.dbg | prepend:
+          'color: #' }}">{{ theme.palette.lhl }}</i>
+      <i class="paletteblock" style="{{ theme.palette.dbg | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.dbg }}</i>
+      <i class="paletteblock" style="{{ theme.palette.ora | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.ora }}</i>
+      <i class="paletteblock" style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.lt1 }}</i>
+      <i class="paletteblock" style="{{ theme.palette.dt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.dt2 }}</i>
+      <i class="paletteblock" style="{{ theme.palette.lt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.lt2 }}</i>
+      <i class="paletteblock" style="{{ theme.palette.vio | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.vio }}</i>
+      <i class="paletteblock" style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
+          'color: #' }}">{{ theme.palette.dt1 }}</i>
+      <i class="paletteblock" style="{{ theme.palette.lbg | prepend: 'background: #' }}; {{ theme.palette.dbg | prepend:
+          'color: #' }}">{{ theme.palette.lbg }}</i>
+    </div>
+    <div>
+      <p>For {{ theme.name }}, the following terminal emulators are supported thus far:
+        <ul>
+          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/hyper">Hyper.app</a></li>
+          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/iterm2">iTerm 2</a> (courtesy of <a href="https://github.com/metalelf0">metalelf0</a>)</li>
+          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/terminator">Terminator</a></li>
+          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/xfce4-terminal">XFCE4 Terminal</a></li>
+          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/urxvt">urxvt</a></li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}

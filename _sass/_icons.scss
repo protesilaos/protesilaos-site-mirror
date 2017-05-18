@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  width: $lsize;
+  height: $lsize;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+
+  .social-share & {
+    display: inline;
+    width: $ssize;
+    height: $ssize;
+    vertical-align: middle;
+    margin-right: $sone * 0.25;
+  }
+}
+
+.deco-icon {
+  display: inline;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-width: 2px;
+  vertical-align: middle;
+}

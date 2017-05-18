@@ -1,0 +1,228 @@
+.header {
+  background: $dbg;
+  color: $dt1;
+
+  @extend %clearfix;
+}
+
+.header-inner {
+  font-family: $fontui;
+  font-size: $msize;
+  text-align: left;
+  max-width: $measure;
+  margin: 0 auto;
+  padding: $sone;
+
+  @extend %clearfix;
+
+  @include tablet {
+    font-size: $lsize;
+    padding: $vrythm $sone;
+  }
+
+  @include desktop {
+    padding: ($vrythm * 2) $sone;
+    max-width: $measure-xl;
+  }
+
+  .header-logo {
+    font-weight: 700;
+    display: block;
+    padding: 0;
+    text-transform: none;
+
+    @include tablet {
+      float: left;
+      display: inline-block;
+      width: calc(100% * 0.3333);
+    }
+  }
+
+  .header-navigation {
+    width: auto;
+    height: $vrythm;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: $sone 0;
+
+    @include tablet {
+      float: left;
+      text-align: right;
+      display: inline-block;
+      width: calc(100% * 0.6666);
+      height: auto;
+      overflow-x: hidden;
+      white-space: normal;
+      padding: 0;
+    }
+
+    ul {
+      display: inline;
+      list-style-type: none;
+      margin: ($vrythm / 2) 0 0;
+      padding: 0;
+
+      @include tablet {
+        margin: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: $sone;
+        line-height: $sone * 2;
+
+        &:last-child {
+          margin-right: 0;
+          padding-right: $sone / 10;
+        }
+
+        @include tablet {
+          text-transform: none;
+          line-height: $vrythm;
+        }
+      }
+    }
+  }
+}
+
+// Homepage
+.headerbar {
+  @extend .header;
+}
+
+.headerbar-inner {
+  @extend .header-inner;
+
+  @include desktop {
+    max-width: $measure-xl;
+  }
+
+  .h1-home {
+    font-size: $xlsize;
+    font-weight: 400;
+    line-height: 1;
+    color: $dt1;
+    margin: $vrythm 0;
+
+    @include tablet {
+      font-size: $jsize;
+      margin: $jsize 0;
+    }
+
+    @include desktop {
+      font-size: $jjsize;
+      margin: $jjsize 0;
+    }
+  }
+
+  .headerbar-navigation {
+    width: auto;
+    height: $vrythm;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 0 0 $sone;
+
+    @include tablet {
+      height: auto;
+      overflow-x: hidden;
+      white-space: normal;
+      padding: 0;
+    }
+
+    ul {
+      display: inline;
+      list-style-type: none;
+      margin: ($vrythm / 2) 0 0;
+      padding: $sone 0;
+
+      @include tablet {
+        display: block;
+        margin: 0;
+        text-align: right;
+        border-bottom: thin solid $dhl;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: $sone;
+        line-height: $sone * 2;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include tablet {
+          line-height: $vrythm;
+        }
+
+        @include tablet {
+          margin-right: $sone;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .headerbar-header {
+    font-weight: 700;
+    margin-bottom: $vrythm / 2;
+
+    @include tablet {
+      font-weight: 400;
+      margin-bottom: $vrythm;
+    }
+  }
+
+  .headerbar-columns {
+    div {
+      width: 100%;
+      display: block;
+
+      @extend %clearfix;
+
+      @include tablet {
+        float: left;
+        width: ($measure / 2) - $sone;
+        display: inline-block;
+        padding: $sone 0;
+        margin: $sone 0;
+        border-top: thin solid $dhl;
+
+        + div {
+          margin-left: ($sone * 2);
+        }
+      }
+
+      @include desktop {
+        width: ($measure-xl / 2) - $sone;
+      }
+    }
+
+    .menu-social {
+      text-align: right;
+    }
+  }
+
+  .headerbar-description {
+    color: $dt2;
+    margin: $vrythm 0;
+
+    @include tablet {
+      font-size: $lsize;
+    }
+  }
+
+  .icon {
+    @include tablet {
+      height: $lsize;
+      width: $lsize;
+    }
+
+    @include desktop {
+      height: $xlsize;
+      width: $xlsize;
+    }
+  }
+}

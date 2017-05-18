@@ -1,0 +1,21 @@
+---
+layout: page
+title: "Blog Archive"
+excerpt: "Archive of my writings on politics, code development, and philosophy."
+permalink: /blog-archive/
+---
+
+<div class="index">
+  <p class="info">This section contains older posts. To view the most recent ones, refer to the <a href="/blog">main blog</a> index.</p>
+  <div class="index-section">
+    <ul>
+      {% assign archives = site.archive | sort: 'date' | reverse %}
+      {% for archive in archives %}
+        <li>
+          <a href="{{ archive.url | relative_url }}">{{ archive.title }}</a>
+          <time>{{ archive.date | date: site.date_format }}</time>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

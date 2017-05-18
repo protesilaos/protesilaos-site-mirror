@@ -1,0 +1,22 @@
+{% assign themes = site.data.themes %}
+
+{% for theme in themes %}
+  {% if page.permalink contains theme.url %}
+  <div class="packages clearfix">
+    <div class="clearfix">
+      <p>{{ theme.name }} light available at</p>
+      <a href="https://atom.io/themes/{{ theme.url }}-syntax">Atom</a>
+      <a href="https://github.com/protesilaos/{{ theme.url }}-light-syntax">GitHub</a>
+      <span>Or run the command</span>
+      <code>apm install {{ theme.url }}-syntax</code>
+    </div>
+    <div class="clearfix">
+      <p>{{ theme.name }} dark available at</p>
+      <a href="https://atom.io/themes/{{ theme.url }}-dark-syntax">Atom</a>
+      <a href="https://github.com/protesilaos/{{ theme.url }}-dark-syntax">GitHub</a>
+      <span>Or run the command</span>
+      <code>apm install {{ theme.url }}-dark-syntax</code>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}

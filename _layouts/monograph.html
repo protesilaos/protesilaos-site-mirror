@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="post-header">
+  <div class="post-header-inner">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <h2 class="subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+    <time>{{ page.date | date: "%-d %B %Y" }}</time>
+  </div>
+</div>
+
+<article class="post container">
+  <div class="post-inner">
+  {{ content }}
+  </div>
+</article>
+
+{% include donation.html %}
+
+<div class="post-footer">
+  <div class="post-footer-inner">
+    <div id="book-nextprev" class="nextprev clearfix">
+      <div class="nextprev-item">
+        <span class="nextprev-link">See all:</span> <a href="/books/">Books and essays</a>
+      </div>
+    </div>
+  </div>
+</div>

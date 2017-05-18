@@ -1,0 +1,197 @@
+.index {
+  font-family: $fontui;
+
+  .index-section {
+    margin: $vrythm 0;
+
+    @extend %clearfix;
+
+    + .index-section {
+      margin: $vrythm 0 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: $shalf 0;
+
+        @extend %clearfix;
+
+        + li {
+          border-top: thin solid $dark2;
+          margin: $sone 0;
+          padding: $sone 0 0;
+        }
+
+        a {
+          border-bottom: none;
+
+          &:hover,
+          &:active {
+            border-bottom: none;
+          }
+        }
+
+        time {
+          margin: 0;
+        }
+
+        @include desktop {
+          a:not(.schemecard),
+          .schemecard span {
+            float: left;
+            display: inline-block;
+            width: 80%;
+          }
+
+          .schemecard span {
+            font-weight: 700;
+          }
+
+          time {
+            float: left;
+            text-align: right;
+            display: inline-block;
+            margin-left: 1%;
+            width: 19%;
+          }
+        }
+      }
+    }
+
+    .schemecard div {
+      display: block;
+      margin: ($vrythm / 2) 0;
+
+      @extend %clearfix;
+    }
+  }
+}
+
+/*
+  Applies to indices except blog archive and book contents.
+  The point is to establish a cards layout on a measure-xl width.
+  Changes cover `blog.html`, `_post.scss`, and a new layout `index-wide.html`.
+*/
+
+.index-xl {
+  font-family: $fontui;
+  display: block;
+  margin: 0 auto;
+  padding: $sone $shalf $shalf;
+  max-width: $measure;
+
+  @extend %clearfix;
+
+  @include desktop {
+    padding: $vrythm 0;
+    max-width: $measure-xl;
+  }
+}
+
+.index-cards {
+  @include tablet {
+    + .index-cards {
+      margin-top: $vrythm * 1.5; // Applies to homepage
+    }
+  }
+
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @include tablet {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    li {
+      background: #fff;
+      padding: $sone;
+      margin: ($vrythm / 4) 0;
+
+      @include shadow;
+
+      @include tablet {
+        width: calc(calc(calc(100% / 2) - 4.5rem) - 2px); // Two columns minus their padding, margin, and border width
+        padding: $sone * 2;
+        margin-top: $sone / 2;
+        border: 1px solid $dark1;
+
+        &:nth-of-type(2n+2) {
+          margin-left: $sone / 2; // This combined with margin-top achieves inner margins
+        }
+      }
+
+      a {
+        font-size: $lsize;
+        font-weight: 700;
+
+        @include desktop {
+          font-size: $xlsize;
+        }
+      }
+
+      time {
+        margin-bottom: $sone / 2;
+
+        @include tablet {
+          font-size: $ssize;
+        }
+      }
+
+      &.highlight-card {
+        background: $cya;
+        color: $lbg;
+        font-size: $ssize;
+      }
+    }
+
+    + div {
+      margin: $vrythm 0 ($vrythm * 2); // The all posts section
+
+      @include tablet {
+        text-align: right;
+      }
+
+      a {
+        background: $gre;
+        color: $lbg;
+        font-size: $ssize;
+        padding: $sone ($sone * 1.25);
+
+        &:hover,
+        &:focus {
+          background: $mag;
+          color: $lbg;
+        }
+
+        @include tablet {
+          font-size: $msize;
+        }
+      }
+    }
+  }
+}

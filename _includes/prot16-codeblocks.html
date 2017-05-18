@@ -1,0 +1,13 @@
+{% assign themes = site.data.themes %}
+
+{% for theme in themes %}
+  {% if page.permalink contains theme.url %}
+  <div class="rouge-stylesheet">
+    <p>To use {{ theme.name }} on your Rouge-enabled Jekyll site, go ahead and implement <a href="https://github.com/protesilaos/prot16/blob/master/{{ theme.url }}/general/{{ theme.url }}-syntax.scss">this SCSS stylesheet</a>. Read the inline comments on how to switch between light and dark.</p>
+    <p class="note">This demo makes use of the Rouge gem to create the markup. It is a lightweight solution for highlighting code on the web. Bear in mind that it is not a perfect representation of the Atom packages or terminal ports.</p>
+  </div>
+  <div class="codeblocks clearfix">
+    {% include prot16-codedemo.html %}
+  </div>
+  {% endif %}
+{% endfor %}

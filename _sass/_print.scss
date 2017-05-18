@@ -1,0 +1,95 @@
+@media print {
+  .header,
+  .headerbar,
+  .nextprev,
+  .mediaframe,
+  .reversefootnote,
+  .print-note,
+  .donation-box,
+  .social-share,
+  .footer {
+    display: none;
+  }
+
+  .post {
+    background: #fff;
+    color: #000;
+    font-family: "Times New Roman", Times, "Liberation Serif", serif;
+    font-size: 14pt;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
+    color: #000 !important;
+  }
+
+  a {
+    font-weight: 700;
+
+    &::before {
+      content: "[";
+      font-weight: 400;
+    }
+
+    &::after {
+      content: "](" attr(href) ")";
+      font-weight: 400;
+      word-break: break-all;
+    }
+
+    &[href^="/"]::after {
+      content: "](https://protesilaos.com" attr(href) ")";
+      font-weight: 400;
+      word-break: break-all;
+    }
+
+    &[href^="#fn"]::after {
+      content: "]";
+      font-weight: 400;
+    }
+  }
+
+  pre,
+  code {
+    font-family: monospace;
+    font-size: 90%;
+    color: #000;
+  }
+
+  pre.highlight code span,
+  .highlighter-rouge {
+    color: #000 !important;
+  }
+
+  p,
+  li {
+    code {
+      color: #000;
+    }
+  }
+
+  time,
+  .post-meta {
+    color: #000 !important;
+  }
+
+  article::after {
+    content: "If my work has been helpful and you would like to buy me a coffee, please do so via Paypal: https://www.paypal.me/protesilaos";
+    display: block;
+    font-size: 10pt;
+    margin: 3rem 0 0;
+  }
+
+  .print-meta {
+    display: block;
+  }
+
+  @page  {
+    margin: 10%;
+  }
+}

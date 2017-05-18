@@ -1,0 +1,32 @@
+.breadcrumbs {
+  font-family: $fontui;
+  font-size: $msize;
+  padding: $sone;
+  margin: ($vrythm * 2) 0 $vrythm;
+  background: $lhl;
+  border-top: medium solid $dark2;
+  border-bottom: medium solid $dark2;
+
+  @extend %clearfix;
+
+  main & {
+    a {
+      font-weight: 700;
+      border-bottom: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: none;
+      }
+    }
+  }
+
+  svg {
+    margin: 0 ($sone / 4);
+  }
+
+  span {
+    font-style: italic;
+  }
+}

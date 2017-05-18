@@ -1,0 +1,20 @@
+<div class="schemesmenu">
+ <button onclick="schemesFunction()" class="schemes-button">
+   All Prot16 schemes
+   <svg class="deco-icon icon-chevron-bottom">
+     <use xlink:href="#icon-chevron-bottom"></use>
+   </svg>
+ </button>
+ <nav id="schemesDropdown" class="dropdown-content" aria-label="Prot16 schemes menu">
+   {% assign schemes = site.data.themes | sort: "name" %}
+   <ul>
+   {% for scheme in schemes %}
+     <li>
+       <a href="{{ scheme.url | prepend: '/' }}">
+         {{ scheme.name }}
+       </a>
+     </li>
+   {% endfor %}
+   </ul>
+ </nav>
+</div>

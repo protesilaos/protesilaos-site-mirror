@@ -1,0 +1,9 @@
+public
+test
+.sass-cache/
+.jekyll-metadata
+node_modules
+.DS_Store
+.directory
+vendor
+.bundle

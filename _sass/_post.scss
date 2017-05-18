@@ -1,0 +1,131 @@
+.post-header {
+  background: $lhl;
+  padding: $vrythm 0;
+
+  @include tablet {
+    padding: ($vrythm * 2) 0;
+  }
+
+  h1 {
+    color: $lt1;
+  }
+
+  .subtitle {
+    color: $lt2;
+    font-weight: 400;
+  }
+
+  time {
+    font-family: $fontui;
+    font-size: $ssize;
+    text-transform: uppercase;
+    margin: $vrythm 0;
+  }
+
+  // Fixes spacing for books print page
+  // It is too wide because of print note
+  &.print-page-header {
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.post-header-inner,
+.post-footer-inner {
+  @extend .container;
+}
+
+.post-footer {
+  font-family: $fontui;
+  background: $lhl;
+
+  @include tablet {
+    margin-top: $vrythm;
+  }
+}
+
+.post-meta {
+  font-family: $font2;
+
+  @extend p;
+
+  // TODO check whether this applies anywhere except _layouts for books
+  // Rendered irrelevant as books will use time tag instead
+  span {
+    &:not(a) {
+      color: $text2;
+    }
+
+    + span {
+      display: block;
+      font-size: $ssize;
+      margin-top: $vrythm / 4;
+
+      @include tablet {
+        display: inline;
+        margin-left: $sone / 2;
+
+        &::before {
+          content: "//";
+          display: inline-block;
+          padding-right: $sone / 2;
+        }
+      }
+    }
+  }
+}
+
+p,
+li {
+  code {
+    color: $primary3;
+    background: transparentize($primary3, 0.95);
+
+    @include desktop {
+      font-size: $ssize;
+    }
+  }
+}
+
+// Page effect on >= tablet
+
+.post {
+  @extend .container;
+  background: $pagebg;
+
+  @include tablet {
+    margin-top: $vrythm;
+    background: none;
+  }
+}
+
+.post-inner {
+  @include tablet {
+    background: $pagebg;
+    padding: ($vrythm * 2);
+
+    @include shadow;
+  }
+
+  @include desktop {
+    @include bigblock;
+  }
+}
+
+// Auxiliary styles
+h1.h1-plus {
+  font-size: $msize * 3; // For books print-page title
+}
+
+.post-header-inner-index-xl {
+  @include desktop {
+    max-width: $measure-xl; // For cards-based indices
+  }
+}
+
+.profile-pic {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 50%;
+}

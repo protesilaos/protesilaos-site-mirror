@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="post-header">
+  <div class="post-header-inner">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <span>
+        {{ site.data.text.euhandbook.title }}
+      </span>
+      <time>
+        {{ site.data.text.euhandbook.datefull }}
+      </time>
+    </div>
+  </div>
+</div>
+
+<article class="post container">
+  <div class="post-inner">
+  {{ content }}
+  </div>
+</article>
+
+{% include donation.html %}
+
+<div class="post-footer">
+  <div class="post-footer-inner">
+    {% capture the_collection %}{{ page.collection }}{% endcapture %}
+
+    {% if page.collection %}
+      {% assign document = site[the_collection] | where: 'flag', 'euhandbook' | sort:'date' %}
+    {% endif %}
+
+    {% for links in document %}
+      {% if links.title == page.title %}
+        {% unless forloop.first %}
+          {% assign prevurl = prev.url %}
+          {% assign prevtitle = prev.title %}
+        {% endunless %}
+        {% unless forloop.last %}
+          {% assign next = document[forloop.index] %}
+          {% assign nexttitle = next.title %}
+          {% assign nexturl = next.url %}
+        {% endunless %}
+      {% endif %}
+      {% assign prev = links %}
+    {% endfor %}
+
+    <div id="book-nextprev" class="nextprev clearfix">
+      {% if prevurl %}
+      <div class="nextprev-item">
+        <span class="nextprev-link">Previous:</span><a class="prev" rel="prev" href="{{prevurl}}">{{ prevtitle }}</a>
+      </div>
+      {% endif %}
+      {% if nexturl %}
+      <div class="nextprev-item">
+        <span class="nextprev-link">Next:</span><a class="next" rel="next" href="{{nexturl}}">{{ nexttitle }}</a>
+      </div>
+      {% endif %}
+      <div class="nextprev-item">
+        <span class="nextprev-link">See all:</span> <a href="/euhandbook/">Book contents</a>
+      </div>
+    </div>
+  </div>
+</div>

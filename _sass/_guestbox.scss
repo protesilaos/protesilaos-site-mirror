@@ -1,0 +1,22 @@
+.authorbox {
+  font-family: $fontui;
+  font-size: $ssize;
+  background: $lhl;
+  display: block;
+  margin: $vrythm 0;
+  padding: $sone * 2;
+
+  @include desktop {
+    float: right;
+    width: ($measure / 2) - ($sone * 2) - $vrythm;
+    margin-top: 0;
+    margin-right: -#{($measure-xl - $measure) / 2};
+    margin-left: $vrythm;
+  }
+
+  .authorbox-title {
+    font-size: $msize;
+    color: $text1;
+    margin: 0 0 ($vrythm / 2);
+  }
+}
