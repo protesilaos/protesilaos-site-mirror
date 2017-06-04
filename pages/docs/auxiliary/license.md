@@ -30,7 +30,7 @@ The current theme is part of [Prot16](/schemes/): my collection of colour scheme
 
 The secondary stylesheet is loaded asynchronously with [loadCSS](https://github.com/filamentgroup/loadCSS) by Scott Jehl of the Filament Group.
 
-Webfonts are implemented with the use of Bram Stein's [Font Face Observer](https://github.com/bramstein/fontfaceobserver). The fonts are [Fira Sans](https://github.com/mozilla/Fira) and [Merriweather](https://github.com/EbenSorkin/Merriweather).
+Webfonts are implemented with the use of Bram Stein's [Font Face Observer](https://github.com/bramstein/fontfaceobserver). The fonts are [Fira Sans](https://github.com/mozilla/Fira) and [Zilla Slab](https://github.com/mozilla/zilla-slab).
 
 Syntax highlighting is handled by the [Rouge gem](https://github.com/jneen/rouge).
 

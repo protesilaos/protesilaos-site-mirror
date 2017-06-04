@@ -4,7 +4,7 @@ excerpt: "All the ways to get in touch with Protesilaos Stavrou. Requests for co
 permalink: /contact/
 layout: page
 ---
-- Email: <public@protesilaos.com> (for encryption [use this](/contact-public-key/))
+- Email: <public@protesilaos.com> (for encryption see [my public key](/contact-public-key/))
 - Twitter: [@protstavrou](https://twitter.com/protstavrou)
 - Location: Limassol area, Cyprus, European Union
 

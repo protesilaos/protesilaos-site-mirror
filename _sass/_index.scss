@@ -195,3 +195,18 @@
     }
   }
 }
+
+.index-rss-feed {
+  background: $blu;
+  color: $lbg;
+  font-family: $mono;
+  font-size: $msize;
+  padding: ($shalf / 2) $shalf;
+  margin: ($vrythm / 2) 0;
+
+  &:hover,
+  &:focus {
+    background: $vio;
+    color: $lbg;
+  }
+}

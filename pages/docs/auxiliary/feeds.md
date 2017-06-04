@@ -9,7 +9,7 @@ There are two types of regular updates on this website. Each has its own feed, a
 **Blog on European Union politics**  
 [https://protesilaos.com/feed.xml](/feed.xml)
 
-**Coding blog about web development and GNU/Linux** 
+**Coding blog about web development and GNU/Linux**  
 [https://protesilaos.com/codelog.xml](/codelog.xml)
 
 ## What is a feed anyway?

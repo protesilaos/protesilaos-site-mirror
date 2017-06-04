@@ -3,6 +3,7 @@ title: "Comment on the 60 years of European integration"
 subtitle: "There still is a long way towards political union"
 excerpt: "The 25th of March 2017 is the 60th anniversary of the Treaty of Rome. Mixed results have been achieved. There is hope for something better."
 date: 2017-03-24
+theme: "future-europe"
 permalink: /eu-integration-60/
 ---
 March 25 marks the 60th anniversary of the Treaty of Rome; the treaty establishing the European Economic Community (EEC). Its ambition was to create a single market among its member countries. Either by political initiative or the jurisprudence of the European Court of Justice, trade barriers were gradually dismantled, while a rich corpus of rights for individuals was developed. The former contributed to the ultimate telos of free trade, while the latter provided the foundation of the European citizenship. 

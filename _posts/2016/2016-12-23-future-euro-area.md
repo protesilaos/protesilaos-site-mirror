@@ -3,6 +3,7 @@ title: "What future for the euro area?"
 subtitle: "Its incoherent makeup will have to be refashioned"
 excerpt: "An analysis of the three possible models for the medium term reform of the Economic and Monetary Union."
 date: 2016-12-23
+theme: "future-europe"
 permalink: /future-euro-area-makeup/
 ---
 A recent paper by France Stratégie tackles the persistent questions surrounding the future of the Economic and Monetary Union, in particular as pertains to the institutional framework underpinning the euro.[^FranceStratPaper] The document comes at a critical juncture, with elections in France and Germany in the horizon and the expectation that much will start happening towards the end of 2017.

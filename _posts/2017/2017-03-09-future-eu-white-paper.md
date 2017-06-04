@@ -3,6 +3,7 @@ title: "Thoughts on the White Paper about the future of Europe"
 subtitle: "The decision should not be just between states"
 excerpt: "The Commission could have done better. Its neutrality does not help move Europe forward."
 date: 2017-03-09
+theme: "future-europe"
 permalink: /future-eu-white-paper/
 ---
 In preparation of the 60th anniversary of the Treaty of Rome, the European Commission published a White Paper on the future of the European Union.[^EUFutureWhitePaper] The document is specifically about the EU27, with Brexit considered a done deal. It reflects on five scenarios about the shape of European politics by 2025. These namely are: (1) persisting on the current path, (2) focusing on the single market, (3) multi-speed and multi-tier integration with coalitions of the willing leading the way, (4) a clearer, yet narrower role for EU policy action, (5) the EU27 does more as a whole.

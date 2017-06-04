@@ -3,6 +3,7 @@ title: "On the near future financing of the EU"
 subtitle: "Change will be gradual, though potentially profound"
 excerpt: "Negotiations over the next Multiannual Financial Framework will likely differ from the previous ones."
 date: 2017-02-04
+theme: "future-europe"
 permalink: /future-financing-eu-hlgor/
 ---
 Reform in the European Union typically involves a long period of reflection and deliberation. To explore the possibilities provided by the Treaties. Evaluate the overall political climate and the position of Member States. Assess the likely impact of the reform. Such gradualism can prove an impediment under certain circumstances though it typically improves the openness of the European integration process.

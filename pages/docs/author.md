@@ -60,7 +60,7 @@ If such an argument holds, then my linguistic skills are broad enough and, most 
 
 ### Linux user and free software fan
 
-I do all my computing with a GNU/Linux operating system. My distribution of choice is [Arch](https://www.archlinux.org/), though I do recommend [Ubuntu MATE](https://ubuntu-mate.org/) to anyone just wanting to get started.
+I do all my computing with a GNU/Linux operating system. My distribution of choice is [Debian](https://www.debian.org/), though I do recommend [Ubuntu MATE](https://ubuntu-mate.org/) to anyone just wanting to get started.
 
 The reasons I do not use either Windows or macOS are both technical and ethical:
 
@@ -72,7 +72,7 @@ My [dotfiles](https://github.com/protesilaos/dotfiles) contain configurations fo
 
 ### Canine handler
 
-I live with a puppy named "Atlas" (born in late August 2016). He is a mutt who has the characteristics of a Molossoid catch dog: solidly built, strong, and athletic. At eight months old his height is ~58cm (23 in) at the withers, while he weighs ~35kg (80lb). The closest resemblance would be to that of a *Cane Corso* (Italian Mastiff) or a *Perro de Presa Canario* (Canary Mastiff).
+I live with a puppy named "Atlas" (born in late August 2016). He is a mutt who has the characteristics of a Molossoid catch dog: solidly built, strong, and athletic. At eight months old his height is ~58cm (23in) at the withers, while he weighs ~35kg (80lb). The closest resemblance would be to that of a *Cane Corso* (Italian Mastiff) or a *Perro de Presa Canario* (Canary Mastiff).
 
 I only use positive methods to instruct him. No physical punishment, no reliance on such items as prong or choke collars. The point is to make the dog harness his potential through a combination of instinct and thought. To recognise patterns that yield rewards and to behave accordingly.
 

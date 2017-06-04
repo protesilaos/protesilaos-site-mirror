@@ -3,6 +3,7 @@ title: "Open comment on the Commission's White Paper"
 subtitle: "More ambition is needed"
 excerpt: "The Commission's White Paper is a good starting point for the discussion on the EU future. Though it can be improved even further."
 date: 2017-03-27
+theme: "future-europe"
 permalink: /input-white-paper-eufuture/
 ---
 **Context:** The European Commission recently published a White Paper on the future of the European Union. It now asks for citizens to send them their comments via [an official form](https://ec.europa.eu/commission/give-your-comments_en). As [my blog commentary](/future-eu-white-paper/) on the White Paper greatly exceeds the 2000 character limit they have set, I have decided to write a summary of my main points, submit it, and also share it with the public. I urge you to send the Commission your own thoughts. If you find any of the following useful, feel free to copy/paste accordingly.

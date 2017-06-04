@@ -3,6 +3,7 @@ title: "Thoughts on the European Pillar of Social Rights"
 subtitle: "Europe's social dimension must be developed further"
 excerpt: "The proposed European Pillar of Social Rights is a step in the right direction. Ambitious initiatives and legislation must follow suit."
 date: 2017-04-29
+theme: "future-europe"
 permalink: /eu-social-pillar/
 ---
 On April 26, the European Commission published two much anticipated documents: (i) the recommendation on the European Pillar of Social Rights, and (ii) the reflection paper on the social dimension of Europe.[^EUSocialPillarPaper]

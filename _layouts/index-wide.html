@@ -16,6 +16,9 @@
             {% if page.subtitle %}
               <h2 class="subtitle">{{ page.subtitle }}</h2>
             {% endif %}
+            {% if page.index-feed %}
+              <a class="index-rss-feed" href="{{ page.index-feed.url }}">{{ page.index-feed.text }}</a>
+            {% endif %}
           </div>
         </div>
 

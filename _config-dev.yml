@@ -16,6 +16,7 @@ exclude:
   - pages/certificates
   - pages/docs
   - pages/docs/auxiliary
+  - pages/indices/blog
   - pages/indices/blog-archive.html
   - _books # --------------------- Books ---------------------------
   - pages/indices/books

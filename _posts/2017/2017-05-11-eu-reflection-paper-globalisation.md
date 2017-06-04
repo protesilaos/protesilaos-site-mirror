@@ -3,6 +3,7 @@ title: "On the EU reflection paper about globalisation"
 subtitle: "The internal aspects need more ambition"
 excerpt: "The Commission's reflection paper on harnessing globalisation is a good starting point. However, it needs more political ambition."
 date: 2017-05-11
+theme: "future-europe"
 permalink: /eu-reflection-paper-globalisation/
 ---
 On May 10, 2017 the European Commission published its reflection paper on harnessing globalisation.[^ReflectionPaperGlobalisation] It is the second such document in a series (the first one being about the EU's social dimension).[^SocialPillar] The idea is to provide all the information and data that will inform the decisions on Europe's future priorities. The EU is at a crossroads. All sides seem to agree that the status quo is unsustainable. Disagreements are about the Union's outlook. Either Europe will proceed with deepening its integration to some degree, or it will have to somehow be refashioned so that national governments regain certain competences. Once this election year reaches its close, the EU is expected to proceed with a range of reforms. The December 2017 European Council will likely provide the impetus for the next five years or so.[^WhitePaper]

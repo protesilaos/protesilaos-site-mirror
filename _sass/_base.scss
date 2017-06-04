@@ -20,11 +20,14 @@ body {
     // Scope font adjustment to avoid it in index pages
     .post {
       font-family: $font1;
-      font-size: $base-font-size - 2;
+      font-size: $base-font-size;
 
       @include tablet {
-        font-size: $base-font-size;
-        line-height: 1.6;
+        font-size: $base-font-size + 2;
+      }
+
+      @include desktop {
+        font-size: $base-font-size + 4;
       }
     }
   }
