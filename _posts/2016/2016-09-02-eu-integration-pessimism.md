@@ -33,7 +33,7 @@ Take the integration process for what it actually is and has always been: inter-
 
 The integration process was always impeded by the kind of political divisions we witness today. It took decades for the single market to start taking shape. And it often was the European Court of Justice—not politicians—that provided the solution to the deadlock.
 
-Europe is heterogeneous. There is a multitude of languages, cultures, historical path dependencies. Even within nation states there are multiple elements that differ profoundly from one another. It is futile to expect, indeed demand, uniformity.
+Europe is heterogeneous. There is a multitude of languages, cultures, historical path dependencies. Even within nation states there are multiple elements that differ profoundly from each other. It is futile to expect, indeed demand, uniformity.
 
 Against this backdrop, the task of European integration is to find that which is common in the multitude, the thing(s) that bring Europeans together. This is not a simple and straightforward venture, in large part due to the historical paradigm of legitimasing politics through the construct of the nation state.
 

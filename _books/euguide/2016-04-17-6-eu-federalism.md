@@ -61,7 +61,7 @@ Lastly, by treating the EU as a "federal system" we are distinguishing between t
 1. **Federalism.** The form of the polity, in this case the multi-level structure.
 2. **Republicanism.** The content or quality of everything pertaining to the political process and interpersonal experiences thereof.
 
-That the EU exhibits a brand of federalism does not necessarily mean that it also delivers on all the public goods peculiar to a modern republic. The structure and the quality of a polity are not connatural. They are separable, even though they certainly influence one another.
+That the EU exhibits a brand of federalism does not necessarily mean that it also delivers on all the public goods peculiar to a modern republic. The structure and the quality of a polity are not connatural. They are separable, even though they certainly influence each other.
 
 More practically, there are federations that operate in accordance with republican norms. There are other federations that leave much to be desired in terms of democratic standards. The EU aspires to be a republic, to institute or otherwise enhance democracy on a supranational scale, but typically falls short of its much-vaunted ambitions.
 

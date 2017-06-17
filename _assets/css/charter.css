@@ -1,0 +1,36 @@
+/* charter-regular - latin */
+@font-face {
+  font-family: 'Bitstream Charter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitstream Charter'), local('BitstreamCharter-Regular'),
+       url('../fonts/charter/charter-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* charter-italic - latin */
+@font-face {
+  font-family: 'Bitstream Charter';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Bitstream Charter Italic'), local('BitstreamCharter-Italic'),
+       url('../fonts/charter/charter-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* charter-700 - latin */
+@font-face {
+  font-family: 'Bitstream Charter';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Bitstream Charter Bold'), local('BitstreamCharter-Bold'),
+       url('../fonts/charter/charter-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* charter-700italic - latin */
+@font-face {
+  font-family: 'Bitstream Charter';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Bitstream Charter Bold Italic'), local('BitstreamCharter-BoldItalic'),
+       url('../fonts/charter/charter-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+

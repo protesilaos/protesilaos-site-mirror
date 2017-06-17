@@ -58,17 +58,26 @@ I would, nonetheless, make the case that code languages also form part of one's 
 
 If such an argument holds, then my linguistic skills are broad enough and, most importantly, are expected to be broadened even further.
 
-### Linux user and free software fan
+### Free software user and supporter
 
-I do all my computing with a GNU/Linux operating system. My distribution of choice is [Debian](https://www.debian.org/), though I do recommend [Ubuntu MATE](https://ubuntu-mate.org/) to anyone just wanting to get started.
+I do all my computing on a GNU/Linux operating system. My distribution of choice is [Debian](https://www.debian.org/).
 
-The reasons I do not use either Windows or macOS are both technical and ethical:
+The reasons I do not choose to use either Windows or macOS are both technical and ethical:
 
 - Concerning the former, I have found that I am most productive when I can get things done my own way. This entails using the tools I want, with the exact configurations I need, plus all the system-wide customisations that remove the perceived friction between me and the machine. Only Linux gets out of my way in a manner I find satisfactory.
-- As for the moral part, I do appreciate the ethical value of free software ("free" as in "freedom"), the innovation and cross-pollination of open source, as well as the material benefits these provide us with (which also relate to the technical reasons).
+- As for the moral part, I do appreciate the normative value of free software ("free" as in "freedom"), the innovation and cross-pollination of open source, as well as the material benefits these provide us with (which also relate to the technical reasons).
+
+I champion free software whenever and wherever I can. For friends and family I help them install either [Linux Mint](https://linuxmint.com/) or [Ubuntu MATE](https://ubuntu-mate.org/). These are solid choices for most desktop use cases.
+
+Users can benefit greatly from such tools as the LibreOffice suite, the GNU Image Manipulation Program (GIMP), the VLC media player, the Kdenlive video editor, the Ardour digital audio workstation, and so many more.
+
+The added benefits of having no built-in spyware and concomitant corporate backdoors further strengthen the argument for digital—and by extent physical, collective—liberty.
+
+If you need help switching to free software, feel free to [contact me](/contact/).
+{:.note}
 
 My [dotfiles](https://github.com/protesilaos/dotfiles) contain configurations for some of my favourite applications, as well as the settings for my current setup.
-{:.note}
+{:.info}
 
 ### Canine handler
 
@@ -78,9 +87,9 @@ I only use positive methods to instruct him. No physical punishment, no reliance
 
 Atlas has always enjoyed socialisation with people and other animals, regular exercise, as well as consistent and meticulous mental training. The latter covers the various instructions on how to "sit", "stay", "come", "heel" etc. and to concentrate on me even in the face of major distractions. I want him to be docile and good with his manners. Being calm is intrinsically important though it also helps overcome the prejudices people have about [large] dogs.
 
-This is a picture of Atlas at eight months old.
+This is a picture of Atlas enjoying life.
 
-![Atlas the dog](/images/other/atlas_eight_months.jpg)
+![Atlas the dog](/images/other/atlas-dog.jpg)
 
 ### Personality
 

@@ -59,7 +59,7 @@ To these one could add such provisions as dismissing the ECB's executive board, 
 
 The aforementioned would require a change in the EU's primary law, albeit a modest one. Under the current order, the "accountability" of the ECB amounts to a mere briefing session before the European Parliament's Economic and Monetary Affairs (ECON) committee. While better than nothing, the "monetary dialogue", as it is known, is nothing more than just that: a *dialogue*.
 
-One of the reasons the ECB is practically exempt from democratic control is that European nations did/do not trust one another over monetary affairs. The fear was/is that "democratising" monetary policy would eventually lead to erratic money supply fluctuations, featuring rampant inflation, radical uncertainty in the markets, and so on.
+One of the reasons the ECB is practically exempt from democratic control is that European nations did/do not trust each other over monetary affairs. The fear was/is that "democratising" monetary policy would eventually lead to erratic money supply fluctuations, featuring rampant inflation, radical uncertainty in the markets, and so on.
 
 The truthfulness of such concerns need not be examined herein. What is of relevance is that the "accountability clause" would not, in principle, alter the institutional standing of the ECB. It would only be the exception to the rule, and would only be activated in accordance with an objective criterion. It is best to think of it as the "failure clause", the fallback option for when nothing else works.
 

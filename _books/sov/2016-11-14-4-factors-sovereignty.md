@@ -17,7 +17,7 @@ Headline sovereignty is the kind one finds at the formal level of international 
 From the UN's references to sovereignty we may infer the following set of principles:
 
 - **Equality.** All nation states that are members of the UN are considered equal in terms of their sovereignty. In other words, the sovereignty of one does not take precedence or is superior to that of another (Article 2.1).
-- **Independence.** All sovereign nation states are independent from interventions from other states, including the use of threats or outright force. Independence is the other side of the principle of equality, while it also means that all sovereign states are considered political wholes, as being discrete, distinguishable from one another (Article 2.4).
+- **Independence.** All sovereign nation states are independent from interventions from other states, including the use of threats or outright force. Independence is the other side of the principle of equality, while it also means that all sovereign states are considered political wholes, as being discrete, distinguishable from each other (Article 2.4).
 - **Territoriality.** Sovereign authority is confined to a physical space, the area within which a nation state's independence may be exercised. Territoriality is, in this regard, the physical embodiment of the constitutional order and, consequently, partakes of the same principle of indivisibility and integrity. Territoriality cannot be divided, with a portion of it no longer qualifying as part of the independent and equally sovereign nation state.
 
 To the above principles, we may also include the following implicit ones:

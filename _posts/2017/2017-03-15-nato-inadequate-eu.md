@@ -17,7 +17,7 @@ Past examples are aplenty, while there are potential future scenarios that could
 
 ## Defence guides the overall political outlook
 
-Speculation aside, security policy is not *merely* about security. Politics cannot be neatly organised in separate containers that have no connection to one another. Defence is inextricably linked to a number of policies, from internal public order, to border management, and foreign affairs (with further implications on fiscal issues and the distribution of resources).
+Speculation aside, security policy is not *merely* about security. Politics cannot be neatly organised in separate containers that have no connection to each other. Defence is inextricably linked to a number of policies, from internal public order, to border management, and foreign affairs (with further implications on fiscal issues and the distribution of resources).
 
 The EU's vision of a global power is anchored in peace, diplomacy, and economic prosperity. It is not about engaging in wars far from home in pursuit of dubious ends. For such a foreign policy to be sustainable and indeed consistent, it needs to be underpinned by a capable military capacity. Otherwise, it will remain exposed to the vicissitudes of internal politics from its partners to its east and west, such as Turkey and the USA.
 

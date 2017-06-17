@@ -6,7 +6,7 @@ flag: euguide
 layout: euguide
 date: 2016-04-17T00:04:00+00:00
 ---
-In a typical republic, the state's functions are divided in at least three: (i) executive, (ii) legislative, (iii) judiciary. This is also known as the principle of the separation of powers, commonly referred to as "checks and balances". The EU partakes of this principle in that its institutions enjoy operational independence from one another and/or from national governments. No authority can interfere with their *internal* affairs so long as they work within their remit.
+In a typical republic, the state's functions are divided in at least three: (i) executive, (ii) legislative, (iii) judiciary. This is also known as the principle of the separation of powers, commonly referred to as "checks and balances". The EU partakes of this principle in that its institutions enjoy operational independence from each other and/or from national governments. No authority can interfere with their *internal* affairs so long as they work within their remit.
 
 The European Commission is the executive, the European Parliament jointly with the Council of the EU are the legislative, the Court of Justice of the EU is the judiciary. Additional functions are performed by the European Central Bank, which is the monetary authority, and the Court of Auditors, which is the auditory authority.
 

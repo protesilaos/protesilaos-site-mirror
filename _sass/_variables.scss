@@ -1,12 +1,12 @@
 // Typography -----------------------------
 
 // Fonts
-$serif: Georgia, "Bitstream Charter", serif;
+$serif: "Bitstream Charter", Georgia, serif;
 $sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Liberation Sans", sans-serif;
 $mono: Menlo, "Lucida Sans Typewriter", "Lucida Console", "DejaVu Sans Mono", "Liberation Mono", Courier, monospace;
-$font1: "Zilla Slab", $serif; // Body
-$font2: "Fira Sans", $sans; // Headings
-$fontui: "Fira Sans", $sans;
+$font1: $serif; // Body
+$font2: "Source Sans Pro", $sans; // Headings
+$fontui: "Source Sans Pro", $sans;
 
 // Scale ----------------------------------
 $base-font-size: 18px;

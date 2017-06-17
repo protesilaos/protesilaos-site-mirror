@@ -26,7 +26,7 @@ What the EMU provides for is a framework of common rules with little common poli
 2. the Council of the EU, a co-legislative institution (together with the European Parliament), which is composed of national ministers;
 3. the Eurogroup, a quasi-legal formation made up of finance ministers of euro Member States, which acts as a de facto “Euro-specific European Council”.
 
-All are fora where national interests confront one another. Sometimes a suboptimal compromise is reached. Otherwise things come to a standstill, waiting to be resolved once a crisis leaves no alternative. What is not represented in these intergovernmental arrangements is the European interest at-large: not the good of a nation state or group thereof, but of the whole system. Had it prevailed in the past, the euro would already be underpinned by a fiscal, financial, and political union.
+All are fora where national interests confront each other. Sometimes a suboptimal compromise is reached. Otherwise things come to a standstill, waiting to be resolved once a crisis leaves no alternative. What is not represented in these intergovernmental arrangements is the European interest at-large: not the good of a nation state or group thereof, but of the whole system. Had it prevailed in the past, the euro would already be underpinned by a fiscal, financial, and political union.
 
 It thus is no coincidence that we refer to “governance” rather than “government”. The present order exhibits a sovereignty mismatch: there are provisions for the whole system, but no unified political entity capable of claiming ownership over them. For citizens this practically implies that the EU represents a set of laws detached from a governing body that could be voted out of office in general elections.
 
