@@ -92,7 +92,7 @@ highlighter: rouge
 permalink: pretty
 sass:
   style: compressed
-gems:
+plugins:
   - jekyll
   - jekyll-feed
   - jekyll-sitemap

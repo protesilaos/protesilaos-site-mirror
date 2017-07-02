@@ -19,11 +19,16 @@ exclude:
   - pages/indices/blog
   - pages/indices/blog-archive.html
   - _books # --------------------- Books ---------------------------
+  - _books/euhandbook
+  - _books/euguide
+  - _books/sov
+  - _books/eudi
   - pages/indices/books
   - pages/indices/books.html
   - _layouts/euhandbook.html
   - _layouts/euguide.html
   - _layouts/sov.html
+  - _layouts/eudi.html
   - _layouts/print.html
   - _includes/booksnav.html
   - _codelog # ------------------- Code ----------------------------

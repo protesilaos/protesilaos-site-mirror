@@ -40,6 +40,7 @@ $dark2: rgba(#000, 0.1) !default;
 $dark3: rgba(#000, 0.3) !default;
 $light1: rgba(#fff, 0.05) !default;
 $light2: rgba(#fff, 0.1) !default;
+$light3: rgba(#fff, 0.3) !default;
 $penumbra: 0 1px 3px $dark2 !default;
 
 // Viewports
@@ -79,7 +80,18 @@ $tertiary3: $red !default;
 $text1: $lt1 !default;
 $text2: $lt2 !default;
 $bg: $lbg !default;
+$bghl: $lhl !default;
 $pagebg: #fff !default; // NOTE Only used for seabed due to dual dark bgs
+
+// // NOTE only for july 12
+// $text1: $dt1 !default;
+// $text2: $dt2 !default;
+// $bg: $dbg !default;
+// $bghl: $dhl !default;
+// $pagebg: darken($dbg, 2%) !default; // NOTE Only used for seabed due to dual dark bgs
+// $dark1: $light1;
+// $dark2: $light2;
+// $dark3: $light3;
 
 // Syntax defaults
 $t1: $dt1 !default;

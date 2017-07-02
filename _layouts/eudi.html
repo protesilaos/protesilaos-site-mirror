@@ -6,10 +6,10 @@ layout: default
     <h1>{{ page.title }}</h1>
     <div class="post-meta">
       <span>
-        {{ site.data.text.euhandbook.title }}
+        {{ site.data.text.eudi.title }}
       </span>
       <time>
-        {{ site.data.text.euhandbook.datefull }}
+        {{ site.data.text.eudi.datefull }}
       </time>
     </div>
   </div>
@@ -26,7 +26,7 @@ layout: default
     {% capture the_collection %}{{ page.collection }}{% endcapture %}
 
     {% if page.collection %}
-      {% assign document = site[the_collection] | where: 'flag', 'euhandbook' | sort:'date' %}
+      {% assign document = site[the_collection] | where: 'flag', 'eudi' | sort:'date' %}
     {% endif %}
 
     {% for links in document %}
@@ -45,18 +45,18 @@ layout: default
     {% endfor %}
 
     <div id="book-nextprev" class="nextprev clearfix">
-      {% if prevurl %}
-      <div class="nextprev-item">
-        <span class="nextprev-link">Previous:</span><a class="prev" rel="prev" href="{{prevurl}}">{{ prevtitle }}</a>
-      </div>
-      {% endif %}
       {% if nexturl %}
       <div class="nextprev-item">
         <span class="nextprev-link">Next:</span><a class="next" rel="next" href="{{nexturl}}">{{ nexttitle }}</a>
       </div>
       {% endif %}
+      {% if prevurl %}
       <div class="nextprev-item">
-        <span class="nextprev-link">See all:</span> <a href="/euhandbook/">Book contents</a>
+        <span class="nextprev-link">Previous:</span><a class="prev" rel="prev" href="{{prevurl}}">{{ prevtitle }}</a>
+      </div>
+      {% endif %}
+      <div class="nextprev-item">
+        <span class="nextprev-link">See all:</span> <a href="/eudi/">Book contents</a>
       </div>
     </div>
   </div>

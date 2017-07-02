@@ -20,7 +20,7 @@ test:
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build --incremental -d public
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public

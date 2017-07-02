@@ -41,9 +41,6 @@
   .header-navigation {
     width: auto;
     height: $vrythm;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
     padding: $sone 0;
 
     @include tablet {
@@ -52,8 +49,6 @@
       display: inline-block;
       width: calc(100% * 0.6666);
       height: auto;
-      overflow-x: hidden;
-      white-space: normal;
       padding: 0;
     }
 

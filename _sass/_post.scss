@@ -1,5 +1,5 @@
 .post-header {
-  background: $lhl;
+  background: $bghl;
   padding: $vrythm 0;
 
   @include tablet {
@@ -7,11 +7,11 @@
   }
 
   h1 {
-    color: $lt1;
+    color: $text1;
   }
 
   .subtitle {
-    color: $lt2;
+    color: $text2;
     font-weight: 400;
   }
 
@@ -38,7 +38,7 @@
 
 .post-footer {
   font-family: $fontui;
-  background: $lhl;
+  background: $bghl;
 
   @include tablet {
     margin-top: $vrythm;

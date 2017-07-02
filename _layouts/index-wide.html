@@ -17,7 +17,12 @@
               <h2 class="subtitle">{{ page.subtitle }}</h2>
             {% endif %}
             {% if page.index-feed %}
-              <a class="index-rss-feed" href="{{ page.index-feed.url }}">{{ page.index-feed.text }}</a>
+                <a class="index-rss-feed" href="{{ page.index-feed.url }}">
+                    <svg class="icon icon-rss">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                    {{ page.index-feed.text }}
+                </a>
             {% endif %}
           </div>
         </div>

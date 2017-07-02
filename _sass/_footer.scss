@@ -1,120 +1,70 @@
 .footer {
   font-family: $fontui;
-  background: $dbg;
-  padding-top: $vrythm;
+  padding: ($vrythm / 2) 0;
+  background: $bg;
 
   @extend %clearfix;
 
   @include tablet {
-    padding-top: $vrythm * 2;
-  }
-}
-
-.footer-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  height: auto;
-  padding: $sone;
-  margin: 0 auto;
-  max-width: $measure;
-
-  @include tablet {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  @include desktop {
     padding: $vrythm 0;
-    max-width: $measure-xl;
-  }
-
-  h3 {
-    color: $dt1;
-    font-weight: 400;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      padding: $shalf 0;
-    }
-  }
-}
-
-.footer-header {
-  display: block;
-  padding: $sone;
-  margin: 0 auto;
-  border-bottom: thin solid $dhl;
-  max-width: $measure;
-
-  @include desktop {
-    max-width: $measure-xl;
-  }
-
-  h2 {
-    color: $dt1;
-    font-weight: 400;
-    margin: 0;
-  }
-
-  h3 {
-    color: $dt2;
-    font-weight: 400;
-  }
-}
-
-.footer-section {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin: ($vrythm / 4) auto;
-
-  @include tablet {
-    width: ($measure / 4) - ($sone * 2);
-    margin: ($vrythm / 2) 0;
-  }
-
-  @include desktop {
-    width: ($measure-xl / 4) - ($sone * 2);
-
-    &:nth-of-type(2n) {
-      margin-left: $sone;
-    }
   }
 }
 
 .footer-menu {
-  font-size: $ssize;
+	display: block;
+    font-size: $ssize;
+    color: $text1;
+	padding: $sone;
+  	margin: 0 auto;
+  	max-width: $measure;
 
-  .icon {
-    padding-right: $sone / 4;
-    width: $ssize;
-    height: $ssize;
-  }
+	ul {
+		display: inline;
+        list-style-type: none;
+        padding-left: 0;
+
+		li {
+			display: inline-block;
+			
+			+ li {
+                margin-left: $shalf;
+
+                @include tablet {
+                    margin-left: $sone;
+                }
+            }	
+		}
+	}
+
+	.icon {
+		padding-right: $sone / 4;
+    	width: $ssize;
+    	height: $ssize;
+		vertical-align: middle;
+  	}
 }
 
 .copyright {
-  @extend .footer-header;
-  color: $dt2;
-  border-top: thin solid $dhl;
-  border-bottom: none;
+	display: block;
+    font-size: $ssize;
+  	color: $text1;
+	padding: $sone;
+  	margin: 0 auto;
+  	max-width: $measure;
+  	border-top: thin solid $dark1;
+
+    a {
+        font-weight: 700;
+    }
+}
+
+.donation-box {
+    @extend .copyright;
+
+    .donation-prompt {
+        display: inline-block;
+        color: $lbg;
+        background: $secondary1;
+        padding: 0 ($sone * 0.25);
+    }
 }

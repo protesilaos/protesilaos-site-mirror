@@ -75,14 +75,6 @@
       {% endcapture %}
       {{ triton-books | scssify }}
     </style>
-  {% elsif page.url contains "contact" %}
-    <!-- Timeline module -->
-    <style type="text/css">
-      {% capture triton-timeline %}
-        {% include triton-timeline.scss %}
-      {% endcapture %}
-      {{ triton-timeline | scssify }}
-    </style>
   {% elsif page.guest %}
     <!-- Guest author styles -->
     <style type="text/css">

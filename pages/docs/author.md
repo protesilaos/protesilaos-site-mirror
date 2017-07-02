@@ -1,16 +1,10 @@
 ---
-title: About me, my work, and this website
+title: "About me"
 excerpt: "Profile page of Protesilaos Stavrou"
 permalink: /author/
 layout: page
 ---
-
 My name is Protesilaos Stavrou, also known as "Prot". I was born in Greece, the August of 1988. I am a Cypriot citizen. Perhaps it is best to describe myself as a Renaissance man, in that I am multidisciplinary.
-
-Employment-wise I am a freelancer who is active in two distinct fields (specifics and availability in my [contact](/contact/) page):
-
-1. policy analysis on European Union affairs,
-2. front end development with a focus on building small websites.
 
 ## My work and what I do
 
@@ -20,15 +14,15 @@ I received university education as a political scientist with a deep understandi
 
 Between February 2012 and July 2014 I worked as a Parliamentary Assistant to Rui Tavares [@ruitavares](https://twitter.com/ruitavares): a Portuguese Member of the European Parliament for the Greens/EFA group.
 
-More recently, I contributed to an major Brussels-led project about Horizon 2020. Details will be included herein some time before the summer of 2017.
+More recently, I collaborated with the Centre for European Policy Studies. I offered expertise in the preparation of the H2020 project proposal *Examining The Processes Of Legitimacy. Rule of Law, Fundamental Rights and Crises in the EU (EURULNET)*, within the Call CULT-COOP-01-2017 of the European Commission.
 
-I also apply that expertise in my independent research on European Union politics, the fruits of which are available on this website, in the form of analyses and opinion [articles](/blog/), [seminars](/seminars/), and [three books](/books/).
+I also apply that expertise in my independent research on European Union politics, the fruits of which are available on this website, in the form of analyses and opinion [articles](/blog/), [seminars](/seminars/), and [books](/books/).
 
 My work is non-partisan. It is focused on the main themes of policy, its underlying factors and drivers. Though I do stand for certain ideals, broadly covering the areas of civil liberties and social progress, my approach is rooted in pragmatism.
 
 ### Web development
 
-I write code mostly in CSS/SCSS/Less and HTML, while I am refining my JavaScript skills. I do occasionally tinker with Vim script, BASH, and Ruby as well.
+I write code mostly in CSS/SCSS/Less and HTML, while I am refining my JavaScript skills. I do also edit Vim script, BASH, and a bit of Ruby.
 
 My focus is on content-driven websites. No gimmicks, no distractions. They must present information in a clear, readily accessible, and device agnostic manner.
 
@@ -81,7 +75,7 @@ My [dotfiles](https://github.com/protesilaos/dotfiles) contain configurations fo
 
 ### Canine handler
 
-I live with a puppy named "Atlas" (born in late August 2016). He is a mutt who has the characteristics of a Molossoid catch dog: solidly built, strong, and athletic. At eight months old his height is ~58cm (23in) at the withers, while he weighs ~35kg (80lb). The closest resemblance would be to that of a *Cane Corso* (Italian Mastiff) or a *Perro de Presa Canario* (Canary Mastiff).
+I live with a puppy named "Atlas" (born in late August 2016). He is a mutt who has the characteristics of a Molossoid catch dog: solidly built, strong, and athletic. At ten months old his height is ~58cm (23in) at the withers, while he weighs ~30kg (66lb).
 
 I only use positive methods to instruct him. No physical punishment, no reliance on such items as prong or choke collars. The point is to make the dog harness his potential through a combination of instinct and thought. To recognise patterns that yield rewards and to behave accordingly.
 
@@ -111,23 +105,11 @@ These are the photos that are currently associated with my online accounts:
 
 ![Protesilaos Stavrou picture 20170422](/images/self/protesilaos_stavrou_nature_20170422.jpg)
 
-The accounts are (from most to least used):
+The main accounts are:
 
-- [GitHub](https://github.com/protesilaos)
-- [GitLab](https://gitlab.com/protesilaos)
 - [Twitter](https://twitter.com/protstavrou)
-- [Paypal](https://www.paypal.me/protesilaos)
-- [Reddit](https://www.reddit.com/user/protesilaos)
-- [Bandcamp](https://bandcamp.com/protesilaos)
-- [Keybase](https://keybase.io/protesilaos)
-- [Atom](https://atom.io/users/protesilaos)
-- [NPM](https://www.npmjs.com/~protesilaos)
-- [Facebook](https://www.facebook.com/protesilaos.stavrou)
-- [Instagram](https://www.instagram.com/protesilaos)
-- [AUR](https://aur.archlinux.org/account/protesilaos)
-- [Gravatar](https://en.gravatar.com/protesilaos)
-- [Google+](https://plus.google.com/113081803807819597676)
+- [GitHub](https://github.com/protesilaos)
 
-[^PhilosophyNote]: My writings on philosophy encompass approximately 60 articles, published between mid-2013 and mid-2015. Because of practical reasons, I no longer write about purely philosophical issues though I do continue to study them. Note that I might revisit certain themes and publish something new (a short book perhaps?) within 2017.
+[^PhilosophyNote]: My writings on philosophy encompass approximately 60 articles, published between mid-2013 and mid-2015. Because of practical reasons, I no longer write about purely philosophical issues though I do continue to study them.
 
 [^WebsiteVers]: This website has evolved a lot over the years. It started off as a simple blog on Blogger, turner into a self-hosted WordPress site, and now exists as a set of files that are transformed into static pages with Jekyll. The [source code](https://gitlab.com/protesilaos/protesilaos.gitlab.io) contains only the latter and only since I moved hosting from GitHub to GitLab.

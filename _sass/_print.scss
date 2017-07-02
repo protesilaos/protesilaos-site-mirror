@@ -11,6 +11,13 @@
     display: none;
   }
 
+	body {
+		display: block;
+   	   	width: 100%;
+   	   	margin: 0 auto;
+   	   	padding: 0;
+  	}
+
   .post {
     background: #fff;
     color: #000;
@@ -26,6 +33,7 @@
   h6 {
     font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
     color: #000 !important;
+    page-break-after: avoid;
   }
 
   a {
@@ -79,17 +87,21 @@
   }
 
   article::after {
-    content: "If my work has been helpful and you would like to buy me a coffee, please do so via Paypal: https://www.paypal.me/protesilaos";
+    content: "If my work has been helpful and you would like to buy me a drink, please do so via Paypal: https://www.paypal.me/protesilaos";
     display: block;
     font-size: 10pt;
-    margin: 3rem 0 0;
+    margin: 3cm 0cm 0cm;
   }
 
   .print-meta {
     display: block;
   }
 
-  @page  {
-    margin: 10%;
+  .print-section {
+      page-break-before: always;
   }
+  
+	@page {
+		margin: 2cm;
+	}
 }

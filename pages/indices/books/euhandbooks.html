@@ -7,7 +7,7 @@ permalink: /euhandbook/
 breadcrumbs: true
 ---
 
-{% assign euhandbooks = site.books | sort='date' %}
+{% assign euhandbooks = site.books | where: "flag", "euhandbook" %}
 
 <div class="books-meta">
   <p>Published: <span>{{ site.data.text.euhandbook.datefull }}</span><br/>Book version: <span>{{ site.data.text.euhandbook.version }}</span></p>
@@ -41,7 +41,5 @@ breadcrumbs: true
     </ul>
   </div>
 </div>
-
-{% include donation.html %}
 
 {% include booksnav.html %}

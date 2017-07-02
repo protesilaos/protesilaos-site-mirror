@@ -128,7 +128,7 @@
     }
 
     li {
-      background: #fff;
+      background: $pagebg;
       padding: $sone;
       margin: ($vrythm / 4) 0;
 
@@ -197,7 +197,7 @@
 }
 
 .index-rss-feed {
-  background: $blu;
+  background: $ora;
   color: $lbg;
   font-family: $mono;
   font-size: $msize;
@@ -206,7 +206,47 @@
 
   &:hover,
   &:focus {
-    background: $vio;
+    background: $red;
     color: $lbg;
   }
+
+  .icon {
+      height: $ssize;
+      width: $ssize;
+      vertical-align: middle;
+  }
 }
+
+// .index-banner {
+    // background: $red;
+    // color: $lhl;
+    // font-family: $fontui;
+    // font-size: $ssize;
+    // padding: $vrythm $sone;
+
+    // @include tablet {
+        // font-size: $msize;
+    // }
+
+    // .index-banner-inner {
+        // display: block;
+        // margin: 0 auto;
+        // width: $measure;
+
+        // p {
+            // margin-bottom: $vrythm / 2;
+        // }
+
+        // strong {
+            // color: $lbg;
+        // }
+    // }
+
+    // .index-banner-inner-highlight {
+        // display: inline-block;
+        // background: $dbg;
+        // color: $dt1;
+        // font-size: $ssize;
+        // padding: 0 $shalf;
+    // }
+// }
