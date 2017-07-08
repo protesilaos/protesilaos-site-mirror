@@ -1,6 +1,6 @@
 ---
 title: "About me"
-excerpt: "Profile page of Protesilaos Stavrou"
+excerpt: "Profile page of Protesilaos Stavrou. European Union policy expert. Programmer. Philosopher."
 permalink: /author/
 layout: page
 ---
@@ -75,15 +75,13 @@ My [dotfiles](https://github.com/protesilaos/dotfiles) contain configurations fo
 
 ### Canine handler
 
-I live with a puppy named "Atlas" (born in late August 2016). He is a mutt who has the characteristics of a Molossoid catch dog: solidly built, strong, and athletic. At ten months old his height is ~58cm (23in) at the withers, while he weighs ~30kg (66lb).
+![Atlas the dog](/images/other/atlas-dog.jpg)
+
+I live with a puppy named "Atlas", who was born in late August 2016. He is a mutt who has the characteristics of a Molossoid catch dog: solidly built, strong, and athletic. At ten months old his height is ~60cm (24in) at the withers, while he weighs ~30kg (66lb).
 
 I only use positive methods to instruct him. No physical punishment, no reliance on such items as prong or choke collars. The point is to make the dog harness his potential through a combination of instinct and thought. To recognise patterns that yield rewards and to behave accordingly.
 
 Atlas has always enjoyed socialisation with people and other animals, regular exercise, as well as consistent and meticulous mental training. The latter covers the various instructions on how to "sit", "stay", "come", "heel" etc. and to concentrate on me even in the face of major distractions. I want him to be docile and good with his manners. Being calm is intrinsically important though it also helps overcome the prejudices people have about [large] dogs.
-
-This is a picture of Atlas enjoying life.
-
-![Atlas the dog](/images/other/atlas-dog.jpg)
 
 ### Personality
 
@@ -95,7 +93,7 @@ I have been posting content on [protesilaos.com](/) since February 2011.[^Websit
 
 Its minimal presentation (or neat underlying code base) should not offer the impression of it being a pastime activity or mere afterthought of mine.
 
-It is at the epicentre of all I do in terms of thinking, writing, and coding: a major content hub, hosting over 400 articles and featuring a growing number of publications on several fronts.
+It is at the epicentre of all I do in terms of thinking, writing, and coding: a major content hub, hosting over 500 articles and featuring a growing number of publications on several fronts.
 
 ### Profile pictures and connected accounts
 
@@ -110,6 +108,6 @@ The main accounts are:
 - [Twitter](https://twitter.com/protstavrou)
 - [GitHub](https://github.com/protesilaos)
 
-[^PhilosophyNote]: My writings on philosophy encompass approximately 60 articles, published between mid-2013 and mid-2015. Because of practical reasons, I no longer write about purely philosophical issues though I do continue to study them.
+[^PhilosophyNote]: My writings on philosophy encompass approximately 60 articles, published between mid-2013 and mid-2015. Because of practical reasons, I no longer write about purely philosophical issues though I do continue to study them. Nevertheless, many of my current writings incorporate philosophical insights or delve into theoretical themes.
 
-[^WebsiteVers]: This website has evolved a lot over the years. It started off as a simple blog on Blogger, turner into a self-hosted WordPress site, and now exists as a set of files that are transformed into static pages with Jekyll. The [source code](https://gitlab.com/protesilaos/protesilaos.gitlab.io) contains only the latter and only since I moved hosting from GitHub to GitLab.
+[^WebsiteVers]: This website has evolved considerably over the years. It started off as a simple blog on Blogger, turner into a self-hosted WordPress site, and now exists as a set of files that are transformed into static pages with Jekyll. The [source code](https://gitlab.com/protesilaos/protesilaos.gitlab.io) contains only the latter and only since I moved hosting from GitHub to GitLab.

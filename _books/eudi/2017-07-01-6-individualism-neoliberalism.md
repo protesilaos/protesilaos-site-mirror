@@ -12,7 +12,7 @@ date: 2017-07-01T00:06:00+00:00
 
 **C.** A newly elected government cannot just go ahead and implement its agenda. It has to comply with the terms of the Stability and Growth Pact and all the other laws relevant to the governance of the Economic and Monetary Union. And since European legislation cannot just be amended at the national level, the government must be fortunate enough to find allies in Europe in order to try and reform the EU. Practically impossible. The very design of this system perpetuates neoliberal policy making. Only EU exit, with the corresponding repatriation of sovereignty, can ensure a path away from the neoliberal paradigm.
 
-**Artur.** I think we need to disaggregate the objects of our inquiry, otherwise our conclusions will not be accurate enough. You seem to be bundling together the euro and the EU. I think that is a mistake, for the former is narrower in scope than the latter.
+**Artur.** I think we need to disaggregate the subjects of our inquiry, otherwise our conclusions will not be accurate enough. You seem to be bundling together the euro and the EU. I think that is a mistake, for the former is narrower in scope than the latter.
 
 **Denis.** I suspect that sweeping generalisation of the sort "the EU is neoliberal" cannot withstand scrutiny. Things are more complex than that.
 
