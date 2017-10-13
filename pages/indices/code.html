@@ -10,7 +10,6 @@ permalink: /code/
 
   <div class="index-cards">
     <h2>{{ site.data.text.codelog }}</h2>
-    <h3>Writings about code, open source, and my experience with Linux</h3>
     <ul>
       {% assign codelogs = site.codelog | sort: 'date' | reverse %}
       {% for codelog in codelogs limit:4 %}
@@ -33,7 +32,6 @@ permalink: /code/
         
   <div class="index-cards">
     <h2>{{ site.data.text.schemes }}</h2>
-    <h3>Colour schemes for highlighting code syntax</h3>
     <ul>
       {% assign schemes = site.data.themes | sort: 'date' | reverse %}
       {% for scheme in schemes limit:4 %}

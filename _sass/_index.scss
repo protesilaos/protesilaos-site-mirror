@@ -1,74 +1,74 @@
 .index {
-  font-family: $fontui;
+    font-family: $fontui;
 
-  .index-section {
-    margin: $vrythm 0;
-
-    @extend %clearfix;
-
-    + .index-section {
-      margin: $vrythm 0 0;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        padding: $shalf 0;
-
+    .index-section {
         @extend %clearfix;
 
-        + li {
-          border-top: thin solid $dark2;
-          margin: $sone 0;
-          padding: $sone 0 0;
+        margin: $vrythm 0;
+
+        + .index-section {
+            margin: $vrythm 0 0;
         }
 
-        a {
-          border-bottom: none;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
 
-          &:hover,
-          &:active {
-            border-bottom: none;
-          }
+            li {
+                @extend %clearfix;
+
+                @include desktop {
+                    a:not(.schemecard),
+                    .schemecard span {
+                        display: inline-block;
+                        float: left;
+                        width: 80%;
+                    }
+
+                    .schemecard span {
+                        font-weight: 700;
+                    }
+
+                    time {
+                        display: inline-block;
+                        float: left;
+                        margin-left: 1%;
+                        text-align: right;
+                        width: 19%;
+                    }
+                }
+
+                padding: $shalf 0;
+
+                + li {
+                    border-top: thin solid $dark2;
+                    margin: $sone 0;
+                    padding: $sone 0 0;
+                }
+
+                a {
+                    border-bottom: none;
+
+                    &:hover,
+                    &:active {
+                        border-bottom: none;
+                    }
+                }
+
+                time {
+                    margin: 0;
+                }
+            }
         }
 
-        time {
-          margin: 0;
+        .schemecard div {
+            @extend %clearfix;
+
+            display: block;
+            margin: ($vrythm / 2) 0;
         }
-
-        @include desktop {
-          a:not(.schemecard),
-          .schemecard span {
-            float: left;
-            display: inline-block;
-            width: 80%;
-          }
-
-          .schemecard span {
-            font-weight: 700;
-          }
-
-          time {
-            float: left;
-            text-align: right;
-            display: inline-block;
-            margin-left: 1%;
-            width: 19%;
-          }
-        }
-      }
     }
-
-    .schemecard div {
-      display: block;
-      margin: ($vrythm / 2) 0;
-
-      @extend %clearfix;
-    }
-  }
 }
 
 /*
@@ -78,175 +78,141 @@
 */
 
 .index-xl {
-  font-family: $fontui;
-  display: block;
-  margin: 0 auto;
-  padding: $sone $shalf $shalf;
-  max-width: $measure;
+    @extend %clearfix;
 
-  @extend %clearfix;
+    @include desktop {
+        max-width: $measure-xl;
+        padding: $vrythm 0;
+    }
 
-  @include desktop {
-    padding: $vrythm 0;
-    max-width: $measure-xl;
-  }
+    display: block;
+    font-family: $fontui;
+    margin: 0 auto;
+    max-width: $measure;
+    padding: $sone $shalf $shalf;
 }
 
 .index-cards {
-  @include tablet {
-    + .index-cards {
-      margin-top: $vrythm * 1.5; // Applies to homepage
-    }
-  }
-
-  ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    height: auto;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
     @include tablet {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
+        + .index-cards {
+            margin-top: $vrythm * 1.5; // Applies to homepage
+        }
     }
 
-    li {
-      background: $pagebg;
-      padding: $sone;
-      margin: ($vrythm / 4) 0;
-
-      @include shadow;
-
-      @include tablet {
-        width: calc(calc(calc(100% / 2) - 4.5rem) - 2px); // Two columns minus their padding, margin, and border width
-        padding: $sone * 2;
-        margin-top: $sone / 2;
-        border: 1px solid $dark1;
-
-        &:nth-of-type(2n+2) {
-          margin-left: $sone / 2; // This combined with margin-top achieves inner margins
-        }
-      }
-
-      a {
-        font-size: $lsize;
-        font-weight: 700;
-
-        @include desktop {
-          font-size: $xlsize;
-        }
-      }
-
-      time {
-        margin-bottom: $sone / 2;
-
+    ul {
         @include tablet {
-          font-size: $ssize;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: horizontal;
+            -webkit-box-pack: justify;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
         }
-      }
 
-      &.highlight-card {
-        background: $cya;
-        color: $lbg;
-        font-size: $ssize;
-      }
+        align-items: stretch;
+        -webkit-box-align: stretch;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        display: flex;
+        display: -ms-flexbox;
+        -ms-flex-align: stretch;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: auto;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            @include shadow;
+
+            @include tablet {
+                border: 1px solid $dark1;
+                margin-top: $sone / 2;
+                padding: $sone * 2;
+                width: calc(calc(calc(100% / 2) - 4.5rem) - 2px); // Two columns minus their padding, margin, and border width
+
+                &:nth-of-type(2n+2) {
+                    margin-left: $sone / 2; // This combined with margin-top achieves inner margins
+                }
+            }
+
+            background: $pagebg;
+            margin: ($vrythm / 4) 0;
+            padding: $sone;
+
+            a {
+                @include desktop {
+                    font-size: $xlsize;
+                }
+
+                font-size: $lsize;
+                font-weight: 700;
+            }
+
+            time {
+                @include tablet {
+                    font-size: $ssize;
+                }
+
+                margin-bottom: $sone / 2;
+            }
+
+            &.highlight-card {
+                background: $cya;
+                color: $lbg;
+                font-size: $ssize;
+            }
+        }
+
+        + div {
+            @include tablet {
+                text-align: right;
+            }
+
+            margin: $vrythm 0 ($vrythm * 2); // The all posts section
+
+            a {
+                @include tablet {
+                    font-size: $msize;
+                }
+
+                background: $primary3;
+                color: $lbg;
+                font-size: $ssize;
+                padding: $sone ($sone * 1.25);
+
+                &:hover,
+                &:focus {
+                    background: $primary2;
+                    color: $lbg;
+                }
+            }
+        }
     }
-
-    + div {
-      margin: $vrythm 0 ($vrythm * 2); // The all posts section
-
-      @include tablet {
-        text-align: right;
-      }
-
-      a {
-        background: $gre;
-        color: $lbg;
-        font-size: $ssize;
-        padding: $sone ($sone * 1.25);
-
-        &:hover,
-        &:focus {
-          background: $mag;
-          color: $lbg;
-        }
-
-        @include tablet {
-          font-size: $msize;
-        }
-      }
-    }
-  }
 }
 
 .index-rss-feed {
-  background: $ora;
-  color: $lbg;
-  font-family: $mono;
-  font-size: $msize;
-  padding: ($shalf / 2) $shalf;
-  margin: ($vrythm / 2) 0;
-
-  &:hover,
-  &:focus {
-    background: $red;
+    background: $primary1;
     color: $lbg;
-  }
+    font-family: $mono;
+    font-size: $msize;
+    margin: ($vrythm / 2) 0;
+    padding: ($shalf / 2) $shalf;
 
-  .icon {
-      height: $ssize;
-      width: $ssize;
-      vertical-align: middle;
-  }
+    &:hover,
+    &:focus {
+        background: $primary2;
+        color: $lbg;
+    }
+
+    .icon {
+        height: $ssize;
+        vertical-align: middle;
+        width: $ssize;
+    }
 }
-
-// .index-banner {
-    // background: $red;
-    // color: $lhl;
-    // font-family: $fontui;
-    // font-size: $ssize;
-    // padding: $vrythm $sone;
-
-    // @include tablet {
-        // font-size: $msize;
-    // }
-
-    // .index-banner-inner {
-        // display: block;
-        // margin: 0 auto;
-        // width: $measure;
-
-        // p {
-            // margin-bottom: $vrythm / 2;
-        // }
-
-        // strong {
-            // color: $lbg;
-        // }
-    // }
-
-    // .index-banner-inner-highlight {
-        // display: inline-block;
-        // background: $dbg;
-        // color: $dt1;
-        // font-size: $ssize;
-        // padding: 0 $shalf;
-    // }
-// }

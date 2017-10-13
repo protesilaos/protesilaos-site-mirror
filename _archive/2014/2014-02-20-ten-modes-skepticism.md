@@ -1,61 +1,9 @@
 ---
-id: 3059
 title: On the ten modes of Skepticism
 date: 2014-02-20T13:10:07+00:00
 author: Protesilaos Stavrou
 layout: post
-guid: http://www.prot.dk/?p=3059
 permalink: /ten-modes-skepticism/
-sf_thumbnail_type:
-  - image
-sf_thumbnail_link_type:
-  - link_to_post
-sf_thumbnail_content_main_detail:
-  - 0
-sf_detail_type:
-  - none
-sf_page_title:
-  - 1
-sf_page_title_style:
-  - fancy
-sf_no_breadcrumbs:
-  - 0
-sf_page_title_bg:
-  - alt-five
-sf_page_title_text_style:
-  - light
-sf_background_image_size:
-  - cover
-sf_full_width_display:
-  - 0
-sf_author_info:
-  - 1
-sf_social_sharing:
-  - 1
-sf_related_articles:
-  - 1
-sf_sidebar_config:
-  - no-sidebars
-sf_left_sidebar:
-  - Sidebar-1
-sf_right_sidebar:
-  - Sidebar-1
-sf_caption_position:
-  - caption-right
-sf_remove_promo_bar:
-  - 0
-sf_thumbnail_image:
-  - 3079
-sf_extra_page_class:
-  - full-width-blog-post
-sf_custom_excerpt:
-  - Analysis and critique of an ancient tradition of skepticism. The methodology rests on a hypothetical distinction between sensible and intelligible objects.
-slide_template:
-  - default
-interview_interviewer:
-  - 
-interview_interviewed:
-  - 
 categories:
   - Philosophy
 tags:
@@ -64,7 +12,8 @@ tags:
   - Metaphysics
   - Skepticism
 ---
-<a title="On the ten modes of Skepticism pdf" href="https://protesilaos.com/wp-content/uploads/2014/02/On-the-ten-modes-of-Skepticism1.pdf" target="_blank"><i class="fa-cloud-download"></i> Download pdf</a> (File size: 112 kB)
+**UPDATE 2017-07-28**: For my current analysis of the modes of scepticism, refer to my paper [Notes on the modes of Scepticism](/notes-modes-scepticism/).
+{:.critical}
 
 ## Abstract
 
@@ -118,15 +67,13 @@ _Q2. How is it, furthermore, that we can understand that this is a dog, which is
 
 A2. If there really is nothing we can refer to, we face at the very outset the impossibility of identification. Besides, to draw a comparison we must first be capable of defining its terms. As suggested in the previous answer, we can make an abstraction out of a pattern — the common in the multitude. That abstraction we may use it to understand specific instances as partaking of it or not. Such an abstraction is also made of &#8220;dog&#8221;, which we consider as supracontextual. When placing in a comparison dog against dog, it is the instances of this abstraction that we consider, not the abstract understanding of &#8220;dog&#8221;. Any differences are between the instances as against one another, not in the very concept of &#8220;dog&#8221; in itself; and, a fortiriori, we claim that notwithstanding the manifested differences of these instances, they still belong to their respective class by means of partaking of its idea.
 
-_Q3. By what means, we may further wonder in astonishment, can such conflation be avoided when, by meticulously applying the ten modes, we are, in essence, led to blithely conclude that an identity is but an illusion and that in fact all there is, is reasons to think of constancy as a mere fancy?
-  
-_ 
+_Q3. By what means, we may further wonder in astonishment, can such conflation be avoided when, by meticulously applying the ten modes, we are, in essence, led to blithely conclude that an identity is but an illusion and that in fact all there is, is reasons to think of constancy as a mere fancy?_ 
 
 A3. Having hypothesised that the thought of the thing is not the thing as such; and that what occurs to one may not necessarily propagate to the other, we may concede that identity might indeed not be a property of the object of sense, but of the object of intelligence. What is traced as a constant is an abstract pattern. It is, nonetheless, intelligible and can be made of all things in the world. It is courtesy of such a capacity to recognise the common in the multitude that we may define instances of an abstraction as partaking of it and may, consequently, proceed to compare them to other instances. Conflation is avoided by virtue of us being able of grasping the abstract pattern of each case and of incorporating it into a broader _abstract structure_ we conceive of the world.
 
 <span style="line-height: 1.5em;">To press on with the argument now propounded, it is pertinent to consider the very concept of </span><em style="line-height: 1.5em;">difference</em> <span style="line-height: 1.5em;">and inquire whether it not only holds constant relative to itself, but also that it retains its form </span><em style="line-height: 1.5em;">regardless</em> <span style="line-height: 1.5em;">of the constitutive/substantive terms peculiar to any case. </span>
 
-Consider the following example: it is to be understood that a rectangle differs from a triangle and that a dog is different from a table, so that one may tell a rectangle from a triangle, a dog from a table. In each case, the diligent researcher, let us call him Aenesidimus, may identify the factors/parameters that inform said difference, and may, furthermore acknowledge that between the comparisons of rectangle-triangle and dog-table, the terms of distinction are not of the same sort. Aenesidimus would indeed be in a position to claim that _the way_ in which a rectangle can be discerned from a triangle bears no qualitative resemblance to the way a dog compares to a table. Correct as that observation would be, Aenesidimus would still be labouring under a uniform, _formal_ understanding of difference; for in spite of such disparities between the two comparisons, a common conclusion would be drawn, namely: that the things examined and found as different from each other in ways that are dissimilar, do share the common characteristic of both being _conceived as different_. Thus, notwithstanding the substantive terms of the comparisons — the _constitution _of each case — difference would be understood _qua_ difference.
+Consider the following example: it is to be understood that a rectangle differs from a triangle and that a dog is different from a table, so that one may tell a rectangle from a triangle, a dog from a table. In each case, the diligent researcher, let us call him Aenesidimus, may identify the factors/parameters that inform said difference, and may, furthermore acknowledge that between the comparisons of rectangle-triangle and dog-table, the terms of distinction are not of the same sort. Aenesidimus would indeed be in a position to claim that _the way_ in which a rectangle can be discerned from a triangle bears no qualitative resemblance to the way a dog compares to a table. Correct as that observation would be, Aenesidimus would still be labouring under a uniform, _formal_ understanding of difference; for in spite of such disparities between the two comparisons, a common conclusion would be drawn, namely: that the things examined and found as different from each other in ways that are dissimilar, do share the common characteristic of both being _conceived as different_. Thus, notwithstanding the substantive terms of the comparisons — the _constitution_ of each case — difference would be understood _qua_ difference.
 
 Consequently, if we are to identify the common in the multitude of these two otherwise distinct cases, we may indeed acknowledge that they are conceived as partaking of the abstraction of difference; their commonality in sharing the characteristic of difference standing at the formal, not the constitutional/substantive level. Again, as with &#8220;dog&#8221; and the instances of it, the gist of the matter is that the idea _can_ be conceived as identical to itself regardless of the particular terms.
 

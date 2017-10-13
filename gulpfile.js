@@ -42,14 +42,26 @@ gulp.task('js', function() {
     .pipe(gulp.dest('js'));
 });
 
-// Prepare Webfonts CSS
+// Prepare Latin Webfonts CSS
 
 gulp.task('webfonts', function() {
   var cleanCSS = require('gulp-clean-css');
 
-  return gulp.src('_assets/css/**/*.css')
+  return gulp.src('_assets/css/latin/**/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(concat('webfonts.css'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('css'));
+});
+
+// Prepare Greek Webfonts CSS
+
+gulp.task('greekfonts', function() {
+  var cleanCSS = require('gulp-clean-css');
+
+  return gulp.src('_assets/css/greek/**/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(concat('greekfonts.css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css'));
 });

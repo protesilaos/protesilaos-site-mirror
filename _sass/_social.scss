@@ -1,31 +1,29 @@
 .menu-social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-  li {
-    display: inline-block;
-    padding: $sone / 2;
-    margin-right: $sone / 2;
+    li {
+        @include desktop {
+            margin-right: $sone * 0.25;
+        }
 
-    @include desktop {
-      margin-right: $sone * 0.25;
+        display: inline-block;
+        margin-right: $sone / 2;
+        padding: $sone / 2;
+
+        &:first-of-type {
+            padding: $shalf $shalf $shalf 0;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
-
-    &:first-of-type {
-      padding: $shalf $shalf $shalf 0;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
 }
 
 .headerbar-social {
-  display: none;
-
-  @include tablet {
-    display: block;
-  }
+    @include tablet {
+        display: block;
+    }
 }

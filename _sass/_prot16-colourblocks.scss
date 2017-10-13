@@ -1,162 +1,175 @@
 // Helper classes used in `_includes/prot16-colourorder.html`
 .dbg {
-  color: $dbg;
+    color: $dbg;
 }
 
 .lbg {
-  color: $lbg;
+    color: $lbg;
 }
 
 .primary1-background {
-  background-color: $primary1;
+    background-color: $primary1;
 }
 
 .primary2-background {
-  background-color: $primary2;
+    background-color: $primary2;
 }
 
 .primary3-background {
-  background-color: $primary3;
+    background-color: $primary3;
 }
 
 .secondary1-background {
-  background-color: $secondary1;
+    background-color: $secondary1;
 }
 
 .secondary2-background {
-  background-color: $secondary2;
+    background-color: $secondary2;
 }
 
 .tertiary1-background {
-  background-color: $tertiary1;
+    background-color: $tertiary1;
 }
 
 .tertiary2-background {
-  background-color: $tertiary2;
+    background-color: $tertiary2;
 }
 
 .tertiary3-background {
-  background-color: $tertiary3;
+    background-color: $tertiary3;
 }
 
 // Index pages
 .paletterow {
-  display: block;
-  margin: ($vrythm / 2) 0;
+    @extend %clearfix;
 
-  @extend %clearfix;
+    display: block;
+    margin: ($vrythm / 2) 0;
 }
 
 .paletteline {
-  width: 12.5%;
-  height: $sone * 2.5;
+    @extend %colourblock;
 
-  @extend %colourblock;
+    @include tablet {
+        height: $measure / 8;
+        width: $measure / 8;
 
-  @include tablet {
-    width: $measure / 8;
-    height: $measure / 8;
-
-    // Ad hoc measurement for index cards
-    .index-cards & {
-      width: ($measure / 16) - ($sone * 0.6);
-      height: ($measure / 16) - ($sone * 0.6);
+        // Ad hoc measurement for index cards
+        .index-cards & {
+            height: ($measure / 16) - ($sone * 0.6);
+            width: ($measure / 16) - ($sone * 0.6);
+        }
     }
-  }
 
-  @include desktop {
-    // Ad hoc measurement for index cards
-    .index-cards & {
-      width: ($measure-xl / 8) - ($sone * 1.25);
-      height: ($measure-xl / 8) - ($sone * 1.25);
+    @include desktop {
+        // Ad hoc measurement for index cards
+        .index-cards & {
+            height: ($measure-xl / 8) - ($sone * 1.25);
+            width: ($measure-xl / 8) - ($sone * 1.25);
+        }
     }
-  }
+
+    height: $sone * 2.5;
+    width: 12.5%;
 }
 
 // Project pages
 
 .palette {
-  font-family: $mono;
-  text-transform: lowercase;
+    @extend .paletterow;
 
-  @extend .paletterow;
+    font-family: $mono;
+    text-transform: lowercase;
 
-  div {
-    display: block;
+    div {
+        @extend %clearfix;
 
-    @extend %clearfix;
+        display: block;
 
-    + div {
-      margin-top: $sone / 32;
+        + div {
+            margin-top: $sone / 32;
+        }
+
+        p {
+            @include desktop {
+                font-size: $msize;
+            }
+
+            font-family: $fontui;
+            font-size: $ssize;
+            margin: 0;
+            padding: $sone / 10;
+        }
     }
 
-    p {
-      margin: 0;
-      padding: $sone / 10;
-      font-family: $fontui;
-      font-size: $ssize;
+    small {
+        display: block;
+        font-family: $fontui;
     }
-  }
-
-  small {
-    display: block;
-    font-family: $fontui;
-  }
 }
 
 .paletteblock {
-  width: 25%;
-  height: $sone * 4;
-  line-height: $sone * 4;
-  font-size: $xxssize;
-  font-style: normal;
-  text-align: center;
+    @extend %colourblock;
 
-  @extend %colourblock;
+    @include tablet {
+        margin: $sone / 16;
+        height: (($measure - 6rem) / 4) - (($sone * 4) / 16);
+        width: (($measure - 6rem) / 4) - (($sone * 4) / 16);
+        line-height: (($measure - 6rem) / 4) - (($sone * 4) / 16);
+    }
 
-  @include tablet {
-    margin: $sone / 32;
-    width: ($measure / 4) - ($sone / 32) - ($sone / 32);
-    height: ($measure / 4) - ($sone / 32) - ($sone / 32);
-    line-height: ($measure / 4) - ($sone / 32) - ($sone / 32);
-  }
+    @include desktop {
+        font-size: $msize;
+    }
+
+    font-size: $xxssize;
+    font-style: normal;
+    height: $sone * 4;
+    line-height: $sone * 4;
+    text-align: center;
+    width: 25%;
 }
 
 .palette-terminal {
-  @extend .paletterow;
+    @extend .paletterow;
 
-  div {
-    display: block;
+    div {
+        @extend %clearfix;
 
-    @extend %clearfix;
+        display: block;
 
-    + div {
-      margin-top: $vrythm;
+        + div {
+            margin-top: $vrythm;
+        }
+
+        &.palette-terminal-termvalues {
+            font-family: $mono;
+        }
+
+        &.palette-terminal-termcolours {
+            font-family: $mono;
+            text-transform: lowercase;
+        }
+
+        p {
+            font-size: inherit;
+        }
     }
 
-    &.termcolours {
-      font-family: $mono;
-      text-transform: lowercase;
-    }
+    .paletteblock {
+        @extend .paletteblock;
 
-    p {
-      font-size: inherit;
+        @include tablet {
+            // NOTE 6rem is to compensate for the added padding of mixin bigblock-outer
+            margin: $sone / 16;
+            height: (($measure - 6rem) / 8) - ($sone / 16) - ($sone / 16);
+            line-height: (($measure - 6rem) / 8) - ($sone / 16) - ($sone / 16);
+            width: (($measure - 6rem) / 8) - ($sone / 16) - ($sone / 16);
+        }
     }
-  }
-
-  .paletteblock {
-    @extend .paletteblock;
-
-    @include tablet {
-      margin: $sone / 16;
-      width: ($measure / 8) - ($sone / 16) - ($sone / 16);
-      height: ($measure / 8) - ($sone / 16) - ($sone / 16);
-      line-height: ($measure / 8) - ($sone / 16) - ($sone / 16);
-    }
-  }
 }
 
 // Visual order
 .visualorder {
-  @extend .palette;
+    @extend .palette;
 }

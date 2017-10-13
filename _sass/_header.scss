@@ -1,223 +1,223 @@
 .header {
-  background: $dbg;
-  color: $dt1;
+    @extend %clearfix;
 
-  @extend %clearfix;
+    background: $lbg;
+    color: $lt1;
 }
 
 .header-inner {
-  font-family: $fontui;
-  font-size: $msize;
-  text-align: left;
-  max-width: $measure;
-  margin: 0 auto;
-  padding: $sone;
+    @extend %clearfix;
 
-  @extend %clearfix;
-
-  @include tablet {
-    font-size: $lsize;
-    padding: $vrythm $sone;
-  }
-
-  @include desktop {
-    padding: ($vrythm * 2) $sone;
-    max-width: $measure-xl;
-  }
-
-  .header-logo {
-    font-weight: 700;
-    display: block;
-    padding: 0;
-    text-transform: none;
+    font-family: $fontui;
+    font-size: $msize;
+    margin: 0 auto;
+    max-width: $measure;
+    padding: $vrythm $sone $sone;
+    text-align: left;
 
     @include tablet {
-      float: left;
-      display: inline-block;
-      width: calc(100% * 0.3333);
-    }
-  }
-
-  .header-navigation {
-    width: auto;
-    height: $vrythm;
-    padding: $sone 0;
-
-    @include tablet {
-      float: left;
-      text-align: right;
-      display: inline-block;
-      width: calc(100% * 0.6666);
-      height: auto;
-      padding: 0;
+        font-size: $lsize;
+        padding: ($vrythm * 2) $sone $sone;
     }
 
-    ul {
-      display: inline;
-      list-style-type: none;
-      margin: ($vrythm / 2) 0 0;
-      padding: 0;
+    @include desktop {
+        font-size: 1.44rem; // NOTE Fills the gap in the minor third
+        max-width: $measure-xl;
+    }
 
-      @include tablet {
-        margin: 0;
-      }
-
-      li {
-        display: inline-block;
-        margin-right: $sone;
-        line-height: $sone * 2;
-
-        &:last-child {
-          margin-right: 0;
-          padding-right: $sone / 10;
-        }
-
+    .header-logo {
         @include tablet {
-          text-transform: none;
-          line-height: $vrythm;
+            display: inline-block;
+            float: left;
+            width: calc(100% * 0.3333);
         }
-      }
+
+        display: block;
+        font-weight: 700;
+        padding: 0;
+        text-transform: none;
     }
-  }
+
+    .header-navigation {
+        @include tablet {
+            display: inline-block;
+            float: left;
+            height: auto;
+            padding: 0;
+            text-align: right;
+            width: calc(100% * 0.6666);
+        }
+
+        height: $vrythm;
+        padding: $sone 0;
+        width: auto;
+
+        ul {
+            @include tablet {
+                margin: 0;
+            }
+
+            display: inline;
+            list-style-type: none;
+            margin: ($vrythm / 2) 0 0;
+            padding: 0;
+
+            li {
+                @include tablet {
+                    line-height: $vrythm;
+                    text-transform: none;
+                }
+
+                display: inline-block;
+                line-height: $sone * 2;
+                margin-right: $sone;
+
+                &:last-child {
+                    margin-right: 0;
+                    padding-right: $sone / 10;
+                }
+            }
+        }
+    }
 }
 
 // Homepage
 .headerbar {
-  @extend .header;
+    @extend .header;
 }
 
 .headerbar-inner {
-  @extend .header-inner;
-
-  @include desktop {
-    max-width: $measure-xl;
-  }
-
-  .h1-home {
-    font-size: $xlsize;
-    font-weight: 400;
-    line-height: 1;
-    color: $dt1;
-    margin: $vrythm 0;
-
-    @include tablet {
-      font-size: $jsize;
-      margin: $jsize 0;
-    }
+    @extend .header-inner;
 
     @include desktop {
-      font-size: $jjsize;
-      margin: $jjsize 0;
-    }
-  }
-
-  .headerbar-navigation {
-    width: auto;
-    height: $vrythm;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 0 0 $sone;
-
-    @include tablet {
-      height: auto;
-      overflow-x: hidden;
-      white-space: normal;
-      padding: 0;
+        max-width: $measure-xl;
     }
 
-    ul {
-      display: inline;
-      list-style-type: none;
-      margin: ($vrythm / 2) 0 0;
-      padding: $sone 0;
-
-      @include tablet {
-        display: block;
-        margin: 0;
-        text-align: right;
-        border-bottom: thin solid $dhl;
-      }
-
-      li {
-        display: inline-block;
-        margin-right: $sone;
-        line-height: $sone * 2;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
+    .h1-home {
         @include tablet {
-          line-height: $vrythm;
+            font-size: $jsize;
+            margin: $jsize 0;
         }
 
+        @include desktop {
+            font-size: $jjsize;
+            margin: $jjsize 0;
+        }
+
+        color: $lt1;
+        font-size: $xlsize;
+        font-weight: 400;
+        line-height: 1;
+        margin: $vrythm 0;
+    }
+
+    .headerbar-navigation {
         @include tablet {
-          margin-right: $sone;
-          text-transform: uppercase;
+            height: auto;
+            overflow-x: hidden;
+            padding: 0;
+            white-space: normal;
         }
-      }
-    }
-  }
 
-  .headerbar-header {
-    font-weight: 700;
-    margin-bottom: $vrythm / 2;
+        height: $vrythm;
+        padding: 0 0 $sone;
+        width: auto;
 
-    @include tablet {
-      font-weight: 400;
-      margin-bottom: $vrythm;
-    }
-  }
+        ul {
+            @include tablet {
+                border-bottom: thin solid $lhl;
+                display: block;
+                margin: 0;
+                text-align: right;
+            }
 
-  .headerbar-columns {
-    div {
-      width: 100%;
-      display: block;
+            display: inline;
+            list-style-type: none;
+            margin: ($vrythm / 2) 0 0;
+            padding: $sone 0;
 
-      @extend %clearfix;
+            li {
+                @include tablet {
+                    line-height: $vrythm;
+                }
 
-      @include tablet {
-        float: left;
-        width: ($measure / 2) - $sone;
-        display: inline-block;
-        padding: $sone 0;
-        margin: $sone 0;
-        border-top: thin solid $dhl;
+                @include tablet {
+                    margin-right: $sone;
+                }
 
-        + div {
-          margin-left: ($sone * 2);
+                display: inline-block;
+                line-height: $sone * 2;
+                margin-right: $sone;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
         }
-      }
-
-      @include desktop {
-        width: ($measure-xl / 2) - $sone;
-      }
     }
 
-    .menu-social {
-      text-align: right;
-    }
-  }
+    .headerbar-header {
+        @include tablet {
+            font-weight: 400;
+            margin-bottom: $vrythm;
+        }
 
-  .headerbar-description {
-    color: $dt2;
-    margin: $vrythm 0;
-
-    @include tablet {
-      font-size: $lsize;
-    }
-  }
-
-  .icon {
-    @include tablet {
-      height: $lsize;
-      width: $lsize;
+        font-weight: 700;
+        margin-bottom: $vrythm / 2;
     }
 
-    @include desktop {
-      height: $xlsize;
-      width: $xlsize;
+    .headerbar-columns {
+        div {
+            @extend %clearfix;
+
+            @include tablet {
+                border-top: thin solid $lhl;
+                display: inline-block;
+                float: left;
+                margin: $sone 0;
+                padding: $sone 0;
+                width: ($measure / 2) - $sone;
+
+                + div {
+                    margin-left: ($sone * 2);
+                }
+            }
+
+            @include desktop {
+                width: ($measure-xl / 2) - $sone;
+            }
+
+            display: block;
+            width: 100%;
+        }
+
+        .menu-social {
+            @include tablet {
+                text-align: right;
+            }
+
+            text-align: left;
+        }
     }
-  }
+
+    .headerbar-description {
+        @include tablet {
+            font-size: $lsize;
+        }
+
+        color: $lt2;
+        margin: $vrythm 0;
+    }
+
+    .icon {
+        @include tablet {
+            height: $lsize;
+            width: $lsize;
+        }
+
+        @include desktop {
+            height: $xlsize;
+            width: $xlsize;
+        }
+    }
 }

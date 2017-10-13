@@ -1,22 +1,22 @@
-.authorbox {
-  font-family: $fontui;
-  font-size: $ssize;
-  background: $lhl;
-  display: block;
-  margin: $vrythm 0;
-  padding: $sone * 2;
+.authorbox.guestbox {
+    @include desktop {
+        float: right;
+        margin-left: $vrythm;
+        margin-right: -#{($measure-xl - $measure) / 2};
+        margin-top: 0;
+        width: ($measure / 2) - ($sone * 2) - $vrythm;
+    }
 
-  @include desktop {
-    float: right;
-    width: ($measure / 2) - ($sone * 2) - $vrythm;
-    margin-top: 0;
-    margin-right: -#{($measure-xl - $measure) / 2};
-    margin-left: $vrythm;
-  }
+    background: $lbg;
+    display: block;
+    font-family: $fontui;
+    font-size: $ssize;
+    margin: $vrythm 0;
+    padding: $sone * 2;
 
-  .authorbox-title {
-    font-size: $msize;
-    color: $text1;
-    margin: 0 0 ($vrythm / 2);
-  }
+    .authorbox-title {
+        color: $text1;
+        font-size: $msize;
+        margin: 0 0 ($vrythm / 2);
+    }
 }

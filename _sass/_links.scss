@@ -1,54 +1,49 @@
 a {
-  color: $primary1;
-  text-decoration: none;
+    color: $primary1;
+    text-decoration: none;
 
-  &:not(.active) {
-    @include transition;
-  }
-
-  &:hover,
-  &:active {
-    color: $tertiary1;
-  }
-
-  &:not(.skip-link):focus {
-    color: $tertiary1;
-    background: transparentize($tertiary1, 0.9);
-    outline: thin dashed $tertiary1;
-  }
-
-  &.active {
-    color: $cya;
-    border-bottom: thin solid $cya;
-  }
-
-  article:not(.packages) &,
-  .homepage-container p &,
-  .index p & {
-    border-bottom: thin solid $primary1;
+    &:not(.active) {
+        @include transition;
+    }
 
     &:hover,
     &:active {
-      border-bottom: thin solid $tertiary1;
+        color: $secondary2;
+        text-decoration: underline;
     }
 
-    &[href^="#fn"] {
-      font-weight: 400;
-      border-bottom: none;
-
-      &::before {
-        content: "[";
-        font-weight: 400;
-
-        @extend %pseudomark;
-      }
-
-      &::after {
-        content: "]";
-        font-weight: 400;
-
-        @extend %pseudomark;
-      }
+    &:not(.skip-link):focus {
+        background: transparentize($tertiary3, 0.9);
+        color: $tertiary3;
+        outline: thin dashed $tertiary3;
     }
-  }
+
+    &.active {
+        border-bottom: 2px solid $tertiary2;
+        padding-bottom: $shalf;
+        color: $tertiary2;
+    }
+
+    article:not(.packages) &,
+    .homepage-container p &,
+    .index p & {
+        &[href^="#fn"] {
+            border-bottom: none;
+            font-weight: 400;
+
+            &::before {
+                @extend %pseudomark;
+
+                content: '[';
+                font-weight: 400;
+            }
+
+            &::after {
+                @extend %pseudomark;
+
+                content: ']';
+                font-weight: 400;
+            }
+        }
+    }
 }

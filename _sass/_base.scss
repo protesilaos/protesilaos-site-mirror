@@ -1,36 +1,40 @@
 body {
-  font-family: $serif;
-  font-size: $base-font-size;
-  line-height: $line-height;
-  color: $text1;
-  background-color: $bg;
-  word-wrap: break-word;
-  margin: 0;
+    // NOTE removed the font adjustments. Base size is 16px
+    // @include tablet {
+        // font-size: $base-font-size + 1;
+    // }
 
-  @include tablet {
-    font-size: $base-font-size + 1;
-  }
+    // @include desktop {
+        // font-size: $base-font-size + 2;
+    // }
 
-  @include desktop {
-    font-size: $base-font-size + 2;
-  }
+    background-color: $bg;
+    color: $text1;
+    font-family: $serif;
+    font-size: $base-font-size;
+    line-height: $line-height;
+    margin: 0;
+    word-wrap: break-word;
+    border-top: 3px solid $primary1;
+    border-bottom: 3px solid $primary1;
 
-  .fonts-loaded & {
+    .fonts-loaded & {
 
-    // Scope font adjustment to avoid it in index pages
-    .post {
-      font-family: $font1;
-      font-size: $base-font-size;
+        // NOTE removed the font adjustments. Base size is 16px
+        // // Scope font adjustment to avoid it in index pages
+        .post {
+            // @include tablet {
+                // font-size: $base-font-size + 1;
+            // }
 
-      @include tablet {
-        font-size: $base-font-size + 1;
-      }
+            // @include desktop {
+                // font-size: $base-font-size + 2;
+            // }
 
-      @include desktop {
-        font-size: $base-font-size + 2;
-      }
+            font-family: $font1;
+            font-size: $base-font-size;
+        }
     }
-  }
 }
 
 h1,
@@ -39,155 +43,154 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $sans;
-  font-weight: 700;
-  color: $text1;
-  margin-bottom: $vrythm / 2;
-  padding: 0;
-
-  .fonts-loaded & {
-    font-family: $font2;
+    color: $text1;
+    font-family: $sans;
     font-weight: 700;
-  }
+    margin-bottom: $vrythm / 2;
+    padding: 0;
+
+    .fonts-loaded & {
+        font-family: $font2;
+        font-weight: 700;
+    }
 }
 
 h1,
 h2 {
-  line-height: $heading-line-height;
+    line-height: $heading-line-height;
 }
 
 h1,
 .h1 {
-  font-size: $xlsize;
+    @include tablet {
+        font-size: $xxlsize;
+    }
 
-  @include tablet {
-    font-size: $xxlsize;
-  }
+    @include desktop {
+        font-size: $xxxlsize;
+    }
 
-  @include desktop {
-    font-size: $xxxlsize;
-  }
+    font-size: $xlsize;
 }
 
 h2,
 .h2 {
-  font-size: $lsize;
+    @include tablet {
+        font-size: $xlsize;
+    }
 
-  @include tablet {
-    font-size: $xlsize;
-  }
+    font-size: $lsize;
 }
 
 h3,
 .h3 {
-  font-size: $msize;
+    @include tablet {
+        font-size: $lsize;
+    }
 
-  @include tablet {
-    font-size: $lsize;
-  }
+    font-size: $msize;
 }
 
 h4,
 .h4 {
-  font-size: $msize;
+    font-size: $msize;
 }
 
 h5,
 .h5 {
-  font-size: $ssize;
+    font-size: $ssize;
 }
 
 h6,
 .h6 {
-  font-size: $xssize;
+    font-size: $xssize;
 }
 
 p {
-  margin: 0 0 $vrythm;
-  padding: 0;
+    margin: 0 0 $vrythm;
+    padding: 0;
 }
 
 b,
 strong {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 i,
 em {
-  font-style: italic;
+    font-style: italic;
 }
 
 blockquote {
-  margin: 0;
-  padding: 0;
-  border-left: thick solid $dark2;
+    border-left: thick solid $dark2;
+    margin: 0;
+    padding: 0;
 
-  p {
-    font-style: italic;
-    padding-left: $vrythm;
-  }
+    p {
+        font-style: italic;
+        padding-left: $vrythm;
+    }
 }
 
 ul,
 ol {
-  margin: 0 0 $vrythm;
-  padding: 0 0 0 $sone;
+    margin: 0 0 $vrythm;
+    padding: 0 0 0 $sone;
 }
 
 pre,
 code,
 samp {
-  font-family: $mono;
-  font-size: $ssize;
+    font-family: $mono;
 }
 
 pre {
-  overflow-x: auto;
-  white-space: pre;
-  word-break: inherit;
-  word-wrap: inherit;
-  margin: $vrythm 0;
+    margin: $vrythm 0;
+    overflow-x: auto;
+    white-space: pre;
+    word-break: inherit;
+    word-wrap: inherit;
 }
 
 figure {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
+    border: 0;
+    height: auto;
+    max-width: 100%;
 }
 
 small {
-  font-size: $xssize;
+    font-size: $xssize;
 }
 
 time {
-  color: $text2;
-  display: block;
+    @extend p;
 
-  @extend p;
+    color: $text2;
+    display: block;
 }
 
 abbr {
-  border-bottom: thin dotted $dark2;
-  cursor: help;
+    border-bottom: thin dotted $dark2;
+    cursor: help;
 }
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 sup {
-  top: -0.5em;
+    top: -0.5em;
 }

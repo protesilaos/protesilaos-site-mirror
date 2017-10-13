@@ -1,25 +1,26 @@
 ---
 layout: default
 ---
-<div class="post-header">
-  <div class="post-header-inner">
-    <h1>{{ page.title }}</h1>
-    <div class="post-meta">
-      <span>
-        {{ site.data.text.euhandbook.title }}
-      </span>
-      <time>
-        {{ site.data.text.euhandbook.datefull }}
-      </time>
-    </div>
-  </div>
-</div>
-
 <article class="post container">
-  <div class="post-inner">
-  {{ content }}
-  </div>
+
+    <div class="post-inner">
+
+        <div class="post-header">
+            <h1>{{ page.title }}</h1>
+            
+            <div class="post-meta">
+                <span>{{ site.data.text.euhandbook.title }}</span>
+                <time>{{ site.data.text.euhandbook.datefull }}</time>
+            </div>
+        </div>
+
+        {{ content }}
+
+    </div>
+
 </article>
+
+{% include authorbox.html %}
 
 <div class="post-footer">
   <div class="post-footer-inner">

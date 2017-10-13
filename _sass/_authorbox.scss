@@ -1,0 +1,45 @@
+.authorbox {
+    @extend %clearfix;
+
+    display: block;
+    margin: $vrythm auto;
+    max-width: $measure;
+    font-family: $fontui;
+}
+
+.authorbox-inner {
+    background: $pagebg;
+    padding: $sone;
+
+    @include tablet {
+        @include shadow;
+        padding: ($vrythm * 2);
+    }
+
+    @include desktop {
+        @include bigblock-outer;
+    }
+}
+
+.authorbox-avatar {
+    img {
+        @include radius(50%);
+        width: 150px;
+        height: auto;
+    }
+
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+
+    @include tablet {
+        text-align: left;
+        display: inline-block;
+        float: left;
+        margin: 0 $vrythm 0 0;
+    }
+
+    @include desktop {
+        margin: 0 ($vrythm * 2) 0 0;
+    }
+}

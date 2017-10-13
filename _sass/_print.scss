@@ -1,107 +1,108 @@
 @media print {
-  .header,
-  .headerbar,
-  .nextprev,
-  .mediaframe,
-  .reversefootnote,
-  .print-note,
-  .donation-box,
-  .social-share,
-  .footer {
-    display: none;
-  }
-
-	body {
-		display: block;
-   	   	width: 100%;
-   	   	margin: 0 auto;
-   	   	padding: 0;
-  	}
-
-  .post {
-    background: #fff;
-    color: #000;
-    font-family: "Times New Roman", Times, "Liberation Serif", serif;
-    font-size: 14pt;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
-    color: #000 !important;
-    page-break-after: avoid;
-  }
-
-  a {
-    font-weight: 700;
-
-    &::before {
-      content: "[";
-      font-weight: 400;
+    @page  {
+        margin: 2cm;
     }
 
-    &::after {
-      content: "](" attr(href) ")";
-      font-weight: 400;
-      word-break: break-all;
+    .header,
+    .headerbar,
+    .authorbox,
+    .nextprev,
+    .mediaframe,
+    .reversefootnote,
+    .print-note,
+    .donation-box,
+    .social-share,
+    .footer {
+        display: none;
     }
 
-    &[href^="/"]::after {
-      content: "](https://protesilaos.com" attr(href) ")";
-      font-weight: 400;
-      word-break: break-all;
+    body {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
     }
 
-    &[href^="#fn"]::after {
-      content: "]";
-      font-weight: 400;
+    .post {
+        background: #fff;
+        color: #000;
+        font-family: 'Times New Roman', Times, 'Liberation Serif', serif;
+        font-size: 14pt;
     }
-  }
 
-  pre,
-  code {
-    font-family: monospace;
-    font-size: 90%;
-    color: #000;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #000 !important;
+        font-family: Helvetica, Arial, 'Liberation Sans', sans-serif;
+        page-break-after: avoid;
+    }
 
-  pre.highlight code span,
-  .highlighter-rouge {
-    color: #000 !important;
-  }
+    a {
+        font-weight: 700;
 
-  p,
-  li {
+        &::before {
+            content: '[';
+            font-weight: 400;
+        }
+
+        &::after {
+            content: '](' attr(href) ')';
+            font-weight: 400;
+            word-break: break-all;
+        }
+
+        &[href^="/"]::after {
+            content: '](https://protesilaos.com' attr(href) ')';
+            font-weight: 400;
+            word-break: break-all;
+        }
+
+        &[href^="#fn"]::after {
+            content: ']';
+            font-weight: 400;
+        }
+    }
+
+    pre,
     code {
-      color: #000;
+        color: #000;
+        font-family: monospace;
+        font-size: 90%;
     }
-  }
 
-  time,
-  .post-meta {
-    color: #000 !important;
-  }
+    pre.highlight code span,
+    .highlighter-rouge {
+        color: #000 !important;
+    }
 
-  article::after {
-    content: "If my work has been helpful and you would like to buy me a drink, please do so via Paypal: https://www.paypal.me/protesilaos";
-    display: block;
-    font-size: 10pt;
-    margin: 3cm 0cm 0cm;
-  }
+    p,
+    li {
+        code {
+            color: #000;
+        }
+    }
 
-  .print-meta {
-    display: block;
-  }
+    time,
+    .post-meta {
+        color: #000 !important;
+    }
 
-  .print-section {
-      page-break-before: always;
-  }
-  
-	@page {
-		margin: 2cm;
-	}
+    article::after {
+        content: 'If my work has been helpful and you would like to buy me a drink, please do so via Paypal: https://www.paypal.me/protesilaos';
+        display: block;
+        font-size: 10pt;
+        margin: 3cm 0cm 0cm;
+    }
+
+    .print-meta {
+        display: block;
+    }
+
+    .print-section {
+        page-break-before: always;
+    }
 }

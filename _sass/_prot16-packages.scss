@@ -1,141 +1,147 @@
 .packages {
-  font-family: $fontui;
-  margin: $vrythm 0;
+    font-family: $fontui;
+    margin: $vrythm 0;
 
-  div {
-    color: $lt1;
-    background: $lbg;
-    text-align: center;
-    padding: $vrythm 0;
+    div {
+        @include shadow;
 
-    @include shadow;
-
-    @include desktop {
-      float: left;
-      width: $measure / 2;
-      display: inline-block;
-    }
-
-    + div {
-      color: $dt1;
-      background: $dbg;
-
-      a {
-        border: thin solid $light2;
-
-        &:hover {
-          color: $dbg;
+        @include desktop {
+            display: inline-block;
+            float: left;
+            font-size: $ssize;
+            // NOTE 6rem is the added padding of mixin bigblock-outer
+            width: ($measure - 6rem) / 2;
         }
-      }
+
+        background: $lbg;
+        color: $lt1;
+        padding: $vrythm 0;
+        text-align: center;
+
+        + div {
+            background: $dbg;
+            color: $dt1;
+
+            a {
+                border: thin solid $light2;
+
+                &:hover {
+                    color: $dbg;
+                }
+            }
+        }
+
+        a {
+            @include transition;
+            @include radius(3%);
+
+            border: thin solid $dark2;
+            display: inline-block;
+            padding: $shalf $sone;
+            text-decoration: none;
+
+            + a {
+                margin-left: $sone;
+            }
+
+            &:hover {
+                background: $primary1;
+                border: thin solid $primary1;
+                color: $lbg;
+                text-decoration: none;
+            }
+        }
+
+        span {
+            @include tablet {
+                font-size: $msize;
+            }
+
+            @include desktop {
+                font-size: $ssize;
+            }
+
+            display: block;
+            font-size: $ssize;
+            margin: $vrythm 0 ($vrythm / 2);
+        }
+
+        code {
+            @include tablet {
+                font-size: $ssize;
+            }
+
+            font-size: $xxssize;
+
+            &::before {
+                color: $primary3;
+                content: '$';
+                display: inline-block;
+                font-size: inherit;
+                padding-right: $sone / 2;
+            }
+        }
     }
-
-    a {
-      display: inline-block;
-      text-decoration: none;
-      padding: $shalf $sone;
-      border: thin solid $dark2;
-
-      @include transition;
-      @include radius(3%);
-
-      + a {
-        margin-left: $sone;
-      }
-
-      &:hover {
-        text-decoration: none;
-        background: $primary1;
-        color: $lbg;
-        border: thin solid $primary1;
-      }
-    }
-
-    span {
-      display: block;
-      font-size: $ssize;
-      margin: $vrythm 0 ($vrythm / 2);
-
-      @include tablet {
-        font-size: $msize;
-      }
-    }
-
-    code {
-      font-size: $xxssize;
-
-      @include tablet {
-        font-size: $ssize;
-      }
-
-      &::before {
-        content: "$";
-        display: inline-block;
-        font-size: inherit;
-        padding-right: $sone / 2;
-        color: $primary3;
-      }
-    }
-  }
 }
 
 .codeblocks {
-  margin: $vrythm 0;
+    margin: $vrythm 0;
 
-  div {
-    .highlight {
-      color: $lt1;
-      background: $lbg;
+    div {
+        .highlight {
+            @include shadow;
 
-      @include shadow;
+            background: $lbg;
+            color: $lt1;
 
-      .c,
-      .cm,
-      .cp,
-      .c1,
-      .cs,
-      .gp {
-        color: $lt2;
-      }
+            .c,
+            .cm,
+            .cp,
+            .c1,
+            .cs,
+            .gp {
+                color: $lt2;
+            }
 
-      .o,
-      .ge,
-      .gh,
-      .gi,
-      .gu,
-      .nl,
-      .nn,
-      .ow,
-      .w {
-        color: $lt1;
-      }
-    }
-
-    &:nth-of-type(2n) {
-      .highlight {
-        color: $dt1;
-        background: $dbg;
-
-        .c,
-        .cm,
-        .cp,
-        .c1,
-        .cs,
-        .gp {
-          color: $dt2;
+            .o,
+            .ge,
+            .gh,
+            .gi,
+            .gu,
+            .nl,
+            .nn,
+            .ow,
+            .w {
+                color: $lt1;
+            }
         }
 
-        .o,
-        .ge,
-        .gh,
-        .gi,
-        .gu,
-        .nl,
-        .nn,
-        .ow,
-        .w {
-          color: $dt1;
+        &:nth-of-type(2n) {
+            .highlight {
+                background: $dbg;
+                color: $dt1;
+
+                .c,
+                .cm,
+                .cp,
+                .c1,
+                .cs,
+                .gp {
+                    color: $dt2;
+                }
+
+                .o,
+                .ge,
+                .gh,
+                .gi,
+                .gu,
+                .nl,
+                .nn,
+                .ow,
+                .w {
+                    color: $dt1;
+                }
+            }
         }
-      }
     }
-  }
 }

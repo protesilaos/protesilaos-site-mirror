@@ -1,69 +1,69 @@
 .books-meta {
-  font-family: $fontui;
-  font-size: $ssize;
-
-  @include tablet {
-    font-size: $msize;
-  }
-
-  .books-options {
-    padding: $sone 0;
-    margin: $sone 0;
-
-    @extend %clearfix;
-
-    a.books-button {
-      color: $lbg;
-      padding: $sone * 0.75;
-      display: inline-block;
-      border-bottom: none;
-      text-transform: lowercase;
-
-      @include radius(3%);
-      @include transition;
-      @include shadow;
-
-      @include tablet {
-        padding: ($sone * 0.75) ($sone * 1.5);
-      }
-
-      &:hover,
-      &:focus,
-      &:active {
-        border-bottom: none;
-      }
-
-      &:last-of-type {
-        margin-left: $sone / 2;
-      }
-
-      .deco-icon {
-        margin-right: $sone / 4;
-      }
-
-      &.read-online {
-        background: $gre;
-
-        &:hover,
-        &:focus,
-        &:active {
-          background: $cya;
-        }
-      }
-
-      &.read-offline {
-        background: $mag;
-
-        &:hover,
-        &:focus,
-        &:active {
-          background: $vio;
-        }
-      }
+    @include tablet {
+        font-size: $msize;
     }
-  }
 
-  span {
-    font-weight: 700;
-  }
+    font-family: $fontui;
+    font-size: $ssize;
+
+    .books-options {
+        @extend %clearfix;
+
+        margin: $sone 0;
+        padding: $sone 0;
+
+        a.books-button {
+            @include radius(3%);
+            @include transition;
+            @include shadow;
+
+            @include tablet {
+                padding: ($sone * 0.75) ($sone * 1.5);
+            }
+
+            border-bottom: none;
+            color: $lbg;
+            display: inline-block;
+            padding: $sone * 0.75;
+            text-transform: lowercase;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom: none;
+            }
+
+            &:last-of-type {
+                margin-left: $sone / 2;
+            }
+
+            .deco-icon {
+                margin-right: $sone / 4;
+            }
+
+            &.read-online {
+                background: $gre;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: $cya;
+                }
+            }
+
+            &.read-offline {
+                background: $mag;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: $vio;
+                }
+            }
+        }
+    }
+
+    span {
+        font-weight: 700;
+    }
 }

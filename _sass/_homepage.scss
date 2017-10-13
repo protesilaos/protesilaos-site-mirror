@@ -1,24 +1,32 @@
 .homepage {
-  font-family: $fontui;
-  display: block;
-  margin: 0 auto;
-  padding: $sone $shalf $shalf;
-  max-width: $measure;
+    @extend %clearfix;
 
-  @extend %clearfix;
-
-  @include desktop {
-    padding: $vrythm 0;
-    max-width: $measure-xl;
-  }
-
-  .homepage-container {
-    + .homepage-container {
-      margin-top: $vrythm * 2;
+    @include desktop {
+        max-width: $measure-xl;
+        padding: $vrythm 0;
     }
 
-    h2 {
-      border-bottom: thick solid $dark2;
+    display: block;
+    font-family: $fontui;
+    margin: 0 auto;
+    max-width: $measure;
+    padding: $sone $shalf $shalf;
+
+    .homepage-container {
+        + .homepage-container {
+            margin-top: $vrythm * 2;
+        }
+
+        h2 {
+            &::after {
+                content: "";
+                display: block;
+                background: $secondary2;
+                width: calc(100% / 5);
+                max-width: 250px;
+                height: 3px;
+                margin: $vrythm 0;
+            }
+        }
     }
-  }
 }

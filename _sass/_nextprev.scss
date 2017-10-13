@@ -1,38 +1,42 @@
 .nextprev {
-  display: block;
-  overflow: hidden;
-  margin: $vrythm auto;
+    @extend %clearfix;
 
-  @extend %clearfix;
+    @include desktop {
+        @include bigblock-outer;
+    }
 
-  div {
     display: block;
-    padding: ($vrythm * 2) 0;
+    margin: $vrythm auto;
+    overflow: hidden;
 
-    &:first-child {
-      padding: $vrythm 0;
+    div {
+        display: block;
+        padding: ($vrythm * 2) 0;
+
+        &:first-child {
+            padding: $vrythm 0;
+        }
+
+        + div {
+            border-top: thin solid $dark1;
+            padding-top: $vrythm;
+
+            &:last-child {
+                padding: $vrythm 0;
+            }
+        }
+
+        &:last-child {
+            padding: ($vrythm * 2) 0;
+        }
     }
 
-    + div {
-      padding-top: $vrythm;
-      border-top: thin solid $dark1;
-
-      &:last-child {
-        padding: $vrythm 0;
-      }
+    span {
+        color: $text1;
+        margin-right: $sone / 2;
     }
 
-    &:last-child {
-      padding: ($vrythm * 2) 0;
+    a {
+        font-weight: 700;
     }
-  }
-
-  span {
-    color: $text1;
-    margin-right: $sone / 2;
-  }
-
-  a {
-    font-weight: 700;
-  }
 }

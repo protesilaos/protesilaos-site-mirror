@@ -12,12 +12,16 @@ exclude:
   - images
   - _archive
   - _trash
+  - master.xml
   - _layouts/seminar.html
   - pages/certificates
   - pages/docs
   - pages/docs/auxiliary
   - pages/indices/blog
   - pages/indices/blog-archive.html
+  - greek.xml # ------------------ Greek ---------------------------
+  - _greek
+  - pages/indices/greek.html
   - _books # --------------------- Books ---------------------------
   - _books/euhandbook
   - _books/euguide
@@ -46,6 +50,5 @@ exclude:
   - _includes/prot16-codedemo.html
   - _includes/prot16-codeblocks.html
   - _includes/prot16-colourorder.html
-  - _includes/prot16-schemesmenu.html
   - _includes/prot16-vim-packages.html
   - _includes/prot16-project-template.md

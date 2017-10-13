@@ -1,55 +1,63 @@
 {% assign themes = site.data.themes %}
 
 {% for theme in themes %}
-  {% if page.permalink contains theme.url %}
-  <div class="palette-terminal">
-    <p>
-      Based on my current tests with a variety of terminal emulators for Arch Linux, Debian 9, and Linux Mint 17.3 and 18.x, I have settled on the following colour mapping (which you have to implement manually if none of the options below suits your needs).
-    </p>
-    <div class="termcolours">
-      <i class="paletteblock" style="{{ theme.palette.dhl | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.dhl }}</i>
-      <i class="paletteblock" style="{{ theme.palette.red | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.red }}</i>
-      <i class="paletteblock" style="{{ theme.palette.gre | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.gre }}</i>
-      <i class="paletteblock" style="{{ theme.palette.yel | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.yel }}</i>
-      <i class="paletteblock" style="{{ theme.palette.blu | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.blu }}</i>
-      <i class="paletteblock" style="{{ theme.palette.mag | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.mag }}</i>
-      <i class="paletteblock" style="{{ theme.palette.cya | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.cya }}</i>
-      <i class="paletteblock" style="{{ theme.palette.lhl | prepend: 'background: #' }}; {{ theme.palette.dbg | prepend:
-          'color: #' }}">{{ theme.palette.lhl }}</i>
-      <i class="paletteblock" style="{{ theme.palette.dbg | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.dbg }}</i>
-      <i class="paletteblock" style="{{ theme.palette.ora | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.ora }}</i>
-      <i class="paletteblock" style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.lt1 }}</i>
-      <i class="paletteblock" style="{{ theme.palette.dt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.dt2 }}</i>
-      <i class="paletteblock" style="{{ theme.palette.lt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.lt2 }}</i>
-      <i class="paletteblock" style="{{ theme.palette.vio | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.vio }}</i>
-      <i class="paletteblock" style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend:
-          'color: #' }}">{{ theme.palette.dt1 }}</i>
-      <i class="paletteblock" style="{{ theme.palette.lbg | prepend: 'background: #' }}; {{ theme.palette.dbg | prepend:
-          'color: #' }}">{{ theme.palette.lbg }}</i>
+{% if page.permalink contains theme.url %}
+<div class="palette-terminal">
+
+    <div class="palette-terminal-termvalues">
+        <strong>Palette value correspondance to 16-colour terms</strong><br/>
+        0 = dhl; 1 = red; 2 = gre; 3 = yel; 4 = blu; 5 = mag; 6 = cya; 7 = lhl;<br/>
+        8 = dbg; 9 = ora; 10 = lt1; 11 = dt2; 12 = lt2; 13 = vio; 14 = dt1; 15 = lbg
     </div>
+
+    <div class="palette-terminal-termcolours">
+        <i class="paletteblock" style="{{ theme.palette.dhl | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dhl }}</i>
+        <i class="paletteblock" style="{{ theme.palette.red | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.red }}</i>
+        <i class="paletteblock" style="{{ theme.palette.gre | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.gre }}</i>
+        <i class="paletteblock" style="{{ theme.palette.yel | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.yel }}</i>
+        <i class="paletteblock" style="{{ theme.palette.blu | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.blu }}</i>
+        <i class="paletteblock" style="{{ theme.palette.mag | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.mag }}</i>
+        <i class="paletteblock" style="{{ theme.palette.cya | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.cya }}</i>
+        <i class="paletteblock" style="{{ theme.palette.lhl | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lhl }}</i>
+        <i class="paletteblock" style="{{ theme.palette.dbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dbg }}</i>
+        <i class="paletteblock" style="{{ theme.palette.ora | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.ora }}</i>
+        <i class="paletteblock" style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</i>
+        <i class="paletteblock" style="{{ theme.palette.dt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt2 }}</i>
+        <i class="paletteblock" style="{{ theme.palette.lt2 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt2 }}</i>
+        <i class="paletteblock" style="{{ theme.palette.vio | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.vio }}</i>
+        <i class="paletteblock" style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</i>
+        <i class="paletteblock" style="{{ theme.palette.lbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lbg }}</i>
+    </div>
+
+    <div class="palette-terminal-termvalues">
+        <p>
+            <strong>Terminal Base values (light theme)</strong><br/>
+            Background: <span style="{{ theme.palette.lbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.lbg }}</span><br/>
+            Foreground: <span style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</span><br/>
+            Cursor: <span style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</span><br/>
+            Bold colour: <span style="{{ theme.palette.lt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.lt1 }}</span>
+        </p>
+        <p>
+            <strong>Terminal Base values (dark theme)</strong><br/>
+            Background: <span style="{{ theme.palette.dbg | prepend: 'background: #' }}; {{ theme.palette.gre | prepend: 'color: #' }}">{{ theme.palette.dbg }}</span><br/>
+            Foreground: <span style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</span><br/>
+            Cursor: <span style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</span><br/>
+            Bold colour: <span style="{{ theme.palette.dt1 | prepend: 'background: #' }}; {{ theme.palette.lbg | prepend: 'color: #' }}">{{ theme.palette.dt1 }}</span>
+        </p>
+    </div>
+
     <div>
-      <p>For {{ theme.name }}, the following terminal emulators are supported thus far:
-        <ul>
-          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/hyper">Hyper.app</a></li>
-          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/iterm2">iTerm 2</a> (courtesy of <a href="https://github.com/metalelf0">metalelf0</a>)</li>
-          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/terminator">Terminator</a></li>
-          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/xfce4-terminal">XFCE4 Terminal</a></li>
-          <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/urxvt">urxvt</a></li>
-        </ul>
-      </p>
+        <p>For {{ theme.name }}, the following terminal emulators are supported thus far:
+            <ul>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/urxvt">urxvt</a></li>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/xfce4-terminal">Xfce4 Terminal</a></li>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/terminator">Terminator</a></li>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/hyper">Hyper.app</a></li>
+                <li><a href="https://github.com/protesilaos/prot16/tree/master/{{ theme.url }}/iterm2">iTerm 2</a> (courtesy of <a href="https://github.com/metalelf0">metalelf0</a>)</li>
+            </ul>
+        </p>
     </div>
-  </div>
-  {% endif %}
+
+</div>
+{% endif %}
 {% endfor %}

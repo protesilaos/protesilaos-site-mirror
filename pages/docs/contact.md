@@ -3,7 +3,6 @@ title: Contact me
 excerpt: "All the ways to get in touch with Protesilaos Stavrou."
 permalink: /contact/
 layout: page
-component: codeblock
 ---
 - Email: <public@protesilaos.com>
 - Twitter: [@protstavrou](https://twitter.com/protstavrou)
@@ -14,13 +13,15 @@ I will also consider any job offer on the basis of my current program and its re
 
 ## PGP encryption for emails (optional)
 
-Grab my key from the MIT server with the following command:
+Grab my key from the server with the following command:
 
 ```shell
-gpg --keyserver hkp://pgp.mit.edu --recv-keys BF48FD84FE21D72A
+gpg --recv-keys A5B8A16D86ADECB21FB8D488BF48FD84FE21D72A
 ```
 
 Or download and then import the file [protesilaos-stavrou-public.key](/pages/certificates/protesilaos-stavrou-public.key).
 
 This key is valid as of 2017-06-03. Any older key should be discarded.
 {:.warn}
+
+I encourage you to learn how to use encryption for your email communications. You can get started with this excellent guide on [email self-defence](https://emailselfdefense.fsf.org/en/).

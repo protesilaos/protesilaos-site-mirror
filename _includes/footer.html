@@ -1,16 +1,18 @@
 <footer class="footer">
     
+    <nav class="footer-menu" aria-label="Footer main menu">
+
+        {% include navigation-footer.html %}
+
+    </nav>
+
     <nav class="footer-menu" aria-label="Footer social links menu">
 
-        {% include social.svg %}
+        {% include iconography.svg %}
 
         {% assign profiles = site.data.social %}
         
         <ul>
-
-            <li>
-                Follow:
-            </li>
 
         {% for profile in profiles %}
 
@@ -29,13 +31,16 @@
     </nav>
 
   <div class="copyright">
-    <small>
-      (c) {{ site.time | date: '%Y' }} Protesilaos Stavrou. <a rel="license" href="{{ '/license/' | prepend: site.url }}">Some rights reserved</a>.
-    </small>
+      (c) 2011-{{ site.time | date: '%Y' }} Protesilaos Stavrou. <a rel="license" href="{{ '/license/' | prepend: site.url }}">Some rights reserved</a>.
   </div>
 
     <div class="donation-box">
-        <p><span class="donation-prompt">Donations</span> If my work has been helpful and you want to buy me a drink, please do so via <a href="https://www.paypal.me/protesilaos">Paypal</a>.</p>
+        <p>
+          <svg class="deco-icon icon-heart">
+              <use xlink:href="#icon-heart"></use>
+          </svg>
+          <span class="donation-prompt">Donations</span> If you enjoy my work please donate via <a href="https://www.paypal.me/protesilaos">Paypal</a>.
+      </p>
     </div>
 
 </footer>

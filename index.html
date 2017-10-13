@@ -50,6 +50,27 @@ layout: index
       </div>
     </div>
 
+    <div class="index-cards">
+      <h3>{{ site.data.text.greek }}</h3>
+      <ul>
+        {% assign greeks = site.greek | sort: 'date' | reverse %}
+        {% for greek in greeks limit:4 %}
+          <li>
+            <time>{{ greek.date | date: site.date_format }}</time>
+            <a href="{{ greek.url | relative_url }}">{{ greek.title }}</a>
+            <p>{{ greek.excerpt }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+      <!-- <div>
+        <a href="{{ '/greek/' | prepend: site.url }}">
+          Όλα τα άρθρα στα ελληνικά
+          <svg class="deco-icon icon-arrow-right">
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </div> -->
+    </div>
   </div>
 
   <div class="homepage-container">

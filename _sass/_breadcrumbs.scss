@@ -1,32 +1,32 @@
 .breadcrumbs {
-  font-family: $fontui;
-  font-size: $msize;
-  padding: $sone;
-  margin: ($vrythm * 2) 0 $vrythm;
-  background: $lhl;
-  border-top: medium solid $dark2;
-  border-bottom: medium solid $dark2;
+    @extend %clearfix;
 
-  @extend %clearfix;
+    background: $lhl;
+    border-bottom: medium solid $dark2;
+    border-top: medium solid $dark2;
+    font-family: $fontui;
+    font-size: $msize;
+    margin: ($vrythm * 2) 0 $vrythm;
+    padding: $sone;
 
-  main & {
-    a {
-      font-weight: 700;
-      border-bottom: none;
+    main & {
+        a {
+            border-bottom: none;
+            font-weight: 700;
 
-      &:hover,
-      &:focus,
-      &:active {
-        border-bottom: none;
-      }
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom: none;
+            }
+        }
     }
-  }
 
-  svg {
-    margin: 0 ($sone / 4);
-  }
+    svg {
+        margin: 0 ($sone / 4);
+    }
 
-  span {
-    font-style: italic;
-  }
+    span {
+        font-style: italic;
+    }
 }

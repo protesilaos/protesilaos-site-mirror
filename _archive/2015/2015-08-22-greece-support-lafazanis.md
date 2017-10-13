@@ -26,7 +26,7 @@ That is so because:
   * **no fiscal capacity:** there is no counter-party European Treasury to the ECB with the capacity to raise taxes, issue bonds, and address asymmetric shocks in line with cyclical fluctuations;
   * **no common economic policy:** there exists no Ministry of Finance, no European Chancellor of the Exchequer with the power to, inter alia, set on an annual basis the inflation target;
   * **false mandate:** the mandate of the ECB does not include any social-economic indicator, such as unemployment;
-  * **disproportional institutional independence:** the legal basis of the ECB stems from inter-state treaties, which means that no parliament, be it the European or any national one, can conduct an ex post review for the sake of amending it in parts or in whole.
+  * **disproportionate institutional independence:** the legal basis of the ECB stems from inter-state treaties, which means that no parliament, be it the European or any national one, can conduct an ex post review for the sake of amending it in parts or in whole.
 
 [Also see [On the institutional independence of the European Central Bank](https://protesilaos.com/institutional-independence-ecb/)]
 

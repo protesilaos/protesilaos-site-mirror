@@ -28,3 +28,15 @@
   date: 2017-07-01
   datefull: "1 July 2017"
   url: "eudi"
+- title: "Notes on the modes of Scepticism"
+  version: 1.0.0
+  description: "On the empirical, epistemological, and metaphysical grounds for scepticism: a pragmatic and holistic disposition towards knowledge and learning."
+  date: 2017-07-28
+  datefull: "28 July 2017"
+  url: "notes-modes-scepticism"
+- title: "Prolegomena to a study of Metaethics"
+  version: 1.0.0
+  description: "On the abstract structure of ethics and its implications on such magnitudes as individuality, agency, reward, punishment, free will."
+  date: 2017-08-11
+  datefull: "11 August 2017"
+  url: "prolegomena-study-metaethics"

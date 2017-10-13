@@ -4,7 +4,7 @@ excerpt: "How to use the work of Protesilaos Stavrou. Text is open. Code is free
 permalink: /license/
 layout: page
 ---
-All original text or complementary material on *protesilaos.com* is available under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode). This applies to every article in the [politics blog](/blog/), the [coding blog](/codelog/), the [blog archive](/blog-archive/), as well as all of the items in the [books](/books/) section.
+All original text or complementary material on *protesilaos.com* is available under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode). This applies to every article in the [politics blog](/blog/), the [coding blog](/codelog/), the [blog archive](/blog-archive/), the [greek language articles](/greek/), as well as all of the items in the [books](/books/) section.
 
 All original code presented herein is distributed under the terms of the [General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.html). Each of my projects on GitHub or GitLab has its own license attached to it. In cases where the GPLv3 could not be used, the MIT License has been selected instead.
 
@@ -13,10 +13,6 @@ Any exceptions are made explicit in context.
 ## Undelying code base
 
 This website is my creation. Its [source is open](https://gitlab.com/protesilaos/protesilaos.gitlab.io) to public scrutiny. All original text and code relevant to it partake of the aforementioned provisions.
-
-### Theme
-
-The current iteration of this website uses my latest creation: *Triton*. Earlier versions used *Akademos* and *Bionis*. The source code of each theme is available on my [GitLab profile](https://gitlab.com/users/protesilaos/projects).
 
 ### Colours
 
@@ -28,9 +24,7 @@ The current theme is part of [Prot16](/schemes/): my collection of colour scheme
 
 ### Front end
 
-The secondary stylesheet is loaded asynchronously with [loadCSS](https://github.com/filamentgroup/loadCSS) by Scott Jehl of the Filament Group.
-
-Webfonts are implemented with the use of Bram Stein's [Font Face Observer](https://github.com/bramstein/fontfaceobserver). The fonts are [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) and [iBitstream Charter](http://practicaltypography.com/charter.html).
+Webfonts are implemented with the use of Bram Stein's [Font Face Observer](https://github.com/bramstein/fontfaceobserver). The fonts are [Noto Sans and Serif](https://www.google.com/get/noto/), and [Ubuntu Mono](http://font.ubuntu.com/).
 
 Syntax highlighting is handled by the [Rouge gem](https://github.com/jneen/rouge).
 

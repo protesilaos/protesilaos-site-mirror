@@ -1,38 +1,38 @@
 .screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
 }
 
 .skip-link {
-  background: $primary3;
-  color: $dbg;
-  display: block;
-  font-family: sans-serif;
-  font-size: $msize;
-  left: -9999em;
-  outline: none;
-  padding: $sone ($sone * 2);
-  text-decoration: none;
-  text-transform: none;
-  top: -9999em;
+    @include shadow;
 
-  @include shadow;
+    background: $dbg;
+    color: $lbg;
+    display: block;
+    font-family: $fontui;
+    font-size: $msize;
+    left: -9999em;
+    outline: none;
+    padding: $sone ($sone * 2);
+    text-decoration: none;
+    text-transform: none;
+    top: -9999em;
 
-  &:hover {
-    background: $secondary1;
-    color: $dbg;
-  }
+    &:hover {
+        background: $tertiary3;
+        color: $lbg;
+    }
 
-  &:focus {
-    clip: auto;
-    height: auto;
-    left: $sone;
-    top: $sone;
-    width: auto;
-    z-index: 100000;
-  }
+    &:focus {
+        clip: auto;
+        height: auto;
+        left: $sone;
+        top: $sone;
+        width: auto;
+        z-index: 100000;
+    }
 }

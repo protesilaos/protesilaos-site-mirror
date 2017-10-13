@@ -3,27 +3,28 @@
 // Fonts
 $serif: "Bitstream Charter", Georgia, serif;
 $sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Liberation Sans", sans-serif;
-$mono: Menlo, "Lucida Sans Typewriter", "Lucida Console", "DejaVu Sans Mono", "Liberation Mono", Courier, monospace;
-$font1: $serif; // Body
-$font2: "Source Sans Pro", $sans; // Headings
-$fontui: "Source Sans Pro", $sans;
+$mono: "Ubuntu Mono", Menlo, "Lucida Sans Typewriter", "Lucida Console", "DejaVu Sans Mono", "Liberation Mono", Courier, monospace;
+$font1: "Noto Serif", $serif; // Body
+$font2: "Noto Sans", $sans; // Headings
+$fontui: "Noto Sans", $sans;
 
 // Scale ----------------------------------
-$base-font-size: 18px;
-$line-height: 1.44;
-$heading-line-height: 1.2;
-$vrythm: 1.44rem;
+$base-font-size: 16px;
+$line-height: 1.424;
+$heading-line-height: 1.266;
+$vrythm: 1.424rem;
 $msize: 1rem;
 $jsize: 4.768rem;
 $jjsize: 7.451rem;
 
-// Minor third
-$xxxlsize: 2.986rem;
-$xxlsize: 2.488rem;
-$xlsize: 1.728rem;
-$lsize: 1.2rem;
+// Major second larger sizes
+// NOTE skips first 1 * 1.125
+$xxxlsize: 1.802rem;
+$xxlsize: 1.602rem;
+$xlsize: 1.424rem;
+$lsize: 1.266rem;
 
-// Major second
+// Major second smaller sizes
 $ssize: 0.889rem;
 $xssize: 0.79rem;
 $xxssize: 0.702rem;
@@ -48,32 +49,34 @@ $tablet: 44.375em;
 $desktop: 75em;
 
 // Colours  -------------------------------
-// Hinterland theme
-$dbg: #12171B !default; // Dark background
-$dhl: #22272B !default; // Dark highlight
-$dt2: #60604f !default; // Dark bg text secondary
-$dt1: #8aa0a4 !default; // Dark bg text primary
-$lbg: #f9f8fc !default; // Light background
-$lhl: #e9e8ec !default; // Light highlight
-$lt2: #768592 !default; // Light bg text secondary
-$lt1: #3d463f !default; // Light bg text primary
-$red: #983f16 !default; // Red
-$ora: #9e6c3d !default; // Orange
-$yel: #b09020 !default; // Yellow
-$gre: #3D814C !default; // Green
-$cya: #01917b !default; // Cyan
-$blu: #217ab3 !default; // Blue
-$vio: #7d6cab !default; // Violet
-$mag: #ad5c5b !default; // Magenta
+// WCAG AA compliance for both bases and accent values
+// NOTE lbg should be #ffffff while lhl is #eeeeee
+// NOTE They default into #f9f9f9 #e9e9e9 for the page effect
+$dbg: #07040A !default; // Dark background
+$dhl: #221a25 !default; // Dark highlight
+$dt2: #898440 !default; // Dark bg text secondary
+$dt1: #9eb0b5 !default; // Dark bg text primary
+$lbg: #f9f9f9 !default; // Light background
+$lhl: #e9e9e9 !default; // Light highlight
+$lt2: #4b5d6b !default; // Light bg text secondary
+$lt1: #202819 !default; // Light bg text primary
+$red: #DD3816 !default; // Red
+$ora: #BE5A14 !default; // Orange
+$yel: #897600 !default; // Yellow
+$gre: #1A891C !default; // Green
+$cya: #437E93 !default; // Cyan
+$blu: #3575D4 !default; // Blue
+$vio: #8764C4 !default; // Violet
+$mag: #DC3259 !default; // Magenta
 
 // Colour order
 $primary1: $gre !default;
-$primary2: $cya !default;
-$primary3: $ora !default;
-$secondary1: $vio !default;
-$secondary2: $yel !default;
-$tertiary1: $mag !default;
-$tertiary2: $blu !default;
+$primary2: $blu !default;
+$primary3: $mag !default;
+$secondary1: $ora !default;
+$secondary2: $vio !default;
+$tertiary1: $cya !default;
+$tertiary2: $yel !default;
 $tertiary3: $red !default;
 
 // Base defaults
@@ -81,17 +84,7 @@ $text1: $lt1 !default;
 $text2: $lt2 !default;
 $bg: $lbg !default;
 $bghl: $lhl !default;
-$pagebg: #fff !default; // NOTE Only used for seabed due to dual dark bgs
-
-// // NOTE only for july 12
-// $text1: $dt1 !default;
-// $text2: $dt2 !default;
-// $bg: $dbg !default;
-// $bghl: $dhl !default;
-// $pagebg: darken($dbg, 2%) !default; // NOTE Only used for seabed due to dual dark bgs
-// $dark1: $light1;
-// $dark2: $light2;
-// $dark3: $light3;
+$pagebg: #ffffff !default; // NOTE Used for themes with dual dark backgrounds
 
 // Syntax defaults
 $t1: $dt1 !default;
@@ -102,101 +95,98 @@ $highlight: $dhl !default;
 // Mixins ---------------------------------
 
 @mixin shadow {
-  box-shadow: $penumbra;
+    box-shadow: $penumbra;
 }
 
 @mixin font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @mixin radius($degree) {
-  border-radius: $degree;
+    border-radius: $degree;
 }
 
 @mixin transition {
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
 }
 
-@mixin notification($bg-colour, $border-colour) {
-  background: transparentize($bg-colour, 0.9);
-  border-left: thick solid $border-colour;
-  margin: $vrythm 0;
+@mixin notification($border-colour) {
+    border-left: 10px solid $border-colour;
+    margin: $vrythm 0;
 }
 
 @mixin calendar-legend($calbg) {
-  content: "";
-  display: inline-block;
-  background: #{$calbg};
-  width: 1em;
-  height: 1em;
-  margin-right: $sone / 2;
-  vertical-align: middle;
+    background: #{$calbg};
+    content: "";
+    display: inline-block;
+    height: 1em;
+    margin-right: $sone / 2;
+    vertical-align: middle;
+    width: 1em;
 }
 
-@mixin bigblock {
-  padding-left: #{($measure-xl - $measure) / 2};
-  padding-right: #{($measure-xl - $measure) / 2};
-  margin-left: -#{($measure-xl - $measure) / 2};
-  margin-right: -#{($measure-xl - $measure) / 2};
+@mixin bigblock-outer { // NOTE Used for post-inner and any other paper-page-like element to keep line length in check with 16px font
+    margin-left: -#{($measure-xl - $measure) / 2};
+    margin-right: -#{($measure-xl - $measure) / 2};
+    padding-left: #{(($measure-xl - $measure) / 2) + 3};
+    padding-right: #{(($measure-xl - $measure) / 2) + 3};
+    // NOTE these are commented out for better line length in Noto Serif 16px
+    // padding-left: #{($measure-xl - $measure) / 2};
+    // padding-right: #{($measure-xl - $measure) / 2};
+}
+
+@mixin bigblock-inner {
+    // Used for modules inside post-inner
+    // NOTE the `+3` is to compensate to the added padding in bigblock-outer mixin
+    margin-left: -#{(($measure-xl - $measure) / 2) + 3};
+    margin-right: -#{(($measure-xl - $measure) / 2) + 3};
+    padding-left: #{(($measure-xl - $measure) / 2) + 3};
+    padding-right: #{(($measure-xl - $measure) / 2) + 3};
 }
 
 @mixin tablet {
-  @media screen and (min-width: #{$tablet}) {
-    @content;
-  }
+    @media screen and (min-width: #{$tablet}) {
+        @content;
+    }
 }
 
 @mixin desktop {
-  @media screen and (min-width: #{$desktop}) {
-    @content;
-  }
+    @media screen and (min-width: #{$desktop}) {
+        @content;
+    }
 }
 
 // Placeholders ---------------------------
 
 %clearfix {
-  &::before {
-    content: '';
-    display: table;
-  }
+    &::before {
+        content: '';
+        display: table;
+    }
 
-  &::after {
-    @extend %clearfix::before;
-    clear: both;
-  }
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
 }
 
 %pseudomark {
-  display: inline;
-  color: $text2;
-  font-weight: 400;
+    color: $text2;
+    display: inline;
+    font-weight: 400;
 }
 
 %notification {
-  font-family: $fontui;
-  font-size: $ssize;
-  padding: $sone;
-
-  code {
-    background: $dark1;
-    border: thin solid $dark2;
-  }
-
-  a {
-    border-bottom: thin solid $primary1;
-
-    &:hover,
-    &:active {
-      border-bottom: thin solid $tertiary1;
-    }
-  }
+    font-family: $fontui;
+    font-size: $ssize;
+    padding: $sone;
 }
 
 %colourblock {
-  display: block;
-  float: left;
-  padding: 0;
-  margin: 0;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
 }

@@ -1,23 +1,23 @@
-.note {
-  @include notification($blu, $blu);
+.info {
+    @include notification($blu);
 
-  @extend %notification;
+    @extend %notification;
 }
 
-.info {
-  @include notification($gre, $gre);
+.note {
+    @include notification($yel);
 
-  @extend %notification;
+    @extend %notification;
 }
 
 .warn {
-  @include notification($ora, $ora);
+    @include notification($ora);
 
-  @extend %notification;
+    @extend %notification;
 }
 
 .critical {
-  @include notification($red, $red);
+    @include notification($red);
 
-  @extend %notification;
+    @extend %notification;
 }

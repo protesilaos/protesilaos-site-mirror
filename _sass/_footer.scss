@@ -1,57 +1,73 @@
 .footer {
-  font-family: $fontui;
-  padding: ($vrythm / 2) 0;
-  background: $bg;
+    @extend %clearfix;
 
-  @extend %clearfix;
+    @include tablet {
+        padding: $vrythm 0;
+    }
 
-  @include tablet {
-    padding: $vrythm 0;
-  }
+    @include desktop {
+        font-size: $msize;
+    }
+
+    background: $dbg;
+    font-family: $fontui;
+    font-size: $ssize;
+    margin-top: $vrythm;
+    padding: ($vrythm / 2) 0;
 }
 
 .footer-menu {
-	display: block;
-    font-size: $ssize;
-    color: $text1;
-	padding: $sone;
-  	margin: 0 auto;
-  	max-width: $measure;
+    color: $dt1;
+    display: block;
+    margin: 0 auto;
+    max-width: $measure;
+    padding: $sone;
 
-	ul {
-		display: inline;
+    @include desktop {
+        max-width: $measure-xl;
+    }
+
+    &:nth-of-type(n+2) {
+        border-top: thin solid $dhl;
+    }
+
+    ul {
+        display: inline;
         list-style-type: none;
         padding-left: 0;
 
-		li {
-			display: inline-block;
-			
-			+ li {
-                margin-left: $shalf;
+        li {
+            display: inline-block;
 
+            + li {
                 @include tablet {
                     margin-left: $sone;
                 }
-            }	
-		}
-	}
 
-	.icon {
-		padding-right: $sone / 4;
-    	width: $ssize;
-    	height: $ssize;
-		vertical-align: middle;
-  	}
+                margin-left: $shalf;
+            }
+        }
+    }
+
+    .icon {
+        height: $ssize;
+        padding-right: $sone / 4;
+        vertical-align: middle;
+        width: $ssize;
+    }
 }
 
 .copyright {
-	display: block;
-    font-size: $ssize;
-  	color: $text1;
-	padding: $sone;
-  	margin: 0 auto;
-  	max-width: $measure;
-  	border-top: thin solid $dark1;
+    border-top: thin solid $dhl;
+    color: $dt1;
+    display: block;
+    margin: 0 auto;
+    max-width: $measure;
+    padding: $sone;
+
+    @include desktop {
+        max-width: $measure-xl;
+    }
 
     a {
         font-weight: 700;
@@ -61,10 +77,13 @@
 .donation-box {
     @extend .copyright;
 
+    .deco-icon {
+        color: $mag;
+        stroke-width: 5px;
+    }
+
     .donation-prompt {
-        display: inline-block;
-        color: $lbg;
-        background: $secondary1;
-        padding: 0 ($sone * 0.25);
+        color: $mag;
+        font-weight: 700;
     }
 }

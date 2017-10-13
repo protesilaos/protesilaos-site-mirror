@@ -1,15 +1,15 @@
 .footnotes {
-  font-family: $fontui;
-  font-size: $ssize;
-  margin: ($vrythm * 2) 0 0;
-  padding: $vrythm 0 0;
-  border-top: thin solid $dark3;
+    @include desktop {
+        font-size: $ssize;
+    }
 
-  @include desktop {
-    font-size: $msize;
-  }
+    border-top: thin solid $dark3;
+    font-family: $fontui;
+    font-size: $ssize;
+    margin: ($vrythm * 2) 0 0;
+    padding: $vrythm 0 0;
 
-  p {
-    margin-bottom: $vrythm / 2;
-  }
+    p {
+        margin-bottom: $vrythm / 2;
+    }
 }
