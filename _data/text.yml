@@ -1,6 +1,6 @@
 # General
 blog: "Blog on EU politics"
-description: "EU policy analyst. Philosopher. Web developer."
+description: "EU policy analyst. Philosopher. Front end developer."
 publications: "Books and independent publications"
 
 # Front end
@@ -16,7 +16,7 @@ greek: "Άρθρα στα ελληνικά (articles in greek)"
 # Each has its own index page under pages/**/books/
 # The `monograph` is self contained. It only needs to be referenced in `_data/books.yml` in order to appear in the index pages.
 books:
-  distribution: "All my books are available free of charge. They are distributed under the terms of a Creative Commons Attribution-ShareAlike Licence. In practice, this means you have the right to study them and adapt their content to your own work (while attrributing the original to me). You can also make modifications and publish them yourself, provided you do so under the terms of this same license (CC BY-SA v.4). This is also known as a 'copyleft' practice. It is the only set of conditions for using these books."
+  distribution: "All my publications are available free of charge. They are distributed under the terms of a Creative Commons Attribution-ShareAlike Licence. In practice, this means you have the right to study them and adapt their content to your own work (while attrributing the original to me). You can also make modifications and publish them yourself, provided you do so under the terms of this same license (CC BY-SA v.4). This is also known as a 'copyleft' practice. It is the only set of conditions for using these books."
 euhandbook:
   title: "A Handbook on the European Union"
   version: "1.0.0"

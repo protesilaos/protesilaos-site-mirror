@@ -1,42 +1,48 @@
 .nextprev {
     @extend %clearfix;
 
-    @include desktop {
-        @include bigblock-outer;
-    }
+    @include border(top, $border-width-thick, solid, $border-color-dark-2);
 
     display: block;
-    margin: $vrythm auto;
+    margin: $vertical-rhythm-1 auto;
+    // NOTE the bottom padding is zero because it is covered by the margin value
+    // NOTE the nextprev block is always followed by the authorbox
+    // NOTE spacing seems equal
+    padding: $vertical-rhythm-1 0 0;
     overflow: hidden;
 
     div {
         display: block;
-        padding: ($vrythm * 2) 0;
+        padding: $vertical-rhythm-0 0;
 
-        &:first-child {
-            padding: $vrythm 0;
+        &:last-child {
+            padding: $vertical-rhythm-0 0;
         }
 
         + div {
-            border-top: thin solid $dark1;
-            padding-top: $vrythm;
+            @include border(top, $border-width-thin, solid, $border-color-dark-0);
 
-            &:last-child {
-                padding: $vrythm 0;
-            }
-        }
+            padding-top: $vertical-rhythm-0;
 
-        &:last-child {
-            padding: ($vrythm * 2) 0;
+            // &:last-child {
+            // padding: $vertical-rhythm-0 0;
+            // }
         }
     }
 
     span {
-        color: $text1;
-        margin-right: $sone / 2;
+        font-weight: 700;
+        color: $basefgalt;
+        margin-right: $space-0;
     }
 
     a {
+        color: $bigtextlinkfg;
         font-weight: 700;
+
+        &:hover,
+        &:active {
+            color: $bigtextlinkfghover;
+        }
     }
 }

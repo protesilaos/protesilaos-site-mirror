@@ -1,22 +1,24 @@
 .authorbox.guestbox {
+    @include fluid-font-size($ssize);
+
     @include desktop {
         float: right;
-        margin-left: $vrythm;
+        margin-left: $vertical-rhythm-0;
         margin-right: -#{($measure-xl - $measure) / 2};
         margin-top: 0;
-        width: ($measure / 2) - ($sone * 2) - $vrythm;
+        width: ($measure / 2) - $space-2 - $vertical-rhythm-0;
     }
 
-    background: $lbg;
-    display: block;
-    font-family: $fontui;
+    background: $basebg;
     font-size: $ssize;
-    margin: $vrythm 0;
-    padding: $sone * 2;
+    display: block;
+    margin: $vertical-rhythm-0 0;
+    padding: $space-2;
+}
 
-    .authorbox-title {
-        color: $text1;
-        font-size: $msize;
-        margin: 0 0 ($vrythm / 2);
-    }
+.authorbox-title {
+    @include fluid-font-size($msize);
+
+    color: $basefg;
+    margin: 0 0 $space-0;
 }

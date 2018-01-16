@@ -1,29 +1,37 @@
 .header {
     @extend %clearfix;
 
-    background: $lbg;
-    color: $lt1;
+    background: $brandbg;
+    color: $brandfg;
+
+    a {
+        color: $brandlink;
+
+        &:hover,
+        &:active {
+            color: $brandlinkalt;
+        }
+    }
 }
 
 .header-inner {
     @extend %clearfix;
 
-    font-family: $fontui;
-    font-size: $msize;
-    margin: 0 auto;
-    max-width: $measure;
-    padding: $vrythm $sone $sone;
-    text-align: left;
+    @include fluid-font-size($msize);
 
     @include tablet {
-        font-size: $lsize;
-        padding: ($vrythm * 2) $sone $sone;
+        padding: $vertical-rhythm-2 $space-1;
     }
 
     @include desktop {
-        font-size: 1.44rem; // NOTE Fills the gap in the minor third
         max-width: $measure-xl;
     }
+
+    font-size: $msize;
+    text-align: left;
+    padding: $vertical-rhythm-0 $space-1;
+    margin: 0 auto;
+    max-width: $measure;
 
     .header-logo {
         @include tablet {
@@ -34,8 +42,8 @@
 
         display: block;
         font-weight: 700;
-        padding: 0;
         text-transform: none;
+        padding: 0;
     }
 
     .header-navigation {
@@ -48,8 +56,8 @@
             width: calc(100% * 0.6666);
         }
 
-        height: $vrythm;
-        padding: $sone 0;
+        height: $vertical-rhythm-0;
+        padding: $space-1 0;
         width: auto;
 
         ul {
@@ -59,165 +67,24 @@
 
             display: inline;
             list-style-type: none;
-            margin: ($vrythm / 2) 0 0;
+            margin: $space-0 0 0;
             padding: 0;
 
             li {
                 @include tablet {
-                    line-height: $vrythm;
+                    line-height: $vertical-rhythm-0;
                     text-transform: none;
                 }
 
                 display: inline-block;
-                line-height: $sone * 2;
-                margin-right: $sone;
+                line-height: $space-2;
+                margin-right: $space-1;
 
                 &:last-child {
                     margin-right: 0;
-                    padding-right: $sone / 10;
+                    padding-right: 0;
                 }
             }
-        }
-    }
-}
-
-// Homepage
-.headerbar {
-    @extend .header;
-}
-
-.headerbar-inner {
-    @extend .header-inner;
-
-    @include desktop {
-        max-width: $measure-xl;
-    }
-
-    .h1-home {
-        @include tablet {
-            font-size: $jsize;
-            margin: $jsize 0;
-        }
-
-        @include desktop {
-            font-size: $jjsize;
-            margin: $jjsize 0;
-        }
-
-        color: $lt1;
-        font-size: $xlsize;
-        font-weight: 400;
-        line-height: 1;
-        margin: $vrythm 0;
-    }
-
-    .headerbar-navigation {
-        @include tablet {
-            height: auto;
-            overflow-x: hidden;
-            padding: 0;
-            white-space: normal;
-        }
-
-        height: $vrythm;
-        padding: 0 0 $sone;
-        width: auto;
-
-        ul {
-            @include tablet {
-                border-bottom: thin solid $lhl;
-                display: block;
-                margin: 0;
-                text-align: right;
-            }
-
-            display: inline;
-            list-style-type: none;
-            margin: ($vrythm / 2) 0 0;
-            padding: $sone 0;
-
-            li {
-                @include tablet {
-                    line-height: $vrythm;
-                }
-
-                @include tablet {
-                    margin-right: $sone;
-                }
-
-                display: inline-block;
-                line-height: $sone * 2;
-                margin-right: $sone;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-    }
-
-    .headerbar-header {
-        @include tablet {
-            font-weight: 400;
-            margin-bottom: $vrythm;
-        }
-
-        font-weight: 700;
-        margin-bottom: $vrythm / 2;
-    }
-
-    .headerbar-columns {
-        div {
-            @extend %clearfix;
-
-            @include tablet {
-                border-top: thin solid $lhl;
-                display: inline-block;
-                float: left;
-                margin: $sone 0;
-                padding: $sone 0;
-                width: ($measure / 2) - $sone;
-
-                + div {
-                    margin-left: ($sone * 2);
-                }
-            }
-
-            @include desktop {
-                width: ($measure-xl / 2) - $sone;
-            }
-
-            display: block;
-            width: 100%;
-        }
-
-        .menu-social {
-            @include tablet {
-                text-align: right;
-            }
-
-            text-align: left;
-        }
-    }
-
-    .headerbar-description {
-        @include tablet {
-            font-size: $lsize;
-        }
-
-        color: $lt2;
-        margin: $vrythm 0;
-    }
-
-    .icon {
-        @include tablet {
-            height: $lsize;
-            width: $lsize;
-        }
-
-        @include desktop {
-            height: $xlsize;
-            width: $xlsize;
         }
     }
 }

@@ -1,11 +1,9 @@
 <div class="breadcrumbs">
-  <a href="{{ site.url }}">Home</a>
-  <svg class="deco-icon icon-arrow-right">
-    <use xlink:href="#icon-arrow-right"></use>
-  </svg>
-  <a href="{{ '/books' | prepend: site.url }}">Books index</a>
-  <svg class="deco-icon icon-arrow-right">
-    <use xlink:href="#icon-arrow-right"></use>
-  </svg>
-  <span>{{ page.title }}</span>
+
+    <a class="breadcrumbs-path-link" href="{{ site.url }}">Home</a> 
+    <span class="breadcrumbs-divider">>></span>
+    <a class="breadcrumbs-path-link" href="{{ '/books' | prepend: site.url }}">Books index</a>
+    <span class="breadcrumbs-divider">>></span>
+    <span class="breadcrumbs-current-item-title">{{ page.title }}</span>
+
 </div>

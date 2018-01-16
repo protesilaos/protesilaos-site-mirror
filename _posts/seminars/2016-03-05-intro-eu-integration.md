@@ -4,6 +4,7 @@ date: 2016-03-05T04:48:00+00:00
 excerpt: In this seminar we cover the essentials of European integration and discuss the main features of the EU.
 mediaid: "02Vyegl5sgU"
 lecture: "EU101"
+lecturetheme: "Guide to the European Union"
 permalink: /seminars/intro-eu-integration/
 layout: seminar
 ---

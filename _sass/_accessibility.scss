@@ -8,31 +8,33 @@
 }
 
 .skip-link {
-    @include shadow;
+    @include fluid-font-size($msize);
 
-    background: $dbg;
-    color: $lbg;
+    background: $btnskipbg;
+    color: $btnskipfg;
     display: block;
-    font-family: $fontui;
-    font-size: $msize;
     left: -9999em;
     outline: none;
-    padding: $sone ($sone * 2);
+    padding: $space-1 $space-2;
     text-decoration: none;
     text-transform: none;
     top: -9999em;
 
     &:hover {
-        background: $tertiary3;
-        color: $lbg;
+        background: $btnskipbgactive;
+        color: $btnskipfgactive;
     }
 
     &:focus {
         clip: auto;
         height: auto;
-        left: $sone;
-        top: $sone;
+        left: $space-1;
+        top: $space-1;
         width: auto;
         z-index: 100000;
     }
+}
+
+a.skip-link:hover {
+    color: $btnskipfgactive;
 }

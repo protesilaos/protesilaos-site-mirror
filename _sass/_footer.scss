@@ -1,34 +1,41 @@
 .footer {
     @extend %clearfix;
 
+    @include fluid-font-size($ssize);
+
     @include tablet {
-        padding: $vrythm 0;
+        padding: $vertical-rhythm-0 0;
     }
 
-    @include desktop {
-        font-size: $msize;
-    }
+    background: $brandbg;
+    color: $brandfg;
+    margin-top: $vertical-rhythm-0;
+    padding: $space-0 0;
 
-    background: $dbg;
-    font-family: $fontui;
-    font-size: $ssize;
-    margin-top: $vrythm;
-    padding: ($vrythm / 2) 0;
+    a {
+        color: $brandlink;
+
+        &:hover,
+        &:active {
+            color: $brandlinkalt;
+        }
+
+        &:focus {
+            color: $brandfg;
+        }
+    }
 }
 
 .footer-menu {
-    color: $dt1;
+    @include fluid-width-measure;
+
+    color: $brandbg;
     display: block;
     margin: 0 auto;
-    max-width: $measure;
-    padding: $sone;
-
-    @include desktop {
-        max-width: $measure-xl;
-    }
+    padding: $space-1;
 
     &:nth-of-type(n+2) {
-        border-top: thin solid $dhl;
+        @include border(top, $border-width-thin, solid, $border-color-light-2);
     }
 
     ul {
@@ -41,33 +48,23 @@
 
             + li {
                 @include tablet {
-                    margin-left: $sone;
+                    margin-left: $space-1;
                 }
 
-                margin-left: $shalf;
+                margin-left: $space-0;
             }
         }
-    }
-
-    .icon {
-        height: $ssize;
-        padding-right: $sone / 4;
-        vertical-align: middle;
-        width: $ssize;
     }
 }
 
 .copyright {
-    border-top: thin solid $dhl;
-    color: $dt1;
+    @include fluid-width-measure;
+    @include border(top, $border-width-thin, solid, $border-color-light-2);
+
+    color: $brandfg;
     display: block;
     margin: 0 auto;
-    max-width: $measure;
-    padding: $sone;
-
-    @include desktop {
-        max-width: $measure-xl;
-    }
+    padding: $space-1;
 
     a {
         font-weight: 700;
@@ -78,12 +75,12 @@
     @extend .copyright;
 
     .deco-icon {
-        color: $mag;
+        color: $brandhighlight;
         stroke-width: 5px;
     }
 
     .donation-prompt {
-        color: $mag;
+        color: $brandhighlight;
         font-weight: 700;
     }
 }

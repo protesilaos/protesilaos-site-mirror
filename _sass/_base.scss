@@ -1,39 +1,31 @@
-body {
-    // NOTE removed the font adjustments. Base size is 16px
-    // @include tablet {
-        // font-size: $base-font-size + 1;
-    // }
-
-    // @include desktop {
-        // font-size: $base-font-size + 2;
-    // }
-
-    background-color: $bg;
-    color: $text1;
-    font-family: $serif;
+html {
+    font-family: sans-serif;
     font-size: $base-font-size;
+    -webkit-text-size-adjust: 100%;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+body {
+    @include fluid-font-size($msize);
+
+    background-color: $basebg;
+    color: $basefg;
+    font-family: $sans;
+    font-size: $msize;
     line-height: $line-height;
     margin: 0;
     word-wrap: break-word;
-    border-top: 3px solid $primary1;
-    border-bottom: 3px solid $primary1;
 
     .fonts-loaded & {
-
-        // NOTE removed the font adjustments. Base size is 16px
-        // // Scope font adjustment to avoid it in index pages
-        .post {
-            // @include tablet {
-                // font-size: $base-font-size + 1;
-            // }
-
-            // @include desktop {
-                // font-size: $base-font-size + 2;
-            // }
-
-            font-family: $font1;
-            font-size: $base-font-size;
-        }
+        font-family: $sans-loaded;
     }
 }
 
@@ -43,71 +35,69 @@ h3,
 h4,
 h5,
 h6 {
-    color: $text1;
     font-family: $sans;
-    font-weight: 700;
-    margin-bottom: $vrythm / 2;
+    line-height: $heading-line-height;
     padding: 0;
+    margin-bottom: $space-0;
 
     .fonts-loaded & {
-        font-family: $font2;
-        font-weight: 700;
+        font-family: $sans-loaded;
     }
-}
-
-h1,
-h2 {
-    line-height: $heading-line-height;
 }
 
 h1,
 .h1 {
-    @include tablet {
-        font-size: $xxlsize;
-    }
+    @include fluid-font-size($xxlsize);
 
-    @include desktop {
-        font-size: $xxxlsize;
-    }
-
-    font-size: $xlsize;
+    font-size: $xxlsize;
+    font-weight: 700;
 }
 
 h2,
 .h2 {
-    @include tablet {
-        font-size: $xlsize;
-    }
+    @include fluid-font-size($xlsize);
 
-    font-size: $lsize;
+    font-size: $xlsize;
+    font-weight: 700;
 }
 
 h3,
 .h3 {
-    @include tablet {
-        font-size: $lsize;
-    }
+    @include fluid-font-size($lsize);
 
-    font-size: $msize;
+    font-size: $lsize;
+    font-weight: 400;
 }
 
 h4,
 .h4 {
+    @include fluid-font-size($msize);
+
     font-size: $msize;
+    font-weight: 700;
+    font-style: italic;
 }
 
 h5,
 .h5 {
+    @include fluid-font-size($ssize);
+
     font-size: $ssize;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 h6,
 .h6 {
+    @include fluid-font-size($xssize);
+
     font-size: $xssize;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 p {
-    margin: 0 0 $vrythm;
+    margin: 0 0 $vertical-rhythm-0;
     padding: 0;
 }
 
@@ -122,20 +112,21 @@ em {
 }
 
 blockquote {
-    border-left: thick solid $dark2;
+    @include border(left, $border-width-thick, solid, $border-color-dark-2);
+
     margin: 0;
     padding: 0;
 
     p {
         font-style: italic;
-        padding-left: $vrythm;
+        padding-left: $vertical-rhythm-0;
     }
 }
 
 ul,
 ol {
-    margin: 0 0 $vrythm;
-    padding: 0 0 0 $sone;
+    margin: 0 0 $vertical-rhythm-0;
+    padding: 0 0 0 $space-1;
 }
 
 pre,
@@ -145,7 +136,8 @@ samp {
 }
 
 pre {
-    margin: $vrythm 0;
+    margin: $vertical-rhythm-0 0;
+    padding: $space-1;
     overflow-x: auto;
     white-space: pre;
     word-break: inherit;
@@ -170,12 +162,13 @@ small {
 time {
     @extend p;
 
-    color: $text2;
+    color: $basefgalt;
     display: block;
 }
 
 abbr {
-    border-bottom: thin dotted $dark2;
+    @include border(bottom, $border-width-thin, dotted, $border-color-dark-0);
+
     cursor: help;
 }
 

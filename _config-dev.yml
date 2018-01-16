@@ -2,7 +2,6 @@ limit_posts: 1
 incremental: false
 exclude:
   - README.md # ------------------ Basis ---------------------------
-  - CNAME
   - Gemfile
   - vendor
   - package.json
@@ -11,14 +10,13 @@ exclude:
   - .stylelintrc
   - images
   - _archive
-  - _trash
   - master.xml
   - _layouts/seminar.html
   - pages/certificates
-  - pages/docs
-  - pages/docs/auxiliary
-  - pages/indices/blog
-  - pages/indices/blog-archive.html
+  - _pages # --------------------- Static Pages --------------------
+  - _pages/blog
+  - _pages/books
+  - _pages/indices
   - greek.xml # ------------------ Greek ---------------------------
   - _greek
   - pages/indices/greek.html
@@ -39,16 +37,14 @@ exclude:
   - codelog.xml
   - pages/indices/codelog.html
   - pages/indices/code.html
-  - _includes/triton-syntax.scss
+  - _includes/cypher-syntax.scss
   - _schemes # ------------------- Schemes -------------------------
   - _includes/main.min.js
   - pages/indices/schemes.html
   - _layouts/scheme.html
   - _data/themes.yml
+  - _includes/prot16-project-template.md
   - _includes/prot16-packages.html
   - _includes/prot16-palette.html
-  - _includes/prot16-codedemo.html
-  - _includes/prot16-codeblocks.html
-  - _includes/prot16-colourorder.html
   - _includes/prot16-vim-packages.html
   - _includes/prot16-project-template.md

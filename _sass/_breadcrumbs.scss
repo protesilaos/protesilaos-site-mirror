@@ -1,32 +1,30 @@
 .breadcrumbs {
     @extend %clearfix;
 
-    background: $lhl;
-    border-bottom: medium solid $dark2;
-    border-top: medium solid $dark2;
-    font-family: $fontui;
-    font-size: $msize;
-    margin: ($vrythm * 2) 0 $vrythm;
-    padding: $sone;
+    @include fluid-font-size($msize);
+    @include border(top, $border-width-medium, solid, $border-color-dark-1);
+    @include border(bottom, $border-width-medium, solid, $border-color-dark-1);
 
-    main & {
-        a {
-            border-bottom: none;
-            font-weight: 700;
+    background: $basebgalt;
+    padding: $space-1;
+    margin: $vertical-rhythm-1 0;
 
-            &:hover,
-            &:focus,
-            &:active {
-                border-bottom: none;
-            }
+    .breadcrumbs-path-link {
+        color: $bigtextlinkfg;
+        font-weight: 700;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $bigtextlinkfghover;
         }
     }
 
-    svg {
-        margin: 0 ($sone / 4);
+    .breadcrumbs-divider {
+        font-weight: 700;
     }
 
-    span {
+    .breadcrumbs-current-item-title {
         font-style: italic;
     }
 }

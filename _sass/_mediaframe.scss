@@ -1,17 +1,20 @@
 .medialayer {
-    padding: $vrythm 0;
     width: 100%;
+    padding: $vertical-rhythm-0 0;
+    margin: $vertical-rhythm-0 0;
 }
 
 .mediaframe {
-    margin: 0 auto;
-    max-width: $measure;
-
-    @include shadow;
+    @include tablet {
+        max-width: $measure;
+    }
 
     @include desktop {
         max-width: $measure-xl;
     }
+
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .mediawrapper {

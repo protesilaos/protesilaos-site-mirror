@@ -1,13 +1,14 @@
-# requiring the environment of Ruby 2.3.x
+# requiring Ruby 2.3.x
 image: ruby:2.3
 
 # add cache to 'vendor' for speeding up builds
 cache:
-  paths: 
+  paths:
     - vendor/
 
 before_script:
   - bundle install --path vendor
+  - apt-get update && apt-get install -y nodejs
 
 # add a job called 'test'
 test:

@@ -1,60 +1,89 @@
+%container {
+    @include tablet {
+        max-width: $measure;
+    }
+
+    @include desktop {
+        max-width: $measure-xl;
+    }
+
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: $space-1;
+}
+
+.post {
+    @extend %container;
+}
+
 .post-header {
-    padding: 0 0 $vrythm;
+    padding: 0;
+
+    @include tablet {
+        padding: $vertical-rhythm-0 0;
+    }
 
     h1 {
-        color: $text1;
+        color: $basefg;
     }
 
     .subtitle {
-        color: $text2;
+        color: $basefgalt;
         font-weight: 400;
     }
 
     time {
-        font-family: $fontui;
+        @include fluid-font-size($xxssize);
+
         font-size: $ssize;
-        margin: $vrythm 0;
-        text-transform: uppercase;
+        margin: $vertical-rhythm-0 0;
     }
 }
 
 .post-header-inner,
 .post-footer-inner {
-    @extend .container;
+    @extend %container;
+}
+
+// NOTE same styles are found in _sass/_index.scss for `.index-item-label`
+// NOTE used in seminar layout to display arbitrary 'label' (description of seminar series)
+.post-header-subtitle-label {
+    @include fluid-font-size($xxssize);
+
+    font-size: $ssize;
+    color: $basefgalt;
 }
 
 .post-footer {
-    background: $bg;
-    font-family: $fontui;
+    background: $basebg;
 }
 
 .post-meta {
     @extend p;
 
-    font-family: $font2;
-
     // TODO check whether this applies anywhere except _layouts for books
     // Rendered irrelevant as books will use time tag instead
     span {
         &:not(a) {
-            color: $text2;
+            color: $basefgalt;
         }
 
         + span {
             @include tablet {
                 display: inline;
-                margin-left: $sone / 2;
+                margin-left: $space-0;
 
                 &::before {
                     content: '//';
                     display: inline-block;
-                    padding-right: $sone / 2;
+                    padding-right: $space-0;
                 }
             }
 
             display: block;
             font-size: $ssize;
-            margin-top: $vrythm / 4;
+            margin-top: $space-0;
         }
     }
 }
@@ -62,55 +91,14 @@
 p,
 li {
     code {
-        background: transparentize($primary3, 0.95);
-        color: $primary3;
-    }
-}
-
-// Page effect on >= tablet
-
-.post {
-    @extend .container;
-
-    @include tablet {
-        background: none;
-        margin-top: $vrythm;
-    }
-
-    background: $pagebg;
-}
-
-.post-inner {
-    @include tablet {
-        @include shadow;
-        background: $pagebg;
-        padding: ($vrythm * 2);
-    }
-
-    @include desktop {
-        @include bigblock-outer;
+        background: $inlinecodebg;
+        color: $inlinecodefg;
     }
 }
 
 // Auxiliary styles
 h1.h1-plus {
-    font-size: $msize * 3; // For books print-page title
-}
-
-.post-header-inner-index-xl {
-    @include desktop {
-        max-width: $measure-xl; // For cards-based indices
-    }
-
-    &::after {
-        content: "";
-        display: block;
-        background: $secondary2;
-        width: calc(100% / 5);
-        max-width: 250px;
-        height: 3px;
-        margin: $vrythm 0 0;
-    }
+    font-size: $impact-text-l; // For books print-page title
 }
 
 .profile-pic {
@@ -125,9 +113,14 @@ h1.h1-plus {
 
     @include tablet {
         float: right;
-        margin-left: $sone;
-        margin-bottom: $sone;
+        margin-left: $space-1;
+        margin-bottom: $space-1;
         max-width: 200px;
         max-height: 200px;
+    }
+
+    @include desktop {
+        max-width: 300px;
+        max-height: 300px;
     }
 }

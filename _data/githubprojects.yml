@@ -1,0 +1,12 @@
+- name: Dotfiles
+  description: "Configuration files for some of my favourite programs on GNU/Linux."
+  url: "https://github.com/protesilaos/dotfiles"
+- name: Prot16 Generator
+  description: "A nimble tool to automate the process of exporting the Prot16 colour schemes to a variety of applications and terminals."
+  url: "https://github.com/protesilaos/prot16-generator"
+- name: Tempus Themes
+  description: "Tempus is a collection of themes for Vim and terminal emulators that are compliant at the very least with the WCAG AA accessibility standard for colour contrast"
+  url: "https://github.com/protesilaos/tempus-themes"
+- name: Tempus Themes Generator
+  description: "Script to build Tempus themes on demand."
+  url: "https://github.com/protesilaos/tempus-themes-generator"

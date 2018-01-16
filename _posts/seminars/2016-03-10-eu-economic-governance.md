@@ -4,6 +4,7 @@ date: 2016-03-10T04:48:00+00:00
 excerpt: In this seminar we examine the governance structure of the Economic and Monetary Union. We also discuss the statelessness of the euro.
 mediaid: "kQmXzQPgiLU"
 lecture: "EU301"
+lecturetheme: "Guide to the European Union"
 permalink: /seminars/eu-economic-governance/
 layout: seminar
 ---

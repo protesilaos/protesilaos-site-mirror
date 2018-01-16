@@ -1,44 +1,17 @@
 <footer class="footer">
-    
+
     <nav class="footer-menu" aria-label="Footer main menu">
 
         {% include navigation-footer.html %}
 
     </nav>
 
-    <nav class="footer-menu" aria-label="Footer social links menu">
-
-        {% include iconography.svg %}
-
-        {% assign profiles = site.data.social %}
-        
-        <ul>
-
-        {% for profile in profiles %}
-
-            <li>
-                <a title="{{ profile.name }}" href="{{ profile.url }}" aria-label="{{ profile.name }}">
-                    <svg class="icon {{ profile.class }}">
-                        <use xlink:href="#{{ profile.class }}"></use>
-                    </svg>
-                    {{ profile.name }}
-                </a>
-            </li>
-
-        {% endfor %}
-
-        </ul>
-    </nav>
-
-  <div class="copyright">
-      (c) 2011-{{ site.time | date: '%Y' }} Protesilaos Stavrou. <a rel="license" href="{{ '/license/' | prepend: site.url }}">Some rights reserved</a>.
-  </div>
+    <div class="copyright">
+        (c) 2011-{{ site.time | date: '%Y' }} Protesilaos Stavrou. <a rel="license" href="{{ '/license/' | prepend: site.url }}">Some rights reserved</a>.
+    </div>
 
     <div class="donation-box">
         <p>
-          <svg class="deco-icon icon-heart">
-              <use xlink:href="#icon-heart"></use>
-          </svg>
           <span class="donation-prompt">Donations</span> If you enjoy my work please donate via <a href="https://www.paypal.me/protesilaos">Paypal</a>.
       </p>
     </div>

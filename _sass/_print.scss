@@ -10,8 +10,6 @@
     .mediaframe,
     .reversefootnote,
     .print-note,
-    .donation-box,
-    .social-share,
     .footer {
         display: none;
     }
@@ -92,7 +90,7 @@
     }
 
     article::after {
-        content: 'If my work has been helpful and you would like to buy me a drink, please do so via Paypal: https://www.paypal.me/protesilaos';
+        content: 'If my work has been helpful please consider donating via Paypal: https://www.paypal.me/protesilaos';
         display: block;
         font-size: 10pt;
         margin: 3cm 0cm 0cm;

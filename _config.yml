@@ -1,8 +1,10 @@
 # Site settings
 title: Protesilaos Stavrou
+eltitle: Πρωτεσίλαος Σταύρου
 email: public@protesilaos.com
 author: Protesilaos Stavrou
-description: "EU policy analyst. Philosopher. Web developer."
+description: "EU policy analyst. Philosopher. Front end developer."
+eldescription: "Πολιτικός αναλυτής της Ε.Ε. Φιλόσοφος. Παραγωγός λογισμικού."
 baseurl: ""
 url: "https://protesilaos.com"
 date_format: "%Y-%m-%d"
@@ -20,6 +22,8 @@ collections:
     output: true
   greek:
     output: true
+  pages:
+    output: true
 
 defaults:
   - scope:
@@ -36,10 +40,15 @@ defaults:
       image: "/images/brand/protesilaos-logo.png"
       master: true
   - scope:
+      type: pages
+    values:
+      layout: page
+      image: "/images/brand/protesilaos-logo.png"
+      master: false
+  - scope:
       type: greek
     values:
-      layout: post
-      lang: el # Used to load Greek fonts in head.html
+      layout: elpost
       index: "/greek/"
       group: Αναρτήσεις στα ελληνικά
       image: "/images/brand/protesilaos-logo.png"
@@ -75,8 +84,6 @@ social:
   name: Protesilaos Stavrou
   links:
     - https://twitter.com/protstavrou
-    - https://www.facebook.com/protesilaos.stavrou
-    - https://www.instagram.com/protesilaos
     - https://plus.google.com/113081803807819597676
     - https://github.com/protesilaos
     - https://gitlab.com/protesilaos
@@ -84,7 +91,6 @@ social:
     - https://atom.io/users/protesilaos
     - https://keybase.io/protesilaos
     - https://www.reddit.com/user/protesilaos
-    - https://bandcamp.com/protesilaos
 
 # Where things are
 source:       .
@@ -114,7 +120,6 @@ plugins:
   - jekyll-seo-tag
 exclude:
   - README.md
-  - CNAME
   - Gemfile
   - vendor
   - package.json

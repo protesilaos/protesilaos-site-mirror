@@ -2,7 +2,8 @@
 title: "How to evaluate international relations"
 subtitle: "Applying the distinction between headline and effective sovereignty"
 excerpt: "International relations can be evaluated based on their impact on a nation state's capacity to exercise supreme political authority."
-# lecture: "#"
+lecture: "POL410"
+lecturetheme: "Advanced issues of political organisation"
 mediaid: "syxXPWmOPYA"
 date: 2017-10-12
 permalink: /seminars/sov-international-relations/

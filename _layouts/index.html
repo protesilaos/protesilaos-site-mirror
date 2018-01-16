@@ -1,19 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
+<div class="index-impact-header">
+    <div class="index-impact-header-inner">
+        <h1 class="index-impact-header-title">
+            {{ page.title }}
+        </h1>
 
-  {% include head.html %}
+        {% if page.subtitle %}
+            <h2 class="index-impact-header-subtitle">
+                {{ page.subtitle }}
+            </h2>
+        {% endif %}
 
-  <body>
+        {% if page.index-feed %}
+            <div class="index-impact-header-meta">
+                <a class="index-rss-feed" href="{{ page.index-feed.url }}">
+                    {{ page.index-feed.text }}
+                </a>
+            </div>
+        {% endif %}
 
-    {% include headerbar.html %}
+    </div>
+</div>
 
-    <main id="content" aria-label="Content">
-      <div class="homepage">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+<div class="index-wrapper">
+    {{ content }}
+</div>

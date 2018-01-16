@@ -2,10 +2,10 @@
 
 <ul>
 {% for link in links %}
-  <li>
-    <a href="{{ link.url | prepend: site.url }}">
-      {{ link.name }}
-    </a>
-  </li>
+    <li>
+        <a href="{{ link.url | prepend: site.url }}">
+            {{ link.name }}
+        </a>
+    </li>
 {% endfor %}
 </ul>

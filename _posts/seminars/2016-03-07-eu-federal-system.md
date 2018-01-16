@@ -4,6 +4,7 @@ date: 2016-03-07T04:48:00+00:00
 excerpt: In this seminar we examine the features of the EU polity. It is at once intergovernmental and supranational.
 mediaid: "oQOWouRzf7o"
 lecture: "EU110"
+lecturetheme: "Guide to the European Union"
 permalink: /seminars/eu-federal-system/
 layout: seminar
 ---

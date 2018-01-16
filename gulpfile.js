@@ -3,7 +3,8 @@
 *  All task-specific variables are included in the task itself.
 *  Keeps things scalable and makes it easier to read.
 *  Each task is self-contained.
-*  `const` and `var` defined individually. No bugs with mistakes over `,` and `;`.
+*  `const` and `var` defined individually.
+*  No bugs with mistakes over `,` and `;`.
 **/
 
 const gulp = require('gulp');
@@ -42,26 +43,14 @@ gulp.task('js', function() {
     .pipe(gulp.dest('js'));
 });
 
-// Prepare Latin Webfonts CSS
+// Prepare Webfonts CSS
 
 gulp.task('webfonts', function() {
   var cleanCSS = require('gulp-clean-css');
 
-  return gulp.src('_assets/css/latin/**/*.css')
+  return gulp.src('_assets/css/**/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(concat('webfonts.css'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('css'));
-});
-
-// Prepare Greek Webfonts CSS
-
-gulp.task('greekfonts', function() {
-  var cleanCSS = require('gulp-clean-css');
-
-  return gulp.src('_assets/css/greek/**/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(concat('greekfonts.css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css'));
 });

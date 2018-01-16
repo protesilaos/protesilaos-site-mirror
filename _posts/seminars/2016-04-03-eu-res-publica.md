@@ -4,6 +4,7 @@ date: 2016-04-03T01:48:00+00:00
 excerpt: "In this seminar we examine the constitutional order of the European Union and the common good it instantiates."
 mediaid: "1ylsxAqskaE"
 lecture: "EU401"
+lecturetheme: "Guide to the European Union"
 permalink: /seminars/eu-constitution-res-publica/
 layout: seminar
 ---

@@ -4,6 +4,7 @@ date: 2016-03-16T03:48:00+00:00
 excerpt: "In this seminar we examine the institutional independence and arrangements for the accountability of the European Central Bank."
 mediaid: "C1devttXR6k"
 lecture: "EU302"
+lecturetheme: "Guide to the European Union"
 permalink: /seminars/ecb-independence-accountability/
 layout: seminar
 ---

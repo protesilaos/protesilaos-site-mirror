@@ -10,7 +10,11 @@ div + h2,
 div + h3,
 small + h2,
 small + h3 {
-    margin-top: $vrythm * 1.5;
+    @include tablet {
+        margin-top: $vertical-rhythm-1;
+    }
+
+    margin-top: $vertical-rhythm-0;
 }
 
 h1 + h2.subtitle,
